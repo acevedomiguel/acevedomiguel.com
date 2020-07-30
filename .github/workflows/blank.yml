@@ -35,5 +35,14 @@ jobs:
     - name: Build Hugo
       uses: lowply/build-hugo@v0.72.0
       
-    - name: rsync deployments
-      uses: contention/rsync-deployments@v1.0.0
+    - name: ssh pipelines
+      uses: cross-the-world/ssh-pipeline@master
+      env:
+        WELCOME: "ssh pipeline"
+      with:
+        host: ${{ secrets.DC_HOST }}
+        user: ${{ secrets.DC_USER }}
+        pass: ${{ secrets.DC_PASS }}
+        port: ${{ secrets.DC_PORT }}
+        key: ${{ secrets.DC_KEY }}
+        connect_timeout: 10s
