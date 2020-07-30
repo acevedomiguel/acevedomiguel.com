@@ -1,0 +1,22 @@
+name: Push to GitHub Pages on push to master
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v1
+
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
+        env:
+          HUGO_VERSION: 0.72.0
+          TARGET_REPO: benmatselby/benmatselby.github.io
+          TOKEN: ${{ secrets.TOKEN }}
+          HUGO_ARGS: '-t academic'
+          CNAME: benmatselby.github.io
