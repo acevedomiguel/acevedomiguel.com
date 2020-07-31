@@ -29,11 +29,6 @@ jobs:
     - name: Build Hugo
       uses: lowply/build-hugo@v0.72.0
 
-  deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-      
     - name: rsync deployments
       uses: burnett01/rsync-deployments@4.1
       with:
