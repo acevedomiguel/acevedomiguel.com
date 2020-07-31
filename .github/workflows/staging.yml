@@ -34,7 +34,7 @@ jobs:
       with:
         switches: -avzr --delete
         path: public/
-        remote_path: /home/mutante_mc/staging.acevedomiguel.com/
-        remote_host: acevedomiguel.com
-        remote_user: mutante_mc
-        remote_key: ${{ secrets.DEPLOY_KEY }}
+        remote_path: ${{ secrets.TESTING_REMOTE_PATH }}
+        remote_host: ${{ secrets.TESTING_REMOTE_HOST }}
+        remote_user: ${{ secrets.TESTING_REMOTE_USER }}
+        remote_key: ${{ secrets.TESTING_DEPLOY_KEY }}
