@@ -8,14 +8,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon-32x32.png">
 
-	<!-- STYLESHEETS -->
+    <!-- STYLESHEETS -->
+    
+
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/simplebar.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	{{/*  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">  */}}
+
+	{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+	{{ $styles := resources.Get "css/main.scss" | toCSS $options | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" type="text/css" media="all">
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,7 +52,7 @@
 			<span></span>
 			<span></span>
 		</button>
-		<a href="index.html" class="logo"><img src="images/profile_80.jpg" alt="Acevedo, Miguel Angel" /></a>
+		<a href="index.html" class="logo"><img src="images/me_round_80.png" alt="Acevedo, Miguel Angel" /></a>
 		<a href="index.html" class="site-title dot ml-2">Miguel</a>
 	</div>
 
@@ -56,7 +62,7 @@
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<div class="header-inner d-flex align-items-start flex-column">
-			<a href="index.html"><img src="images/profile_80.jpg" alt="Acevedo, Miguel Angel" /></a>
+			<a href="index.html"><img src="images/me_round_80.png" alt="Acevedo, Miguel Angel" /></a>
 			<a href="index.html" class="site-title dot mt-3">Miguel</a>
 			<span class="site-slogan">Senior Software Engineer</span>
 			
@@ -94,7 +100,7 @@
 				<h1 class="mt-0 mb-4">I’m Miguel<span class="dot"></span></h1>
 				<p class="mb-4">Miguel is a Fullstack Developer who helps startups to create and take your MPV to the next level.</p>
 				<p class="mb-4">Before starting a development business, Miguel worked 16 years as a Developer and Lead Programmer in south america and asia. After a successful career helping tech companies and entrepreneurs, Miguel now lead them on how to plan, develop and run online products.</p>
-				<a href="#" class="btn btn-default btn-lg mr-3"><i class="icon-arrow-down-circle"></i>Download Resume</a>
+				<a href="#" class="btn btn-default btn-lg mr-3"><i class="icon-cloud-download"></i>Download CV</a>
 				<div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
 				<a href="#contact" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Hire me</a>
 			</div>
@@ -124,7 +130,7 @@
 						</div>
 					</div>
 					<a href="#" class="btn btn-default mr-3"><i class="icon-cloud-download"></i>Download CV</a>
-					<a href="#" class="btn btn-alt mt-2 mt-md-0 mt-xs-2"><i class="icon-envelope"></i>Hire me</a>
+					<a href="#contact" class="btn btn-alt mt-2 mt-md-0 mt-xs-2"><i class="icon-envelope"></i>Hire me</a>
 				</div>
 			</div>
 		</section>

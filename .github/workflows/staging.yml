@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ staging ]
   pull_request:
-    branches: [ master ]
+    branches: [ staging ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,25 +24,22 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: echo Hello, world! 
 
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-            echo test, and deploy your project.
-            
     - name: Build Hugo
       uses: lowply/build-hugo@v0.72.0
+
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
       
-    - name: ssh pipelines
-      uses: cross-the-world/ssh-pipeline@master
-      env:
-        WELCOME: "ssh pipeline"
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@4.1
       with:
-        host: ${{ secrets.DC_HOST }}
-        user: ${{ secrets.DC_USER }}
-        pass: ${{ secrets.DC_PASS }}
-        port: ${{ secrets.DC_PORT }}
-        key: ${{ secrets.DC_KEY }}
-        connect_timeout: 10s
+        switches: -avzr --delete
+        path: public/
+        remote_path: /home/mutante_mc/staging.acevedomiguel.com/
+        remote_host: acevedomiguel.com
+        remote_user: mutante_mc
+        remote_key: ${{ secrets.DEPLOY_KEY }}
