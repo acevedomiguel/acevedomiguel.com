@@ -180,6 +180,8 @@ section {
 	float: left;
 	width: 20%;
 	position: relative;
+	font-size: 0.9rem;
+	text-transform: uppercase;
 }
 
 .entry .title:before {
@@ -191,7 +193,7 @@ section {
 	background-color: #fff;
 	border-radius: 100%;
 	padding: 4.5px;
-	top: 15%;
+	top: 30%;
 	right: -8px;
 	z-index: 1;
 }
