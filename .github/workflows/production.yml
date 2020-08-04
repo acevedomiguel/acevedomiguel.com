@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ staging ]
+    branches: [ master ]
   pull_request:
-    branches: [ staging ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,7 +36,7 @@ jobs:
         chmod 600 ~/.ssh/gh_actions_key
         rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" public/ $remote_user@$remote_host:$remote_path
       env:
-        remote_path: ${{ secrets.TESTING_REMOTE_PATH }}
-        remote_host: ${{ secrets.TESTING_REMOTE_HOST }}
-        remote_user: ${{ secrets.TESTING_REMOTE_USER }}
-        remote_key: ${{ secrets.TESTING_DEPLOY_KEY }}
+        remote_path: ${{ secrets.REMOTE_PATH }}
+        remote_host: ${{ secrets.REMOTE_HOST }}
+        remote_user: ${{ secrets.REMOTE_USER }}
+        remote_key: ${{ secrets.DEPLOY_KEY }}
