@@ -1,68 +1,22 @@
 ############################ Default configuration #########################
-baseURL = "https://examplesite.com/"
+baseURL = "https://www.acevedommiguel.com/"
 languageCode = "en-us"
 # site title 
-title = "Northendlab | Blog Template"
+title = "Personal Resume for Acevedo Miguel Angel | acevedomiguel.com"
 # theme
 theme = "acevedomiguel"
-# post pagination
-paginate = "5"
-# post excerpt
-summaryLength = "10"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
 
 [outputs]
-home = ["HTML", "AMP", "RSS", "JSON"]
+home = ["HTML", "AMP", "RSS"]
 
-########################## Plugings ######################################
-
-# css plugins
-[[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-link = "plugins/themify-icons/themify-icons.css"
-
-# js plugins
-[[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/search/fuse.min.js"
-[[params.plugins.js]]
-link = "plugins/search/mark.js"
-[[params.plugins.js]]
-link = "plugins/search/search.js"
-
-
-########################### Navigation ###################################
-
-# main menu
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 1
-
-[[menu.main]]
-URL = "tools"
-name = "tools"
-weight = 2
-
-# footer menu
-[[menu.footer]]
-URL = "contact"
-name = "Contact"
-weight = 1
-
-[[menu.footer]]
-URL = "tools"
-name = "tools"
-weight = 2
 
 
 ######################### Default Parameters ###########################
 [params]
+email = "miguelangel@linux.com"
+address = "Yau Ma Tei, Kowloon, Hong Kong"
+phone = "+852 6435 6936"
+cvFile= "resume-complete-v13.pdf"
 # home
 home = "Home"
 # logo

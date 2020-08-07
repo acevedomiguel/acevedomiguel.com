@@ -307,3 +307,15 @@
 .background-white {
     background: #FFF;
 }
+
+// Extended mixin for bootstrap
+.badge {
+    padding: 0.5em .8em;
+}
+
+.badge-dark {
+    color: #000;
+    // background-color: lightgray;
+    background-color: gainsboro;
+    text-transform: uppercase;
+}

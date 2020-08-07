@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ staging ]
   pull_request:
-    branches: [ master ]
+    branches: [ staging ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,25 +24,19 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: echo Hello, world! 
 
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-            echo test, and deploy your project.
-            
     - name: Build Hugo
       uses: lowply/build-hugo@v0.72.0
-      
-    - name: ssh pipelines
-      uses: cross-the-world/ssh-pipeline@master
+
+    - name: rsync deployments
+      run: |
+        mkdir ~/.ssh
+        echo "$remote_key" > ~/.ssh/gh_actions_key
+        chmod 600 ~/.ssh/gh_actions_key
+        rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" public/ $remote_user@$remote_host:$remote_path
       env:
-        WELCOME: "ssh pipeline"
-      with:
-        host: ${{ secrets.DC_HOST }}
-        user: ${{ secrets.DC_USER }}
-        pass: ${{ secrets.DC_PASS }}
-        port: ${{ secrets.DC_PORT }}
-        key: ${{ secrets.DC_KEY }}
-        connect_timeout: 10s
+        remote_path: ${{ secrets.TESTING_REMOTE_PATH }}
+        remote_host: ${{ secrets.TESTING_REMOTE_HOST }}
+        remote_user: ${{ secrets.TESTING_REMOTE_USER }}
+        remote_key: ${{ secrets.TESTING_DEPLOY_KEY }}
