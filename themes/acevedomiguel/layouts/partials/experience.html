@@ -1,0 +1,30 @@
+<div class="entry">
+    <div class="title">
+        <span>{{ .DateInit }} {{ .DateEnd }}</span>
+    </div>
+    <div class="body">
+        <div class="header">
+            <h4 class="mt-0 mb-0 position">{{ .Role }}</h4>
+            <h4 class="mt-1 company">{{ .Company }} <small>({{ .Location }})</small></h4>
+            <small>{{ .ShortDescription }}</small>
+        </div>
+        
+        <ul class="fa-ul">
+            {{ range .Achievements }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+        
+        <!-- <p>
+            <span class="badge badge-dark">Node.js</span>
+            <span class="badge badge-dark">Scala</span>
+            <span class="badge badge-dark">Kafka</span>
+            <span class="badge badge-dark">Postgres</span>
+            <span class="badge badge-dark">Redis</span>
+            <span class="badge badge-dark">AWS</span>
+            <span class="badge badge-dark">Kubernetes</span>
+            <span class="badge badge-dark">Jenkins</span>
+            <span class="badge badge-dark">Bitbucket</span>
+        </p> -->
+    </div>
+</div>
