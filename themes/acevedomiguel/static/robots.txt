@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.acevedomiguel.com/sitemap.xml
