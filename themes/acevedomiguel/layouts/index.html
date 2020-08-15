@@ -28,7 +28,28 @@
 
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Person">
+
+<script type="application/ld+json">
+	{
+		"@context" : "http://schema.org",
+		"@type" : "Organization",
+		"name" : "Miguel Acevedo",
+		"url" : "https://www.acevedomiguel.com",
+		"sameAs" : [
+		"https://twitter.com/webdriver",
+		"https://www.facebook.com/acevedomiguel",
+		"https://www.linkedin.com/in/acevedomiguel/"
+		],
+		"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Yau Ma Tei",
+		"addressRegion": "Kowloon",
+		"postalCode": "00000",
+		"addressCountry": "HK"
+		}
+	}
+	</script>
 
 <!-- preloader -->
 <div id="preloader">
@@ -51,7 +72,7 @@
 			<span></span>
 		</button>
 		<a href="index.html" class="logo"><img src="images/me_round_80.png" alt="Acevedo, Miguel Angel" /></a>
-		<a href="index.html" class="site-title dot ml-2">Miguel</a>
+		<a href="index.html" class="site-title dot ml-2" itemprop="name">Miguel</a>
 	</div>
 
 	<!-- header -->
@@ -61,8 +82,8 @@
 		</button>
 		<div class="header-inner d-flex align-items-start flex-column">
 			<a href="index.html"><img src="images/me_round_80.png" alt="Acevedo, Miguel Angel" /></a>
-			<a href="index.html" class="site-title dot mt-3">Miguel</a>
-			<span class="site-slogan">Senior Software Engineer</span>
+			<a href="index.html" class="site-title dot mt-3" itemprop="name">Miguel</a>
+			<span class="site-slogan" itemprop="jobTitle">Senior Software Engineer</span>
 			
 			<!-- navigation menu -->
 			<nav>
@@ -81,7 +102,8 @@
 				<!-- social icons -->
 				<ul class="social-icons list-inline">
 					<li class="list-inline-item"><a href="https://www.linkedin.com/in/acevedomiguel/"><i class="fab fa-linkedin"></i></a></li>
-					<li class="list-inline-item"><a href="mailto:{{ $.Site.Params.email }}"><i class="fab icon-envelope"></i></a></li>
+					<li class="list-inline-item"><a href="mailto:{{ $.Site.Params.email }}" class="mailtoui"><i class="fab icon-envelope"></i></a></li>
+					<li class="list-inline-item"><a href="https://twitter.com/{{ $.Site.Params.twitter }}"><i class="fab fa-twitter"></i></a></li>
 				</ul>
 
 			</div>
@@ -123,7 +145,7 @@
 							
 						</div>
 						<div class="col-md-6 mt-2 mt-md-0 mt-sm-2">
-							<p class="mb-0">Email: <span class="text-dark">{{ $.Site.Params.email }}</span></p>
+							<p class="mb-0">Email: <span class="text-dark" itemprop="email"><a href="mailto:{{ $.Site.Params.email }}" class="mailtoui">{{ $.Site.Params.email }}</a></span></p>
 						</div>
 					</div>
 					<a href="{{ $.Site.Params.cvFile }}" class="btn btn-default mr-3"><i class="icon-cloud-download"></i>Download CV</a>
@@ -197,15 +219,15 @@
 						<i class="icon-phone"></i>
 						<div class="details">
 							<h5>Phone</h5>
-							<span>{{ $.Site.Params.phone }}</span>
+							<span itemprop="telephone">{{ $.Site.Params.phone }}</span>
 						</div>
 					</div>
 					
 					<div class="contact-info">
 						<i class="icon-location-pin"></i>
-						<div class="details">
+						<div class="details" itemprop="address">
 							<h5>Location</h5>
-							<span>{{ $.Site.Params.address }}</span>
+							<span itemprop="addressLocality">{{ $.Site.Params.address }}</span>
 						</div>
 					</div>
 				</div>
@@ -215,7 +237,7 @@
 						<i class="icon-envelope"></i>
 						<div class="details">
 							<h5>Email address</h5>
-							<span>{{ $.Site.Params.email }}</span>
+							<span itemprop="email"><a href="mailto:{{ $.Site.Params.email }}" class="mailtoui">{{ $.Site.Params.email }}</a></span>
 						</div>
 					</div>
 				</div>
@@ -239,6 +261,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script> -->
+<script src="js/mailtoui-min.js"></script>
 <script src="js/custom.js"></script>
 
 </body>

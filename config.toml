@@ -13,6 +13,7 @@ home = ["HTML", "AMP", "RSS"]
 
 ######################### Default Parameters ###########################
 [params]
+twitter = "faultydev"
 email = "miguelangel@linux.com"
 address = "Yau Ma Tei, Kowloon, Hong Kong"
 phone = "+852 6435 6936"
