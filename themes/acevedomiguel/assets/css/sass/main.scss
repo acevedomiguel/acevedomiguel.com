@@ -132,38 +132,7 @@ section {
 
 .timeline {
 	position: relative;
-	padding: 70px 0;
-}
-
-.timeline-line {
-	position: absolute;
-	top: 0px;
-	left: calc(12% + 2px);
-	bottom: 0px;
-	width: 1px;
-	background: $colororange;
-	&::before, &::after {
-		content: '';
-		display: block;
-		border-radius: 100%;
-		background: $colororange;
-		position: absolute;
-		left: -3px;
-		height: 7px;
-		width: 7px;
-	}
-	&::before {
-		top: 0;
-	}
-	&::after {
-		bottom: 0;
-	}
-}
-
-.timeline:after {
-	content: "";
-	display: table;
-	clear: both;
+	// padding: 70px 0;
 }
 
 .timeline .entry .position {
@@ -226,9 +195,7 @@ section {
 }
 
 .entry .body {
-	margin: 0 0 6em;
-	float: right;
-	width: 88%;
+	margin: 0 0 3em;
 	padding-left: 30px;
 	p {
 		margin-bottom: 0;
