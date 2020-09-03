@@ -1,12 +1,10 @@
 <div class="entry">
-    <div class="title">
-        <span>{{ .DateInit }} {{ .DateEnd }}</span>
-    </div>
     <div class="body">
         <div class="header">
+            <span>{{ .DateInit }} - {{ .DateEnd }}</span>
             <h4 class="mt-0 mb-0 position">{{ .Role }}</h4>
             <h4 class="mt-1 company">{{ .Company }} <small>({{ .Location }})</small></h4>
-            <small>{{ .ShortDescription }}</small>
+            <!-- <small>{{ .ShortDescription }}</small> -->
         </div>
         
         <ul class="fa-ul">
