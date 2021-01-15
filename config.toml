@@ -17,7 +17,7 @@ twitter = "faultydev"
 email = "miguelangel@linux.com"
 address = "Yau Ma Tei, Kowloon, Hong Kong"
 phone = "+852 6435 6936"
-cvFile= "resume-complete.pdf"
+cvFile= "acevedo-miguel-cv-202001.pdf"
 # home
 home = "Home"
 # logo
@@ -32,7 +32,7 @@ google_analitycs_id = "" # your id
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
 # copyright
-copyright = "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
+copyright = ""
 
 # preloader
 [params.preloader]
