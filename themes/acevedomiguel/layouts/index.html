@@ -8,15 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon-32x32.png">
 
-    <!-- STYLESHEETS -->
-    
-
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
 	{{/*  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">  */}}
-
-	{{/*  {{ .Site.IsServer }}  */}}
 	{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
 	{{ $styles := resources.Get "css/main.scss" | toCSS $options | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" type="text/css" media="all">
@@ -35,11 +30,11 @@
 		"@context" : "http://schema.org",
 		"@type" : "Organization",
 		"name" : "Miguel Acevedo",
-		"url" : "https://www.acevedomiguel.com",
+		"url" : "{{ $.Site.BaseURL }}",
 		"sameAs" : [
-		"https://twitter.com/webdriver",
-		"https://www.facebook.com/acevedomiguel",
-		"https://www.linkedin.com/in/acevedomiguel/"
+		"https://twitter.com/{{ $.Site.Params.twitter }}",
+		"https://www.facebook.com/{{ $.Site.Params.facebook }}",
+		"http://hk.linkedin.com/in/{{ $.Site.Params.linkedin }}"
 		],
 		"address": {
 		"@type": "PostalAddress",
@@ -101,7 +96,7 @@
 
 				<!-- social icons -->
 				<ul class="social-icons list-inline">
-					<li class="list-inline-item"><a href="https://www.linkedin.com/in/acevedomiguel/"><i class="fab fa-linkedin"></i></a></li>
+					<li class="list-inline-item"><a href="http://hk.linkedin.com/in/{{ $.Site.Params.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
 					<li class="list-inline-item"><a href="mailto:{{ $.Site.Params.email }}" class="mailtoui"><i class="fab icon-envelope"></i></a></li>
 					<li class="list-inline-item"><a href="https://twitter.com/{{ $.Site.Params.twitter }}"><i class="fab fa-twitter"></i></a></li>
 				</ul>
