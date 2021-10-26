@@ -9,12 +9,10 @@ theme = "acevedomiguel"
 [outputs]
 home = ["HTML", "AMP", "RSS"]
 
-
-
 ######################### Default Parameters ###########################
 [params]
 twitter = "faultydev"
-email = "miguelangel@linux.com"
+email = "me@acevedomiguel.com"
 address = "Yau Ma Tei, Kowloon, Hong Kong"
 phone = "+852 6435 6936"
 cvFile= "acevedo-miguel-cv-2021-08.pdf"
@@ -65,11 +63,11 @@ link = "https://gethugothemes.com/shop/"
 
 ############################## Social Site ##########################
 [[params.social]]
-icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
-link = "https://twitter.com/webdriver"
+icon = "ti-twitter-alt"
+link = "https://twitter.com/faultydev"
 [[params.social]]
-icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+icon = "ti-github"
 link = "https://github.com/acevedomiguel"
 [[params.social]]
-icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+icon = "ti-linkedin"
 link = "http://hk.linkedin.com/in/acevedomiguel"
