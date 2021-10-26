@@ -1,5 +1,5 @@
 ############################ Default configuration #########################
-baseurl = "https://www.acevedommiguel.com/"
+baseurl = "https://www.acevedomiguel.com/"
 languageCode = "en-us"
 title = "Personal Resume for Acevedo Miguel Angel | acevedomiguel.com"
 theme = "acevedomiguel"
