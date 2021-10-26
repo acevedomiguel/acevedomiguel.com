@@ -1,75 +1,29 @@
 ############################ Default configuration #########################
-baseURL = "https://www.acevedommiguel.com/"
+baseurl = "https://www.acevedomiguel.com/"
 languageCode = "en-us"
-# site title 
 title = "Personal Resume for Acevedo Miguel Angel | acevedomiguel.com"
-# theme
 theme = "acevedomiguel"
+canonifyurls = true
 
 [outputs]
 home = ["HTML", "AMP", "RSS"]
 
-
-
 ######################### Default Parameters ###########################
 [params]
+# url = "https://www.acevedommiguel.com/"
 twitter = "faultydev"
-email = "miguelangel@linux.com"
+facebook = "acevedomiguel"
+linkedin = "acevedomiguel"
+email = "me@acevedomiguel.com"
 address = "Yau Ma Tei, Kowloon, Hong Kong"
 phone = "+852 6435 6936"
 cvFile= "acevedo-miguel-cv-2021-08.pdf"
-# home
 home = "Home"
-# logo
 logo = "images/logo.svg"
-# meta data
 author = "Themefisher"
 description = "This is meta description"
-# google tag manager
-google_tag_manager = "" # your id
-# google analitycs ID
-google_analitycs_id = "" # your id
-# contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
-# copyright
-copyright = ""
 
 # preloader
 [params.preloader]
 enable = true
 preloader = "" # use png, jpg, svg or gif format
-
-# search
-[params.search]
-enable = true
-
-
-####################### banner #######################################
-[params.banner]
-bgImage = "images/banner/banner-bg.svg"
-title = "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
-image = "images/banner/illustration.svg"
-
-
-######################## call to action ###############################
-[params.cta]
-enable = true
-image = "images/hugo-muscot.svg"
-title = "Get the best hugo templates"
-description = "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
-[params.cta.button]
-enable = true
-label = "Visit Here"
-link = "https://gethugothemes.com/shop/"
-
-
-############################## Social Site ##########################
-[[params.social]]
-icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
-link = "https://twitter.com/webdriver"
-[[params.social]]
-icon = "ti-github" # themify icon pack https://themify.me/themify-icons
-link = "https://github.com/acevedomiguel"
-[[params.social]]
-icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
-link = "http://hk.linkedin.com/in/acevedomiguel"
