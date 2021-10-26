@@ -25,7 +25,9 @@ jobs:
       run: echo Hello, world! 
 
     - name: Build Hugo
-      uses: lowply/build-hugo@v0.72.0
+      uses: lowply/build-hugo@v0.88.1
+      with:
+        args: --config config.toml,config.staging.toml
 
     - name: rsync deployments
       run: |
