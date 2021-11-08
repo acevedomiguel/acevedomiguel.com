@@ -11,20 +11,19 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Run a one-line script
-      run: echo Hello, world! 
-
-    - name: Build Hugo
-      uses: lowply/build-hugo@v0.88.1
-      with:
-        args: --config config.toml,config.staging.toml
+    - name: Build
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - run: npm run build
 
     - name: rsync deployments
       run: |
         mkdir ~/.ssh
         echo "$remote_key" > ~/.ssh/gh_actions_key
         chmod 600 ~/.ssh/gh_actions_key
-        rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" public/ $remote_user@$remote_host:$remote_path
+        rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" out/ $remote_user@$remote_host:$remote_path
       env:
         remote_path: ${{ secrets.TESTING_REMOTE_PATH }}
         remote_host: ${{ secrets.TESTING_REMOTE_HOST }}
