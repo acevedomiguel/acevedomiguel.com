@@ -7,23 +7,14 @@ import LinkTree from '../components/linktree'
 export default function Index() {
   return (
     <>
-      <Layout>
-        <Head>
-          <title>links - {SITE_NAME}</title>
-        </Head>
-        <Container>
-        <LinkTree />
-        </Container>
-      </Layout>
+        <Layout>
+            <Head>
+                <title>Links - {SITE_NAME}</title>
+            </Head>
+            <Container>
+                <LinkTree />
+            </Container>
+        </Layout>
     </>
   )
 }
-
-/*
-<Link href="/resume" passHref>
-  <Button variant="contained" color="primary">Resume</Button>
-</Link>
-<Link href="/blog" passHref>
-  <Button variant="contained" color="primary">Blog</Button>
-</Link>
-*/
