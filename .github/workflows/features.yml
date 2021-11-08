@@ -1,0 +1,32 @@
+name: Features CI
+
+on:
+  push:
+    branches: [ features/* ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run a one-line script
+      run: echo Hello, world! 
+
+    - name: Build Hugo
+      uses: lowply/build-hugo@v0.88.1
+      with:
+        args: --config config.toml,config.staging.toml
+
+    - name: rsync deployments
+      run: |
+        mkdir ~/.ssh
+        echo "$remote_key" > ~/.ssh/gh_actions_key
+        chmod 600 ~/.ssh/gh_actions_key
+        rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" public/ $remote_user@$remote_host:$remote_path
+      env:
+        remote_path: ${{ secrets.TESTING_REMOTE_PATH }}
+        remote_host: ${{ secrets.TESTING_REMOTE_HOST }}
+        remote_user: ${{ secrets.TESTING_REMOTE_USER }}
+        remote_key: ${{ secrets.TESTING_DEPLOY_KEY }}
