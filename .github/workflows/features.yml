@@ -11,12 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm ci
-      - run: npm run build
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - run: npm ci
+    - run: npm run build
 
     - name: rsync deployments
       run: |
