@@ -1,0 +1,35 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.react-icons {
+    /* vertical-align: middle; */
+    display: inline-block;
+    size: 1.2em;
+}
+
+.linktree-resume{
+    background-color: #1A2477;
+}
+
+.linktree-linkedin{
+    background-color: #0A66C2;
+}
+
+.linktree-twitter{
+    background-color: #1DA1F2;
+}
+
+.linktree-github{
+    background-color: #181717;
+}
+
+.linktree-buymeacoffee{
+    background-color: #f2d200;
+}
+
+.linktree-instagram{
+    background-color: #E4405F;
+}
