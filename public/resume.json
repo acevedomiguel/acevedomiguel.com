@@ -2,11 +2,11 @@
     "basics": {
       "name": "Acevedo Miguel",
       "label": "Senior Software Engineer",
-      "image": "https://user-images.githubusercontent.com/10413754/79948155-e5e9da80-84a5-11ea-83eb-34e2f5aa89f6.png",
-      "email": "johndoe@gmail.com",
+      "image": "/profile.png",
+      "email": "me@acevedomiguel.com",
       "phone": "(+852) 6435-6936",
       "url": "https://www.acevedomiguel.com",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "summary": "Target-oriented, senior software developer, with extensive experience (over 20 years) in the digital marketing world and IoT. Knowledge of web technologies and understanding of devops and infrastructure.",
       "location": {
         "address": "22111 Makiling",
         "postalCode": "00000",

@@ -4,7 +4,7 @@ import { ResumeData } from '../types/resumedata';
 
 const Resume = () => {
     const [ data, setData ] = useState();
-    
+
     useEffect(()=>{ 
         getData(setData)
     } ,[])
@@ -16,7 +16,11 @@ const Resume = () => {
     const cv:ResumeData = data;
 
     return (
-        <div>Resume {cv.basics.name}</div>
+        <>
+            <div>Resume {cv.basics.name}</div>
+            <div>{cv.basics.summary}</div>
+            <img src={cv.basics.image} />
+        </>
     )
 }
   
