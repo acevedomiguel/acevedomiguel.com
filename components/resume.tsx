@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ResumeData } from '../types/resumedata';
 
-
 const Resume = () => {
     const [ data, setData ] = useState();
 
@@ -19,7 +18,7 @@ const Resume = () => {
         <>
             <div>Resume {cv.basics.name}</div>
             <div>{cv.basics.summary}</div>
-            <img src={cv.basics.image} />
+            <img alt="profile picture" src={cv.basics.image} />
         </>
     )
 }
