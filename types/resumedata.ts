@@ -22,12 +22,13 @@ export type ResumeData = {
     },
     work: [{
         name: string
-        positionv
+        position:string
         url: string
         startDate: string
         endDate: string
         summary: string
         highlights: string[]
+        location: string
     }],
     volunteer: [{
         organization: string
@@ -38,7 +39,7 @@ export type ResumeData = {
         summary: string
         highlights: string[]
     }],
-    education: [{
+    certifications: [{
         institution: string
         url: string
         area: string
