@@ -15,6 +15,7 @@ const Resume = () => {
     }
     
     const cv:ResumeData = data;
+    console.log(cv)
 
     return (
         <>
