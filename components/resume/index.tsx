@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { ResumeData } from '../types/resumedata';
+import { ResumeData } from '../../types/resumedata';
+import getData from '../../lib/getdata';
 
 const Resume = () => {
     const [ data, setData ] = useState();
@@ -25,17 +26,4 @@ const Resume = () => {
   
 export default Resume
 
-const getData = (setData) => {
-    fetch('/resume.json',{
-        headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
-    })
-    .then((response) => {
-        return response.json();
-    })
-    .then((myJson) => {
-        setData(myJson)
-    });
-}
+

@@ -1,9 +1,24 @@
+import { useEffect, useState } from 'react'
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaMapMarker } from 'react-icons/fa';
 import { HiDocumentSearch } from 'react-icons/hi';
 import { SiBuymeacoffee } from 'react-icons/si';
 import Button from './button';
+import getData from '../../lib/getdata';
+import { ResumeData } from '../../types/resumedata';
 
 export const Linktree = () => {
+    const [ data, setData ] = useState();
+
+    useEffect(()=>{ 
+        getData(setData)
+    } ,[])
+
+    if (!data) {
+        return <div />
+    }
+    
+    const cv:ResumeData = data;
+
     return (
     <>
         <div className="mt-10"></div>
@@ -15,11 +30,11 @@ export const Linktree = () => {
                         <div className="justify-center flex">
                             <img className="rounded-full w-28 mb-3" src="/profile.png" alt="" />
                         </div>
-                        <h6 className="mb-2 font-semibold leading-5 text-lg">Miguel Acevedo</h6>
-                        <p className="text-sm text-gray-900 mb-2">Target-oriented, senior software developer, with extensive experience in the digital marketing world and IoT. Knowledge of web technologies and understanding of devops and infrastructure.</p>
+                        <h6 className="mb-2 font-semibold leading-5 text-lg">{cv.basics.name}</h6>
+                        <p className="text-sm text-gray-900 mb-2">{cv.basics.summary}</p>
 
                         <FaMapMarker className="react-icons text-gray-500" />{' '}
-                        <span className="text-sm text-gray-500">Hong Kong</span>
+                        <span className="text-sm text-gray-500">{cv.basics.location.region}</span>
                         </div>
                     </div>
                 </a>
