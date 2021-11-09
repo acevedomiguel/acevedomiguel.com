@@ -1,6 +1,6 @@
 # Personal online resume for acevedomiguel.com
 
-Leaning **next.js** on my personal website.
+Leaning [next.js](https://nextjs.org/) and [tailwindcss](https://tailwindcss.com/) on my personal website.
 
 Structure:
 * Homepage with links
