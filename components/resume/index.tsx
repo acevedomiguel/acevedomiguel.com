@@ -41,12 +41,12 @@ const Resume = () => {
                     
                     <div className="ml-6 mr-6">
                         <h2 className="uppercase mt-8 mb-2 font-bold">Skills</h2>
-                        {cv.skills.map(skill => {
-                            return (<div className="mb-3">
+                        {cv.skills.map((skill, index) => {
+                            return (<div key={'skill-'+index} className="mb-3">
                                 <div className="uppercase font-semibold">{skill.name}</div>
                                 <ul className="ml-4 list-disc list-inside">
-                                    {skill.keywords.map(keyword => {
-                                        return (<li>{keyword}</li>)
+                                    {skill.keywords.map((keyword, index) => {
+                                        return (<li key={"keyword-"+index}>{keyword}</li>)
                                     })}
                                 </ul>
                             </div>)
@@ -55,8 +55,8 @@ const Resume = () => {
 
                     <div className="ml-6 mr-6">
                         <h2 className="uppercase mt-8 mb-2 font-bold">Language</h2>
-                        {cv.languages.map(language => {
-                            return (<div className="mb-3">
+                        {cv.languages.map((language, index) => {
+                            return (<div key={'lang-'+index} className="mb-3">
                                 <div className="ml-4">{language.language}: {language.fluency}</div>
                             </div>)
                         })}
@@ -67,14 +67,14 @@ const Resume = () => {
                     <div className="p-6 pt-0">
                         <h2 className="text-2xl uppercase pb-3 resume-color-4">Work Experience</h2>
                         <div>
-                            {cv.work.map(work => {
-                                return (<div className="mb-6 resume-color-5">
+                            {cv.work.map((work, index) => {
+                                return (<div key={'work-'+index} className="mb-6 resume-color-5">
                                     <div className="text-sm text-gray-400">{work.startDate} - {work.endDate}</div>
                                     <div className="font-semibold text-lg">{work.position}</div>
                                     <div className="pb-2">{work.name} ({work.location})</div>
                                     <ul className="list-disc list-inside">
-                                        {work.highlights.map(highlight => {
-                                            return (<li>{highlight}</li>)
+                                        {work.highlights.map((highlight, index) => {
+                                            return (<li key={"highlight-"+index}>{highlight}</li>)
                                         })}
                                     </ul>
                                 </div>)
@@ -82,8 +82,8 @@ const Resume = () => {
                         </div>
                         <h2 className="text-3xl pt-4 pb-3 resume-color-4">Certifications</h2>
                         <div>
-                            {cv.certifications.map(certification => {
-                                return (<div className="mb-3">
+                            {cv.certifications.map((certification, index) => {
+                                return (<div key={'cert-'+index} className="mb-3">
                                     <div className="font-semibold text-lg">{certification.courses.join(", ")}</div>
                                     <div>{certification.institution}</div>
                                     <div>issued {certification.endDate}</div>
