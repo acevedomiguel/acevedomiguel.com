@@ -1,8 +1,8 @@
-name: Production CI
+name: Features CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ features/* ]
 
 jobs:
   build:
@@ -17,8 +17,7 @@ jobs:
     - run: npm ci
     - run: npm run build
       env:
-        GA_CODE: G-FF211XJ57Q
-        SITE_URL: https://www.acevedomiguel.com
+        SITE_URL: https://staging.acevedomiguel.com
 
     - name: rsync deployments
       run: |
@@ -27,7 +26,7 @@ jobs:
         chmod 600 ~/.ssh/gh_actions_key
         rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" out/ $remote_user@$remote_host:$remote_path
       env:
-        remote_path: ${{ secrets.REMOTE_PATH }}
-        remote_host: ${{ secrets.REMOTE_HOST }}
-        remote_user: ${{ secrets.REMOTE_USER }}
-        remote_key: ${{ secrets.DEPLOY_KEY }}
+        remote_path: ${{ secrets.TESTING_REMOTE_PATH }}
+        remote_host: ${{ secrets.TESTING_REMOTE_HOST }}
+        remote_user: ${{ secrets.TESTING_REMOTE_USER }}
+        remote_key: ${{ secrets.TESTING_DEPLOY_KEY }}
