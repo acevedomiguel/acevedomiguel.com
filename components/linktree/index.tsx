@@ -57,7 +57,7 @@ export const Linktree = () => {
             <FaGithub className="react-icons" />
         </Button>
 
-        <Button link="https://www.buymeacoffee.com/acevedomiguel" label="Buy me a coffee" iconClassName="linktree-buymeacoffee">
+        <Button link="https://www.buymeacoffee.com/acevedomiguel" label="Buy me a coffee" color="text-black" iconClassName="linktree-buymeacoffee">
             <SiBuymeacoffee className="react-icons" />
         </Button>
 
