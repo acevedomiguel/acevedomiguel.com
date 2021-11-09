@@ -41,7 +41,7 @@ export const Linktree = () => {
             </div>
         </div>
 
-        <Button link="/resume" label="Resume" iconClassName="linktree-resume">
+        <Button link="/resume" label="Resume" iconClassName="linktree-resume" target="">
             <HiDocumentSearch className="react-icons" />
         </Button>
 
