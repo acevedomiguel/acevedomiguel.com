@@ -1,6 +1,6 @@
 import Meta from './meta'
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Meta />
