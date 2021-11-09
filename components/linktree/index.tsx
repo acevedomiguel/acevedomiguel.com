@@ -3,7 +3,7 @@ import { HiDocumentSearch } from 'react-icons/hi';
 import { SiBuymeacoffee } from 'react-icons/si';
 import Button from './button';
 
-export default () => {
+export const Linktree = () => {
     return (
     <>
         <div className="mt-10"></div>
@@ -52,3 +52,5 @@ export default () => {
     </>
     )
 }
+
+export default Linktree;

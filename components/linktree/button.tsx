@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default ({ children, label, link, iconClassName }) => {
+export const Button = ({ children, label, link, iconClassName }) => {
     return (<div className="px-4 mx-auto mb-4 sm:max-w-xl">
         <div className="grid max-w-2xl sm:mx-auto">
             <Link href={link}>
@@ -16,3 +16,5 @@ export default ({ children, label, link, iconClassName }) => {
         </div>
     </div>);
 }
+
+export default Button;

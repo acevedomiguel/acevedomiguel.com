@@ -1,5 +1,6 @@
+const config = require("./next.config")
 module.exports = {
-    siteUrl: process.env.SITE_URL || "https://www.acevedomiguel.com",
+    siteUrl: config.siteUrl,
     generateRobotsTxt: true,
     outDir: "out"
 }
