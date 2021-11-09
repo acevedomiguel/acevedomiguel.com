@@ -12,12 +12,12 @@ jobs:
     - uses: actions/checkout@v2
 
     - uses: actions/setup-node@v1
-      env:
-        SITE_URL: https://staging.acevedomiguel.com/
       with:
         node-version: 12
     - run: npm ci
     - run: npm run build
+      env:
+        SITE_URL: https://staging.acevedomiguel.com
 
     - name: rsync deployments
       run: |
