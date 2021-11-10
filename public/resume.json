@@ -33,7 +33,9 @@
         "Designed and implemented stream micro service architecture for the IoT integration",
         "Deployment and maintenance the infrastructure for Mainland China and Hong Kong",
         "CI/CD planning and implementation, as a DevOps in charge of defining good practices in deployment and coding styles",
-        "IoT integration with 3rd party hardware providers"
+        "IoT integration with 3rd party hardware providers",
+        "Setting up Kubernetes Platform on AWS (EKS and Bare installation on EC2)",
+        "Installation and maintenance of monitoring application (Grafana, Kibana, Elasticsearch, Filebeat), storage (Redis, Postgres, Cassandra) and messaging (Kafka, MQTT)"
       ]
     },{
       "name": "Cereb Intelligence",
@@ -231,10 +233,10 @@
         "Kubernetes",
         "AWS EKS",
         "AWS IoT Core",
-        "Jenkins",
-        "AWS Code Build / Pipelines",
+        "Bitbucket, GitHub, AWS Code commit",
+        "Jenkins, AWS Code Build, Pipelines, Github Actions",
         "Docker",
-        "ELK Stack"
+        "ELK Stack, AWS OpenSearch"
       ]
     },{
       "name": "Backend",
@@ -252,10 +254,19 @@
       "level": "",
       "keywords": [
         "MQTT",
-        "RabbitMQ / AMQ",
-        "Kafka / MSK",
-        "AWS Kinesis",
-        "AWS SQS"
+        "RabbitMQ, AMQ",
+        "Kafka, MSK",
+        "AWS Kinesis, AWS SQS"
+      ]
+    },{
+      "name": "Electronics",
+      "level": "",
+      "keywords": [
+        "Arduino",
+        "PLC",
+        "ESP32, ESP8266",
+        "Micro Bit",
+        "Raspberry"
       ]
     }],
     "languages": [
