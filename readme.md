@@ -32,4 +32,4 @@ npm run build
 ```
 
 ## Deploy
-Using github actions `.github/*.yml`
+Using github actions `.github/workflows/*.yml`
