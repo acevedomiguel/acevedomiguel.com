@@ -38,8 +38,12 @@ export const pageview = (url) => {
 }
   
 export const event = ({ action, params }) => {
+    alert(params.url)
     if (config.gaCode){
         window.gtag('event', action, params)
     }
 }
-  
+
+export const eventOnClick = (action, params) => {
+    return () => { event({ action, params }) }
+}

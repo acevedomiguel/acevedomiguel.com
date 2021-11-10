@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { ResumeData } from '../../types/resumedata';
-import getData from '../../lib/getdata';
-import nextConfig from '../../next.config';
-import Work from './work';
-import Certifications from './certifications';
-import Language from './language';
-import Skills from './skills';
+import { ResumeData } from '../../types/resumedata'
+import getData from '../../lib/getdata'
+import nextConfig from '../../next.config'
+import Work from './work'
+import Certifications from './certifications'
+import Language from './language'
+import Skills from './skills'
+import { eventOnClick } from '../ga'
 
 const Resume = () => {
     const [ data, setData ] = useState();
@@ -39,7 +40,7 @@ const Resume = () => {
         <div className="lg:grid grid-cols-8 ">
             <div className="col-span-2 resume-bg text-gray-300">
                 <div className="text-center">
-                    <a className="text-gray-100 bg-yellow-600 rounded-full py-4 px-8" href={nextConfig.resumePath}>Download CV</a>
+                    <a className="text-gray-100 bg-yellow-600 rounded-full py-4 px-8" onClick={eventOnClick("resume_download", { url: nextConfig.resumePath })} href={nextConfig.resumePath}>Download CV</a>
                 </div>
 
                 
