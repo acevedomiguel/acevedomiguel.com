@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaMapMarker } from 'react-icons/fa';
+import {
+    FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaMapMarker, FaStackOverflow
+} from 'react-icons/fa';
 import { HiDocumentSearch } from 'react-icons/hi';
 import { SiBuymeacoffee } from 'react-icons/si';
 import Button from './button';
@@ -49,12 +51,16 @@ export const Linktree = () => {
             <FaLinkedin className="react-icons" />
         </Button>
 
-        <Button link="https://www.twitter.com/faultydev" label="@faultydev" iconClassName="linktree-twitter">
-            <FaTwitter className="react-icons" />
-        </Button>
-
         <Button link="https://github.com/acevedomiguel" label="GitHub" iconClassName="linktree-github">
             <FaGithub className="react-icons" />
+        </Button>
+
+        <Button link="https://stackoverflow.com/users/599036/miguel-angel-acevedo" label="StackOverflow" iconClassName="linktree-so">
+            <FaStackOverflow className="react-icons" />
+        </Button>
+
+        <Button link="https://www.twitter.com/faultydev" label="@faultydev" iconClassName="linktree-twitter">
+            <FaTwitter className="react-icons" />
         </Button>
 
         <Button link="https://www.buymeacoffee.com/acevedomiguel" label="Buy me a coffee" color="text-black" iconClassName="linktree-buymeacoffee">
