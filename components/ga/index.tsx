@@ -1,13 +1,13 @@
-import nextConfig from '../../next.config';
+import config from '../../next.config';
 
-export const GA = () => {
-    if (!nextConfig.gaCode) { return(<></>); }
+export const GA = ({ code = "" }) => {
+    if (!code || code==="") { return(<></>); }
 
     return(<>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${nextConfig.gaCode}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
         />
         <script
             dangerouslySetInnerHTML={{
@@ -15,7 +15,7 @@ export const GA = () => {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${nextConfig.gaCode}', {
+                gtag('config', '${code}', {
                 page_path: window.location.pathname,
                 });`,
             }}
@@ -32,13 +32,13 @@ declare global {
 }
 
 export const pageview = (url) => {
-    if (nextConfig.gaCode){
+    if (config.gaCode){
         window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, { page_path: url })
     }
 }
   
 export const event = ({ action, params }) => {
-    if (nextConfig.gaCode){
+    if (config.gaCode){
         window.gtag('event', action, params)
     }
 }
