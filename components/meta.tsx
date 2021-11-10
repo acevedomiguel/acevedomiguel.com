@@ -2,7 +2,7 @@ import Head from 'next/head'
 import GA from './ga'
 import config from '../next.config'
 
-// todo: meta image
+// todo: meta image -> <meta property="og:image" content={HOME_OG_IMAGE_URL} />
 export default function Meta({ description = "" }) {
   return (
     <Head>
@@ -23,11 +23,7 @@ export default function Meta({ description = "" }) {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
-      <meta
-        name="description"
-        content={description}
-      />
-      {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
+      <meta name="description" content={description} />
       <GA code={config.gaCode} />
     </Head>
   )
