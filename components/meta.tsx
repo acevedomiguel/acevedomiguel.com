@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 import GA from './ga'
+import config from '../next.config'
 
 // todo: meta image
-// todo: description as variable
-export default function Meta() {
+export default function Meta({ description = "" }) {
   return (
     <Head>
       <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
@@ -26,10 +25,10 @@ export default function Meta() {
       <meta name="theme-color" content="#ffffff" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={description}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
-      <GA />
+      {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
+      <GA code={config.gaCode} />
     </Head>
   )
 }
