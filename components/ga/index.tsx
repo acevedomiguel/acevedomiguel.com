@@ -1,7 +1,7 @@
 import config from '../../next.config';
 
 export const GA = ({ code = "" }) => {
-    if (!code || code==="") { return(<></>); }
+    if (!code || code==="") { return(<script></script>); }
 
     return(<>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
