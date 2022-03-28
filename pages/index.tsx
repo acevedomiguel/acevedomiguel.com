@@ -19,15 +19,15 @@ export default function Index() {
                 <div className='px-4 mx-auto mb-4 sm:max-w-xl'>
                     <div className="bg-white shadow-md overflow-hidden sm:rounded-xl mt-8 mb-8">
                         <div className="px-4 py-5 sm:px-6">
-                            <div className="lg:flex lg:items-center lg:justify-between">
+                            <div className="flex items-center justify-between">
                                 <div className="flex-0 min-w-0">
                                     <div className="relative w-14 h-14 mr-2">
                                     <img className="rounded-full border border-gray-100 shadow-sm" src="/profile.png" alt="user image" />
                                     </div>
                                 </div>
-                                <div className="flex-1 min-w-0">
-                                    <div className="font-bold text-gray-900 sm:truncate">Acevedo Miguel Angel</div>
-                                    <div className="flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                                <div className="flex-1">
+                                    <div className="font-bold text-gray-900">Acevedo Miguel Angel</div>
+                                    <div className="flex flex-col">
                                         <div className="flex items-center text-xs text-gray-500">
                                             <a href='https://www.acevedomiguel.com/'>acevedomiguel.com</a>
                                         </div>
