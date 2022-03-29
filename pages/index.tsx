@@ -46,22 +46,22 @@ export default function Index() {
                         </div>
                         <div className=''>
                             <div className="px-4 pb-4 items-center justify-center flex">
-                                <Button link="http://hk.linkedin.com/in/acevedomiguel" title="Linkedin">
+                                <Button href="http://hk.linkedin.com/in/acevedomiguel" title="Linkedin">
                                     <FaLinkedin className="react-icons" />
                                 </Button>
-                                <Button link="https://github.com/acevedomiguel" title='GitHub'>
+                                <Button href="https://github.com/acevedomiguel" title='GitHub'>
                                     <FaGithub className="react-icons" />
                                 </Button>
-                                <Button title='Stack Overflow' link="https://stackoverflow.com/users/599036/miguel-angel-acevedo">
+                                <Button title='Stack Overflow' href="https://stackoverflow.com/users/599036/miguel-angel-acevedo">
                                     <FaStackOverflow className="react-icons" />
                                 </Button>
-                                <Button title='Twitter' link="https://www.twitter.com/faultydev">
+                                <Button title='Twitter' href="https://www.twitter.com/faultydev">
                                     <FaTwitter className="react-icons" />
                                 </Button>
-                                <Button title='Buy me a Coffee' link="https://www.buymeacoffee.com/acevedomiguel">
+                                <Button title='Buy me a Coffee' href="https://www.buymeacoffee.com/acevedomiguel">
                                     <SiBuymeacoffee className="react-icons" />
                                 </Button>
-                                <Button title="Instagram" link="https://www.instagram.com/acevedomiguel/">
+                                <Button title="Instagram" href="https://www.instagram.com/acevedomiguel/">
                                     <FaInstagram className="react-icons" />
                                 </Button>
                             </div>
