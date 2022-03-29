@@ -1,6 +1,6 @@
 {
     "basics": {
-      "name": "Miguel Acevedo",
+      "name": "Miguel Angel Acevedo",
       "label": "Senior Software Engineer",
       "image": "/profile.png",
       "email": "me@acevedomiguel.com",
@@ -36,6 +36,16 @@
         "IoT integration with 3rd party hardware providers",
         "Setting up Kubernetes Platform on AWS (EKS and Bare installation on EC2)",
         "Installation and maintenance of monitoring application (Grafana, Kibana, Elasticsearch, Filebeat), storage (Redis, Postgres, Cassandra) and messaging (Kafka, MQTT)"
+      ],
+      "stack": [
+        "AWS EKS",
+        "AWS Keyspaces",
+        "Kubernetes",
+        "Cassandra",
+        "Redis",
+        "Postgres",
+        "Node.js",
+        "Scala"
       ]
     },{
       "name": "Cereb Intelligence",
@@ -52,7 +62,8 @@
         "Enhanced and maintained the infrastructure through monitoring and reporting",
         "Improved the CI/CD cost and speed migrating from Bitbucket Pipelines to hosted Jenkins",
         "Remote support for the more than 1000 devices connected"
-      ]
+      ],
+      "stack": []
     },{
       "name": "Urban Spring",
       "position": "Senior Software Engineer",
@@ -67,7 +78,8 @@
         "Infrastructure as code, Kubernetes deployment with terraform in AWS",
         "Provided mentoring to junior developers",
         "Firmware code review from 3rd party developers (C - C++) for STM32"
-      ]
+      ],
+      "stack": []
     },{
       "name": "LYNK",
       "position": "Product Architect",
@@ -83,7 +95,8 @@
         "Design and create optimised web applications in HTML5, CSS and WebRTC to support company' s business needs which includes a Skype-like application for experts and clients consultations",
         "Worked independently and as team in collaboration with other departments in establishing their needs for their business goals",
         "Contributing to overall business development with regular meetings with management, and aligning goals with the CTO and CEO"
-      ]
+      ],
+      "stack": []
     },{
       "name": "Kaizen Interactive",
       "position": "CTO and Co-Founder",
@@ -99,7 +112,8 @@
         "Helped create and implement new ideas for ways to grow the business and generate revenue",
         "Managed project tasks, timelines, and communication with several freelance developers and designers",
         "Demonstrated the ability to work diligently under pressure to meet deadlines"
-      ]
+      ],
+      "stack": []
     },{
       "name": "Gravity Makers",
       "position": "Remote Mobile Programmer",
@@ -112,7 +126,8 @@
         "Trained in Symbian and Qt",
         "Designed for and tested mobile applications, across multiple devices",
         "Successfully adapted and thrived in a fast-paced work environment with rapidly changing goals"
-      ]
+      ],
+      "stack": []
     },{
       "name": "United Virtualities",
       "position": "Team Leader and ActionScript Expert",
@@ -124,7 +139,8 @@
       "highlights": [
         "Successfully served as lead project manager of three developers",
         "Responsible for overall web project management from development to execution and maintenance"
-      ]
+      ],
+      "stack": []
     },{
       "name": "E-volution",
       "position": "Team Leader and ActionScript Programmer",
@@ -139,7 +155,8 @@
         "Created \"The bubble machine\" game which won a \"Diente de Oro 2005\" for innovation being a game playable with the webcam",
         "Develop and localise several online games mainly for Disney Latin America",
         "Created interactivity using Flash, ActionScript, and JavaScript"
-      ]
+      ],
+      "stack": []
     },{
       "name": "Marketing Plus",
       "position": "Programmer and Server Administrator",
@@ -152,7 +169,8 @@
         "Develop a horse racing game simulator using real data, integrating the game with the internal system of the racing course in Buenos Aires",
         "Created Dynamic Websites that were user-friendly, effective, and appealing for more than 12 clients",
         "Managed several web servers in production and development"
-      ]
+      ],
+      "stack": []
     },{
       "name": "Gauchito",
       "position": "Web Developer Intern",
@@ -165,7 +183,8 @@
         "Acquired an in-depth familiarisation with CNC and electronics",
         "Create custom web based UI applications for products and stock management, based on department needs and functionality",
         "Setup the e-commerce and online quotation system"
-      ]
+      ],
+      "stack": []
     }],
     "volunteer": [],
     "certifications": [{
@@ -231,12 +250,24 @@
       "level": "",
       "keywords": [
         "Kubernetes",
+        "Bitbucket",
+        "GitHub",
+        "Github Actions",
+        "AWS Code Commit",
+        "Jenkins",
+        "AWS Code Build",
+        "Bitbucket",
+        "Bitbucket Pipelines",
+        "Docker",
+        "Docker Compose",
+        "ELK Stack",
+        "AWS OpenSearch",
+        "AWS Lambda",
+        "AWS Amplify",
+        "AWS Appsync",
         "AWS EKS",
         "AWS IoT Core",
-        "Bitbucket, GitHub, AWS Code commit",
-        "Jenkins, AWS Code Build, Pipelines, Github Actions",
-        "Docker",
-        "ELK Stack, AWS OpenSearch"
+        "APOLLO"
       ]
     },{
       "name": "Backend",
@@ -246,7 +277,7 @@
         "Typescript",
         "Python",
         "PHP",
-        "Basic Go",
+        "Go",
         "Basic Scala"
       ]
     },{
@@ -254,9 +285,12 @@
       "level": "",
       "keywords": [
         "MQTT",
-        "RabbitMQ, AMQ",
-        "Kafka, MSK",
-        "AWS Kinesis, AWS SQS"
+        "RabbitMQ",
+        "AMQ",
+        "Kafka",
+        "AWS MSK",
+        "AWS Kinesis",
+        "AWS SQS"
       ]
     },{
       "name": "Electronics",
@@ -264,19 +298,23 @@
       "keywords": [
         "Arduino",
         "PLC",
-        "ESP32, ESP8266",
+        "ESP32",
+        "ESP8266",
         "Micro Bit",
         "Raspberry"
       ]
     }],
     "languages": [
         {
+            "icon": "/Flag_of_Argentina_vertical.gif",
             "language": "Spanish",
             "fluency": "Native speaker"
         },{
+            "icon": "/Flag_of_the_United_Kingdom_vertical.gif",
             "language": "English",
             "fluency": "Fluent"
         },{
+            "icon": "/Flag_of_Japan_vertical.gif",
             "language": "日本語",
             "fluency": "Basic - N5"
         }

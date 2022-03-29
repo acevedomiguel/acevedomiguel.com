@@ -2,7 +2,9 @@ name: Features CI
 
 on:
   push:
-    branches: [ features/* ]
+    branches: 
+      - features/*
+      - feature/*
 
 jobs:
   build:

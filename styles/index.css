@@ -1,8 +1,10 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+/* body { */
+    /* background: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195)); */
+/* } */
 
 .react-icons {
     /* vertical-align: middle; */

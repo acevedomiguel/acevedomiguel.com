@@ -29,6 +29,7 @@ export type ResumeData = {
         summary: string
         highlights: string[]
         location: string
+        stack: string[]
     }],
     volunteer: [{
         organization: string
@@ -68,6 +69,7 @@ export type ResumeData = {
         keywords: string[]
     }],
     languages: [{
+        icon: string
         language: string
         fluency: string
     }],

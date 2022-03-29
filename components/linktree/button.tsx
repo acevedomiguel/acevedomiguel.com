@@ -1,21 +1,14 @@
 import Link from 'next/link';
-import { eventOnClick } from '../ga'
+import { onThisClick } from '../ga'
 
-export const Button = ({ children, label, link, iconClassName, color="text-white", target = "_blank" }) => {
-    return (<div className="px-4 mx-auto mb-4 sm:max-w-xl">
-        <div className="grid max-w-2xl sm:mx-auto">
-            <Link href={link}>
-                <a rel="noreferrer" onClick={eventOnClick("outbound_click", { url: link }) } target={target} className={iconClassName+" overflow-hidden rounded-2xl shadow-sm"}>
-                    <div className={color+" flex items-center justify-between p-5 rounded-sm"}>
-                        <div className="pr-4">
-                        {children}{' '}
-                        <span className="mb-2 font-semibold leading-5">{label}</span>
-                        </div>
-                    </div>
-                </a>
-            </Link>
-        </div>
-    </div>);
+export const Button = (props) => {
+    const { children, href, title, target } = props
+    return (
+    <Link href={href} passHref>
+        <a onClick={onThisClick} title={title} target={target}>
+            <div className="w-12 h-12 mr-2 pt-3 items-center justify-center text-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">{children}</div>
+        </a>
+    </Link>);
 }
 
 export default Button;

@@ -46,3 +46,7 @@ export const event = ({ action, params }) => {
 export const eventOnClick = (action, params) => {
     return () => { event({ action, params }) }
 }
+
+export const onThisClick = (e) => {
+    eventOnClick("outbound_click", { url: e.currentTarget.href })
+}
