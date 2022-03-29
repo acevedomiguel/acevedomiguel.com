@@ -2,11 +2,8 @@ import dateFormat from 'dateformat';
 import { SiBuymeacoffee } from 'react-icons/si';
 
 export const Certifications = ({ certifications }) => {
-    return(<>
-        <h2 className="text-3xl pt-4 pb-3 resume-color-4">Certifications</h2>
-        <div>
-            
-        </div>
+    return(<div className='px-6 pt-6'>
+        <h2 className="text-xl font-bold pb-1 underline">Certifications</h2>
         <div className="grid grid-cols-2 gap-4">
             {certifications.map((certification, index) => {
                 const date = new Date(certification.endDate);
@@ -21,16 +18,10 @@ export const Certifications = ({ certifications }) => {
                             <p className="mt-2 text-gray-600"></p>
                         </div>
                     </div>
-                // <div key={'cert-'+index} className="mb-3">
-                //     <div className="font-semibold text-lg"></div>
-                //     <div>{certification.institution}</div>
-                //     <div>issued </div>
-                //     <div className="text-sm text-gray-400"><a href={certification.url}>see credential</a></div>
-                // </div>
                 )
             })}
         </div>
-    </>)
+    </div>)
 }
 
 export default Certifications;

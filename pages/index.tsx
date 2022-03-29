@@ -12,8 +12,8 @@ export default function Index() {
             <Head>
                 <title>Home</title>
             </Head>
-            <Container>
-                <div className='px-4 mx-auto mb-4 sm:max-w-xl'>
+            <div className="flex h-screen bg-gradient-to-r from-slate-600 to-slate-500">
+                <div className='m-auto max-w-xl'>
                     <div className="bg-white shadow-md overflow-hidden sm:rounded-xl mt-8 mb-8">
                         <div className="px-4 py-5 sm:px-6">
                             <div className="flex items-center justify-between">
@@ -26,7 +26,7 @@ export default function Index() {
                                     <div className="font-bold text-gray-900">Acevedo Miguel Angel</div>
                                     <div className="flex flex-col">
                                         <div className="flex items-center text-xs text-gray-500">
-                                            <a href='https://www.acevedomiguel.com/'>acevedomiguel.com</a>
+                                            <a href='mailto:me@acevedomiguel.com'>me@acevedomiguel.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@ export default function Index() {
                         <div className='border-t border-gray-200 '>
                             <div className="p-6 items-center justify-center">
                                 <div className='mb-6 text-sm'>
-                                Target-oriented, senior software developer, with extensive experience (over 20 years) in the digital marketing world and IoT. Knowledge of web technologies and understanding of devops and infrastructure.
+                                <p>Target-oriented, senior software developer, with extensive experience (over 20 years) in the digital marketing world and IoT. Knowledge of web technologies and understanding of devops and infrastructure.</p>
                                 </div>
                                 <div className='justify-center flex pt-2'>
                                     <Link href="/resume" >
@@ -46,29 +46,29 @@ export default function Index() {
                         </div>
                         <div className=''>
                             <div className="px-4 pb-4 items-center justify-center flex">
-                                <Button href="http://hk.linkedin.com/in/acevedomiguel" title="Linkedin">
+                                <Button target="_blank" href="http://hk.linkedin.com/in/acevedomiguel" title="Linkedin">
                                     <FaLinkedin className="react-icons" />
                                 </Button>
-                                <Button href="https://github.com/acevedomiguel" title='GitHub'>
+                                <Button target="_blank" href="https://github.com/acevedomiguel" title='GitHub'>
                                     <FaGithub className="react-icons" />
                                 </Button>
-                                <Button title='Stack Overflow' href="https://stackoverflow.com/users/599036/miguel-angel-acevedo">
+                                <Button target="_blank" title='Stack Overflow' href="https://stackoverflow.com/users/599036/miguel-angel-acevedo">
                                     <FaStackOverflow className="react-icons" />
                                 </Button>
-                                <Button title='Twitter' href="https://www.twitter.com/faultydev">
+                                <Button target="_blank" title='Twitter' href="https://www.twitter.com/faultydev">
                                     <FaTwitter className="react-icons" />
                                 </Button>
-                                <Button title='Buy me a Coffee' href="https://www.buymeacoffee.com/acevedomiguel">
+                                <Button target="_blank" title='Buy me a Coffee' href="https://www.buymeacoffee.com/acevedomiguel">
                                     <SiBuymeacoffee className="react-icons" />
                                 </Button>
-                                <Button title="Instagram" href="https://www.instagram.com/acevedomiguel/">
+                                <Button target="_blank" title="Instagram" href="https://www.instagram.com/acevedomiguel/">
                                     <FaInstagram className="react-icons" />
                                 </Button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </Container>
+            </div>
         </Layout>
     </>);
 }

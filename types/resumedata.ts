@@ -69,6 +69,7 @@ export type ResumeData = {
         keywords: string[]
     }],
     languages: [{
+        icon: string
         language: string
         fluency: string
     }],

@@ -1,6 +1,6 @@
 {
     "basics": {
-      "name": "Miguel Acevedo",
+      "name": "Miguel Angel Acevedo",
       "label": "Senior Software Engineer",
       "image": "/profile.png",
       "email": "me@acevedomiguel.com",
@@ -250,12 +250,24 @@
       "level": "",
       "keywords": [
         "Kubernetes",
+        "Bitbucket",
+        "GitHub",
+        "Github Actions",
+        "AWS Code Commit",
+        "Jenkins",
+        "AWS Code Build",
+        "Bitbucket",
+        "Bitbucket Pipelines",
+        "Docker",
+        "Docker Compose",
+        "ELK Stack",
+        "AWS OpenSearch",
+        "AWS Lambda",
+        "AWS Amplify",
+        "AWS Appsync",
         "AWS EKS",
         "AWS IoT Core",
-        "Bitbucket, GitHub, AWS Code commit",
-        "Jenkins, AWS Code Build, Pipelines, Github Actions",
-        "Docker",
-        "ELK Stack, AWS OpenSearch"
+        "APOLLO"
       ]
     },{
       "name": "Backend",
@@ -265,7 +277,7 @@
         "Typescript",
         "Python",
         "PHP",
-        "Basic Go",
+        "Go",
         "Basic Scala"
       ]
     },{
@@ -273,9 +285,12 @@
       "level": "",
       "keywords": [
         "MQTT",
-        "RabbitMQ, AMQ",
-        "Kafka, MSK",
-        "AWS Kinesis, AWS SQS"
+        "RabbitMQ",
+        "AMQ",
+        "Kafka",
+        "AWS MSK",
+        "AWS Kinesis",
+        "AWS SQS"
       ]
     },{
       "name": "Electronics",
@@ -283,19 +298,23 @@
       "keywords": [
         "Arduino",
         "PLC",
-        "ESP32, ESP8266",
+        "ESP32",
+        "ESP8266",
         "Micro Bit",
         "Raspberry"
       ]
     }],
     "languages": [
         {
+            "icon": "/Flag_of_Argentina_vertical.gif",
             "language": "Spanish",
             "fluency": "Native speaker"
         },{
+            "icon": "/Flag_of_the_United_Kingdom_vertical.gif",
             "language": "English",
             "fluency": "Fluent"
         },{
+            "icon": "/Flag_of_Japan_vertical.gif",
             "language": "日本語",
             "fluency": "Basic - N5"
         }

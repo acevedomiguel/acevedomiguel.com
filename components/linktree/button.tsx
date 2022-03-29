@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { eventOnClick } from '../ga'
+import { onThisClick } from '../ga'
 
-export const Button = ({ children, href, title }) => {
+export const Button = (props) => {
+    const { children, href, title, target } = props
     return (
     <Link href={href} passHref>
-        <button onClick={eventOnClick("outbound_click", { url: href }) } title={title} className="w-12 h-12 mr-2 items-center justify-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">  
-            {children}
-        </button>
+        <a onClick={onThisClick} title={title} target={target}>
+            <div className="w-12 h-12 mr-2 pt-3 items-center justify-center text-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">{children}</div>
+        </a>
     </Link>);
 }
 

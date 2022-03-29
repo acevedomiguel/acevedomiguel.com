@@ -6,7 +6,7 @@ export default function Document() {
         <Head>
             <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
-        <body className='bg-gradient-to-r from-indigo-500'>
+        <body className=''>
             <Main />
             <NextScript />
         </body>
