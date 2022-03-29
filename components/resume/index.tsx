@@ -24,7 +24,7 @@ const Resume = () => {
 
     return (<>
         <div className="lg:grid grid-cols-8">
-            <div className="hidden lg:inline col-span-2 resume-bg">
+            <div className="hidden lg:inline col-span-2">
                 <div>
                     <img className="mx-auto rounded-full mt-16 mb-16" alt="profile picture" src={cv.basics.image} />
                 </div>
@@ -38,7 +38,7 @@ const Resume = () => {
             </div>
         </div>
         <div className="lg:grid grid-cols-8 ">
-            <div className="col-span-2 resume-bg text-gray-300">
+            <div className="col-span-2  text-gray-300">
                 <div className="text-center">
                     <a className="text-gray-100 bg-yellow-600 rounded-full py-4 px-8" onClick={eventOnClick("resume_download", { url: nextConfig.resumePath })} href={nextConfig.resumePath}>Download CV</a>
                 </div>
@@ -53,7 +53,7 @@ const Resume = () => {
                 </div>
 
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 bg-slate-50">
                 <div className="p-6 pt-0">
                     <Work work={cv.work} />
                     <Certifications certifications={cv.certifications} />

@@ -29,6 +29,7 @@ export type ResumeData = {
         summary: string
         highlights: string[]
         location: string
+        stack: string[]
     }],
     volunteer: [{
         organization: string

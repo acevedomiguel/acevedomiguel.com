@@ -1,13 +1,10 @@
-import Container from '../components/container'
-import Layout from '../components/layout'
-import Head from 'next/head'
-import LinkTree from '../components/linktree'
+import Container from '../components/container';
+import Layout from '../components/layout';
+import Head from 'next/head';
 import Link from 'next/link';
-import {
-    FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaMapMarker, FaStackOverflow
-} from 'react-icons/fa';
-import { HiDocumentSearch } from 'react-icons/hi';
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow } from 'react-icons/fa';
 import { SiBuymeacoffee } from 'react-icons/si';
+import Button from '../components/linktree/button';
 
 export default function Index() {
     return (<>
@@ -37,48 +34,36 @@ export default function Index() {
                         </div>
                         <div className='border-t border-gray-200 '>
                             <div className="p-6 items-center justify-center">
-                                <div className='mb-4 text-sm'>
+                                <div className='mb-6 text-sm'>
                                 Target-oriented, senior software developer, with extensive experience (over 20 years) in the digital marketing world and IoT. Knowledge of web technologies and understanding of devops and infrastructure.
                                 </div>
-                                <div className='justify-center flex'>
-                                    <Link href={"/resume"} >
-                                        <button className="bg-sky-300 hover:bg-sky-900 text-white text-sm py-2 px-4 rounded-full pl-12 pr-12">View Resume</button>
+                                <div className='justify-center flex pt-2'>
+                                    <Link href="/resume" >
+                                        <button className="bg-sky-900 hover:bg-sky-300 text-white text-sm py-2 px-12 rounded-full">View Resume</button>
                                     </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className='border-t border-gray-200 '>
-                            <div className="p-4 items-center justify-center flex">
-                                <Link href="http://hk.linkedin.com/in/acevedomiguel" >
-                                    <button title='Linkedin' className="w-12 h-12 mr-2 items-center justify-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">
-                                        <FaLinkedin className="react-icons" />
-                                    </button>
-                                </Link>
-                                <Link href="https://github.com/acevedomiguel">
-                                    <button title='GitHub' className="w-12 h-12 mr-2 items-center justify-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">
-                                        <FaGithub className="react-icons" />
-                                    </button>
-                                </Link>
-                                <Link href="https://stackoverflow.com/users/599036/miguel-angel-acevedo">
-                                    <button title='Stack Overflow' className="w-12 h-12 mr-2 items-center justify-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">
-                                        <FaStackOverflow className="react-icons" />
-                                    </button>
-                                </Link>
-                                <Link href="https://www.twitter.com/faultydev">
-                                    <button title='Twitter' className="w-12 h-12 mr-2 items-center justify-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">
-                                        <FaTwitter className="react-icons" />
-                                    </button>
-                                </Link>
-                                <Link href="https://www.buymeacoffee.com/acevedomiguel">
-                                    <button title='Buy me a Coffee' className="w-12 h-12 mr-2 items-center justify-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">
-                                        <SiBuymeacoffee className="react-icons" />
-                                    </button>
-                                </Link>
-                                <Link href="https://www.instagram.com/acevedomiguel/">
-                                    <button className="w-12 h-12 mr-2 items-center justify-center text-gray-700 transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-gray-200">
-                                        <FaInstagram className="react-icons" />
-                                    </button>
-                                </Link>
+                        <div className=''>
+                            <div className="px-4 pb-4 items-center justify-center flex">
+                                <Button link="http://hk.linkedin.com/in/acevedomiguel" title="Linkedin">
+                                    <FaLinkedin className="react-icons" />
+                                </Button>
+                                <Button link="https://github.com/acevedomiguel" title='GitHub'>
+                                    <FaGithub className="react-icons" />
+                                </Button>
+                                <Button title='Stack Overflow' link="https://stackoverflow.com/users/599036/miguel-angel-acevedo">
+                                    <FaStackOverflow className="react-icons" />
+                                </Button>
+                                <Button title='Twitter' link="https://www.twitter.com/faultydev">
+                                    <FaTwitter className="react-icons" />
+                                </Button>
+                                <Button title='Buy me a Coffee' link="https://www.buymeacoffee.com/acevedomiguel">
+                                    <SiBuymeacoffee className="react-icons" />
+                                </Button>
+                                <Button title="Instagram" link="https://www.instagram.com/acevedomiguel/">
+                                    <FaInstagram className="react-icons" />
+                                </Button>
                             </div>
                         </div>
                     </div>
