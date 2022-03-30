@@ -17,9 +17,9 @@ export default function Index() {
                     <div className="bg-white shadow-md overflow-hidden sm:rounded-xl mt-8 mb-8">
                         <div className="px-4 py-5 sm:px-6">
                             <div className="flex items-center justify-between">
-                                <div className="flex-0 min-w-0">
+                                <div className="flex-0 min-w-0 ">
                                     <div className="relative w-14 h-14 mr-2">
-                                    <img className="rounded-full border border-gray-100 shadow-sm" src="/profile.png" alt="user image" />
+                                        <img className="rounded-full border border-gray-100 shadow-sm" src="/profile.png" alt="user image" />
                                     </div>
                                 </div>
                                 <div className="flex-1">

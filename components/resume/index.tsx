@@ -28,11 +28,11 @@ const Resume = () => {
     console.log(cv)
 
     return (<>
-        <div className='rounded-lg overflow-hidden my-4 pb-4'>
+        <div className='rounded-lg overflow-hidden md:my-4 pb-4 my-0'>
             <div className='flex bg-slate-600 text-white font-light'>
                 
                 <Link href="/" passHref>
-                    <img className="rounded-none w-48 h-auto cursor-pointer" alt="profile picture" src={cv.basics.image} />
+                    <img className="rounded-none w-48 h-auto cursor-pointer hidden md:block" alt="profile picture" src={cv.basics.image} />
                 </Link>
                 
                 <div className='p-8'>
