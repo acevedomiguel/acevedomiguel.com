@@ -2,7 +2,7 @@ import Container from '../components/container';
 import Layout from '../components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon } from 'react-icons/fa';
 import { SiBuymeacoffee } from 'react-icons/si';
 import Button from '../components/linktree/button';
 
@@ -63,6 +63,9 @@ export default function Index() {
                                 </Button>
                                 <Button target="_blank" title="Instagram" href="https://www.instagram.com/acevedomiguel/">
                                     <FaInstagram className="react-icons" />
+                                </Button>
+                                <Button target="_blank" rel="me" title="Mastodon" href="https://social.treehouse.systems/@acevedomiguel">
+                                    <FaMastodon className="react-icons" />
                                 </Button>
                             </div>
                         </div>
