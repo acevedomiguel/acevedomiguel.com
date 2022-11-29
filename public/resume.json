@@ -21,8 +21,8 @@
       }]
     },
     "work": [{
-      "name": "Henderson (China) Investment Company Limited",
-      "position": "Devops - Senior Software Engineer",
+      "name": "Tensor Energy",
+      "position": "Cloud Lead & IoT",
       "location": "Hong Kong",
       "url": "",
       "startDate": "Feb 2020",
@@ -46,6 +46,33 @@
         "Postgres",
         "Node.js",
         "Scala"
+      ]
+    },{
+      "name": "Henderson (China) Investment Company Limited",
+      "position": "Devops - Senior Software Engineer",
+      "location": "Hong Kong",
+      "url": "",
+      "startDate": "Feb 2020",
+      "endDate": "Dec 2021",
+      "summary": "",
+      "highlights": [
+        "Defined the base architecture and tech for the next energy platform in Japan.",
+        "Lead new staff to follow good development and deployment practices",
+        "Coding server services in Typescript (GraphQL) and Golang (Lambda)",
+        "Serve-less approach in AWS environment, Lambda, Aurora (Postgres), Steps Functions, ECS, Batch",
+        "Code as infrastructure with CDK"
+      ],
+      "stack": [
+        "AWS Lambda",
+        "AWS Aurora",
+        "AWS Step Functions",
+        "AWS ECS",
+        "Github Actions",
+        "CDK",
+        "Postgres",
+        "GoLang",
+        "Go",
+        "Node.js"
       ]
     },{
       "name": "Cereb Intelligence",
