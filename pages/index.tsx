@@ -44,6 +44,7 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        
                         <div className=''>
                             <div className="px-4 pb-4 items-center justify-center flex">
                                 <Button target="_blank" href="http://hk.linkedin.com/in/acevedomiguel" title="Linkedin">
@@ -64,7 +65,7 @@ export default function Index() {
                                 <Button target="_blank" title="Instagram" href="https://www.instagram.com/acevedomiguel/">
                                     <FaInstagram className="react-icons" />
                                 </Button>
-                                <Button target="_blank" rel="me" title="Mastodon" href="https://social.treehouse.systems/@acevedomiguel">
+                                <Button target="_blank" rel="me" title="Mastodon" href="https://infosec.exchange/@faultydev">
                                     <FaMastodon className="react-icons" />
                                 </Button>
                             </div>
