@@ -8,6 +8,9 @@ export const Language = ({ languages }) => {
                     {/* <img className="w-20 h-20 object-cover rounded-full border-2 border-gray-300" src="/aws.jpg" /> */}
                 {/* </div> */}
                 <div className="flex">
+                    <div className="object-none object-center w-20 h-20 overflow-hidden hidden md:block">
+                        <img src={language.icon} />
+                    </div>
                     <div className="px-4 py-2">
                         <h2 className="text-gray-800 text-lg font-semibold">{language.language}</h2>
                         <p className="mt-2 text-gray-600">{language.fluency}</p>

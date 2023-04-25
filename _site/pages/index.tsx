@@ -2,7 +2,7 @@ import Container from '../components/container';
 import Layout from '../components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon, FaCalendarDay } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon } from 'react-icons/fa';
 import { SiBuymeacoffee } from 'react-icons/si';
 import Button from '../components/linktree/button';
 
@@ -67,9 +67,6 @@ export default function Index() {
                                 </Button>
                                 <Button target="_blank" rel="me" title="Mastodon" href="https://infosec.exchange/@faultydev">
                                     <FaMastodon className="react-icons" />
-                                </Button>
-                                <Button target="_blank" rel="me" title="Calendly" href="https://calendly.com/acevedomiguel/30-min-zoom-meeting">
-                                    <FaCalendarDay className="react-icons" />
                                 </Button>
                             </div>
                         </div>
