@@ -19,15 +19,6 @@ jobs:
         node-version: 18
         cache: 'npm'
 
-    - uses: actions/cache@v3
-      with:
-        path: |
-          ~/.npm
-          ${{ github.workspace }}/.next/cache
-        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-        restore-keys: |
-          ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-
     - run: npm ci
     - run: npm run build
       env:
