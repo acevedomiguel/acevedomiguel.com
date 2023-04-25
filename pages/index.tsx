@@ -38,7 +38,7 @@ export default function Index() {
                                 <p>Target-oriented, senior software developer, with extensive experience (over 20 years) in the digital marketing world and IoT. Knowledge of web technologies and understanding of devops and infrastructure.</p>
                                 </div>
                                 <div className='justify-center flex pt-2'>
-                                    <Link href="/resume" >
+                                    <Link href="/resume" passHref={true} >
                                         <button className="bg-sky-900 hover:bg-sky-300 text-white text-sm py-2 px-12 rounded-full">View Resume</button>
                                     </Link>
                                 </div>

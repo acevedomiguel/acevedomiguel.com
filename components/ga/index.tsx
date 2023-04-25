@@ -32,13 +32,13 @@ declare global {
 }
 
 export const pageview = (url) => {
-    if (config.gaCode){
+    if (process.env.GA_CODE){
         window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, { page_path: url })
     }
 }
   
 export const event = ({ action, params }) => {
-    if (config.gaCode){
+    if (process.env.GA_CODE){
         window.gtag('event', action, params)
     }
 }

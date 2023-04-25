@@ -24,7 +24,7 @@ export default function Meta({ description = "" }) {
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="description" content={description} />
-      <GA code={config.gaCode} />
+      <GA code={process.env.GA_CODE} />
     </Head>
   )
 }

@@ -1,4 +1,3 @@
-
 export default function Nav ()  {
   return (
     <header className="text-gray-600 body-font">
