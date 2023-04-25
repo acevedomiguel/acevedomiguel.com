@@ -2,7 +2,7 @@ import Container from '../components/container';
 import Layout from '../components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon, FaCalendarDay } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon } from 'react-icons/fa';
 import { SiBuymeacoffee } from 'react-icons/si';
 import Button from '../components/linktree/button';
 
@@ -38,7 +38,7 @@ export default function Index() {
                                 <p>Target-oriented, senior software developer, with extensive experience (over 20 years) in the digital marketing world and IoT. Knowledge of web technologies and understanding of devops and infrastructure.</p>
                                 </div>
                                 <div className='justify-center flex pt-2'>
-                                    <Link href="/resume" passHref={true} >
+                                    <Link href="/resume" >
                                         <button className="bg-sky-900 hover:bg-sky-300 text-white text-sm py-2 px-12 rounded-full">View Resume</button>
                                     </Link>
                                 </div>
@@ -67,9 +67,6 @@ export default function Index() {
                                 </Button>
                                 <Button target="_blank" rel="me" title="Mastodon" href="https://infosec.exchange/@faultydev">
                                     <FaMastodon className="react-icons" />
-                                </Button>
-                                <Button target="_blank" rel="me" title="Calendly" href="https://calendly.com/acevedomiguel/30-min-zoom-meeting">
-                                    <FaCalendarDay className="react-icons" />
                                 </Button>
                             </div>
                         </div>
