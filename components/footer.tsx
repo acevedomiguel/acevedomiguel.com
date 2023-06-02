@@ -9,7 +9,7 @@ export const Footer = () => {
           © 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="http://hk.linkedin.com/in/acevedomiguel" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/acevedomiguel/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <FaLinkedin className="react-icons" />
               <span className="sr-only">Linkedin</span>
             </a>

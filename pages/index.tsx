@@ -49,7 +49,7 @@ export default function Index() {
                         
                         <div className=''>
                             <div className="px-4 pb-4 items-center justify-center flex">
-                                <Button target="_blank" href="http://hk.linkedin.com/in/acevedomiguel" title="Linkedin">
+                                <Button target="_blank" href="https://www.linkedin.com/in/acevedomiguel/" title="Linkedin">
                                     <FaLinkedin className="react-icons" />
                                 </Button>
                                 <Button target="_blank" href="https://github.com/acevedomiguel" title='GitHub'>
