@@ -1,4 +1,4 @@
-import config from '../../next.config';
+// import config from '../../next.config';
 
 export const GA = ({ code = "" }) => {
     if (!code || code==="") { return(<script></script>); }
@@ -9,13 +9,15 @@ export const GA = ({ code = "" }) => {
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${code}`}
         />
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', '${code}');
-        </script>
+        <script
+            dangerouslySetInnerHTML={{
+                __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${code}');`,
+            }}
+        />
     </>)
 }
 
