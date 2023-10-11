@@ -1,4 +1,4 @@
-name: Features CI
+name: Features
 
 on:
   push:
