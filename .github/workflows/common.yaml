@@ -1,0 +1,46 @@
+name: Build and Deploy
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      ga_code:
+        required: false
+        type: string
+      site_url:
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: 'npm'
+        cache-dependency-path: package-lock.json
+
+    - run: npm ci
+    - run: npm run build
+      env:
+        GA_CODE: ${{ inputs.ga_code }}
+        SITE_URL: ${{ inputs.site_url }}
+
+    - name: rsync deployments
+      run: |
+        mkdir ~/.ssh
+        echo "$remote_key" > ~/.ssh/gh_actions_key
+        chmod 600 ~/.ssh/gh_actions_key
+        rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" out/ $remote_user@$remote_host:$remote_path
+      env:
+        remote_path: ${{ secrets.REMOTE_PATH }}
+        remote_host: ${{ secrets.REMOTE_HOST }}
+        remote_user: ${{ secrets.REMOTE_USER }}
+        remote_key: ${{ secrets.GH_PKEY }}

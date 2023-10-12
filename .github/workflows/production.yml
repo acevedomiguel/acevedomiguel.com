@@ -1,4 +1,4 @@
-name: Production CI
+name: Production
 
 on:
   push:
@@ -7,32 +7,12 @@ on:
 concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-        cache: 'npm'
-
-    - run: npm ci
-    - run: npm run build
-      env:
-        GA_CODE: G-FF211XJ57Q
-        SITE_URL: https://www.acevedomiguel.com
-
-    - name: rsync deployments
-      run: |
-        mkdir ~/.ssh
-        echo "$remote_key" > ~/.ssh/gh_actions_key
-        chmod 600 ~/.ssh/gh_actions_key
-        rsync -avz --exclude '.git' --exclude '.well-known' -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" out/ $remote_user@$remote_host:$remote_path
-      env:
-        remote_path: ${{ secrets.REMOTE_PATH }}
-        remote_host: ${{ secrets.REMOTE_HOST }}
-        remote_user: ${{ secrets.REMOTE_USER }}
-        remote_key: ${{ secrets.DEPLOY_KEY }}
+  deploy:
+    uses: ./.github/workflows/common.yaml
+    secrets: inherit
+    with:
+      environment: production
+      ga_code: G-FF211XJ57Q
+      site_url: https://www.acevedomiguel.com
