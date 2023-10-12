@@ -1,5 +1,7 @@
 # Personal online resume for acevedomiguel.com
 
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/s6ya.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
 Static website made with [next.js](https://nextjs.org/) and [tailwindcss](https://tailwindcss.com/).
 
 Structure:
