@@ -1,13 +1,8 @@
 name: Features
 
 on:
-  push:
-    branches: 
-      - features/*
-      - feature/*
-      - feat/*
-      - bug/*
-      - hotfix/*
+  pull_request:
+    types: [opened]
 
 concurrency:
   group: ${{ github.ref }}
