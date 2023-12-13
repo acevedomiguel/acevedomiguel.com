@@ -1,10 +1,10 @@
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon, FaGoogle, FaCalendarDay } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon, FaGoogle } from 'react-icons/fa';
 import { SiBuymeacoffee } from 'react-icons/si';
 
 export const Footer = () => {
   return (<footer className="container p-5 bg-white sm:p-6 dark:bg-gray-900">
     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <div className="sm:flex sm:items-center sm:justify-center mb-3">
+    <div className="flex items-center justify-center mb-3">
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="https://www.linkedin.com/in/acevedomiguel/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <FaLinkedin className="react-icons" title='Linkedin' />
@@ -38,10 +38,7 @@ export const Footer = () => {
               <FaGoogle className="react-icons" title='Google Developer' />
               <span className="sr-only">Google Developer</span>
             </a>
-            <a href="https://calendly.com/acevedomiguel/30-min-zoom-meeting" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-              <FaCalendarDay className="react-icons" title='Calendly' />
-              <span className="sr-only">Calendly</span>
-            </a>
+            
         </div>
     </div>
   </footer>)

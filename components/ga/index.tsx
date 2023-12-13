@@ -1,7 +1,7 @@
 // import config from '../../next.config';
 
 export const GA = ({ code = "" }) => {
-  console.log("GA", code);
+  // console.log("GA", code);
   if (!code || code === "") {
     return <script></script>;
   }
