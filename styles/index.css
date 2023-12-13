@@ -57,3 +57,7 @@
 .resume-color-3 { color: #c5c5c9; }
 .resume-color-4 { color: #6980a7; }
 .resume-color-5 { color: #312b3d; }
+
+.signature-logo {
+  max-width: 300px;
+}

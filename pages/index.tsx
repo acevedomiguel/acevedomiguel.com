@@ -1,9 +1,8 @@
 import Layout from '../components/layout';
 import Head from 'next/head';
 import Link from 'next/link';
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon, FaCalendarDay, FaGoogle } from 'react-icons/fa';
-import { SiBuymeacoffee } from 'react-icons/si';
-import Button from '../components/linktree/button';
+import Nav from '../components/nav'
+import Container from '../components/container'
 
 export default function Index() {
     return (<>
@@ -11,7 +10,8 @@ export default function Index() {
             <Head>
                 <title>Home</title>
             </Head>
-            <div className="flex h-screen bg-gradient-to-r from-slate-600 to-slate-500">
+            <Nav />
+            <Container>
                 <div className='m-auto max-w-xl'>
                     <div className="bg-white shadow-md overflow-hidden sm:rounded-xl mt-8 mb-8">
                         <div className="px-4 py-5 sm:px-6">
@@ -45,41 +45,9 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        
-                        <div className=''>
-                            <div className="px-4 pb-4 items-center justify-center flex">
-                                <Button target="_blank" href="https://www.linkedin.com/in/acevedomiguel/" title="Linkedin">
-                                    <FaLinkedin className="react-icons" />
-                                </Button>
-                                <Button target="_blank" href="https://github.com/acevedomiguel" title='GitHub'>
-                                    <FaGithub className="react-icons" />
-                                </Button>
-                                <Button target="_blank" title='Stack Overflow' href="https://stackoverflow.com/users/599036/miguel-angel-acevedo">
-                                    <FaStackOverflow className="react-icons" />
-                                </Button>
-                                <Button target="_blank" title='Twitter' href="https://www.twitter.com/faultydev">
-                                    <FaTwitter className="react-icons" />
-                                </Button>
-                                <Button target="_blank" title='Buy me a Coffee' href="https://www.buymeacoffee.com/acevedomiguel">
-                                    <SiBuymeacoffee className="react-icons" />
-                                </Button>
-                                <Button target="_blank" title="Instagram" href="https://www.instagram.com/acevedomiguel/">
-                                    <FaInstagram className="react-icons" />
-                                </Button>
-                                <Button target="_blank" rel="me" title="Mastodon" href="https://infosec.exchange/@faultydev">
-                                    <FaMastodon className="react-icons" />
-                                </Button>
-                                <Button target="_blank" rel="me" title="Google Developer" href="https://g.dev/acevedomiguel">
-                                    <FaGoogle className="react-icons" />
-                                </Button>
-                                <Button target="_blank" rel="me" title="Calendly" href="https://calendly.com/acevedomiguel/30-min-zoom-meeting">
-                                    <FaCalendarDay className="react-icons" />
-                                </Button>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </Layout>
     </>);
 }

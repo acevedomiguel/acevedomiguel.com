@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ResumeData } from '../../types/resumedata'
 import getData from '../../lib/getdata'
-import nextConfig from '../../next.config'
 import Work from './work'
-import Certifications from './certifications'
 import Language from './language'
 import Skills from './skills'
 import { onThisClick } from '../ga'
@@ -46,27 +44,27 @@ const Resume = () => {
                     <div className='py-2'><FaEnvelope className='react-icons' /> me@acevedomiguel.com</div>
                     <div className='py-2'><ImLocation className='react-icons' /> Hong Kong</div>
                     <div className='py-2'>
-                        <Link href="https://www.linkedin.com/in/acevedomiguel/" passHref>
-                            <a target="_blank" onClick={onThisClick} >
+                        <Link href="https://www.linkedin.com/in/acevedomiguel/" passHref onClick={onThisClick}>
+
                                 <FaLinkedin className='react-icons'/> linkedin.com/in/acevedomiguel
-                            </a>
+
                         </Link>
                     </div>
                 </div>
                 <div className='flex-1'>
                     <div className='py-2'><BsPhone className='react-icons' /> (852) 6435-6936</div>
                     <div className='py-2'>
-                        <Link href="https://www.acevedomiguel.com/" passHref>
-                            <a onClick={onThisClick} >
+                        <Link href="https://www.acevedomiguel.com/" passHref onClick={onThisClick}>
+                            
                                 <CgWebsite className='react-icons' /> acevedomiguel.com
-                            </a>
+                            
                         </Link>
                     </div>
                     <div className='py-2'>
-                        <Link href="https://www.twitter.com/faultydev" passHref>
-                            <a target="_blank" onClick={onThisClick} >
+                        <Link href="https://www.twitter.com/faultydev" passHref onClick={onThisClick}>
+                            
                                 <FaTwitter className='react-icons' /> @faultydev
-                            </a>
+                            
                         </Link>
                     </div>
                 </div>
@@ -74,7 +72,6 @@ const Resume = () => {
             <div className='border-x border-gray-100'>
                 <Skills skills={cv.skills} />
                 <Work work={cv.work} />
-                <Certifications certifications={cv.certifications} />
                 <Language languages={cv.languages} />
             </div>
             <div className='border-x border-gray-100 border-b rounded-lg pb-6'>
