@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
 import Head from 'next/head';
-import Link from 'next/link';
+// import Link from 'next/link';
 import Nav from '../components/nav'
 import Container from '../components/container'
 
