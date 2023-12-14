@@ -4,7 +4,7 @@ import Meta from './meta';
 export default function Layout({ children }) {
     return (<>
         <Meta />
-        <div className="min-h-screen">
+        <div>
             <main>{children}</main>
         </div>
         <Footer />

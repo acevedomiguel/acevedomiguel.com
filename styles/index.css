@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body { */
+body {
     /* background: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195)); */
-/* } */
+    background-color: white;
+}
 
 .react-icons {
     /* vertical-align: middle; */
@@ -57,3 +58,7 @@
 .resume-color-3 { color: #c5c5c9; }
 .resume-color-4 { color: #6980a7; }
 .resume-color-5 { color: #312b3d; }
+
+.signature-logo {
+  max-width: 300px;
+}
