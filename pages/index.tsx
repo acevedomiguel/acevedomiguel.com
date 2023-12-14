@@ -21,9 +21,9 @@ export default function Index() {
                                 <p>I&apos;m currently the <strong>Cloud Lead & IoT</strong> at <strong>Tensor Energy</strong>, a company that provides smart energy solutions. I enjoy learning from other developers, keeping up with the latest technologies, and making toys and furniture for my family in my spare time. I&apos;m also interested in the growing market of space and the opportunities it offers for infrastructure, communication, embedded system, security, and reliability.</p>
                                 </div>
                                 <div className='justify-center flex pt-4'>
-                                    <Link href="/contact" passHref={true} >
+                                    {/* <Link href="/contact" passHref={true} >
                                         <button className="bg-sky-900 hover:bg-sky-300 text-white text-sm py-2 px-12 rounded-full">Get in touch</button>
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                         </div>

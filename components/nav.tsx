@@ -11,7 +11,7 @@ export default function Nav ()  {
         <nav className="md:py-1 md:px-4 items-center text-base">
           <a href="/" className="mx-4 md:mx-8 hover:text-gray-700 text-sm">home</a>
           <a href="/resume" className="mx-4 md:mx-8 hover:text-black text-sm">resume</a>
-          <a href="/contact" className="mx-4 md:mx-8 hover:text-black text-sm">contact</a>
+          {/* <a href="/contact" className="mx-4 md:mx-8 hover:text-black text-sm">contact</a> */}
         </nav>
       </div>
     </header>
