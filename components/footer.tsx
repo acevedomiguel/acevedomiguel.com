@@ -34,11 +34,6 @@ export const Footer = () => {
               <FaMastodon className="react-icons" title='Mastodon' />
               <span className="sr-only">Mastodon</span>
             </a>
-            <a href="https://g.dev/acevedomiguel" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-              <FaGoogle className="react-icons" title='Google Developer' />
-              <span className="sr-only">Google Developer</span>
-            </a>
-            
         </div>
     </div>
   </footer>)
