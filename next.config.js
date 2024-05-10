@@ -1,4 +1,4 @@
 module.exports = {
-  // basePath: process.env.SITE_URL,
+    output: 'export',
     trailingSlash: true,
 }
