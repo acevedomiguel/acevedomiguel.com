@@ -1,4 +1,5 @@
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon, FaGoogle } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaStackOverflow, FaMastodon } from 'react-icons/fa';
+import { FaBluesky } from "react-icons/fa6";
 import { SiBuymeacoffee } from 'react-icons/si';
 
 export const Footer = () => {
@@ -18,9 +19,9 @@ export const Footer = () => {
               <FaStackOverflow className="react-icons" title='Stack Overflow' />
               <span className="sr-only">Stack Overflow</span>
             </a>
-            <a href="https://www.twitter.com/faultydev" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-              <FaTwitter className="react-icons" title='Twitter' />
-              <span className="sr-only">Twitter</span>
+            <a href="https://bsky.app/profile/acevedomiguel.bsky.social" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              <FaBluesky className="react-icons" title='Bluesky' />
+              <span className="sr-only">Bluesky</span>
             </a>
             <a href="https://www.buymeacoffee.com/acevedomiguel" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <SiBuymeacoffee className="react-icons" title='Buy me a coffee' />
