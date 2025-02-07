@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import GA from './ga'
 import config from '../next.config'
 
 // todo: meta image -> <meta property="og:image" content={HOME_OG_IMAGE_URL} />
@@ -26,7 +25,6 @@ export default function Meta({ description = "" }) {
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
       <meta name="description" content={description} />
-      <GA code={process.env.GA_CODE} />
     </Head>
   )
 }
