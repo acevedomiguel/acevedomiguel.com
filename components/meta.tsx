@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import config from '../next.config'
 
 // todo: meta image -> <meta property="og:image" content={HOME_OG_IMAGE_URL} />
 export default function Meta({ description = "" }) {

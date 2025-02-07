@@ -3,7 +3,6 @@ import { ResumeData } from '../../types/resumedata'
 import getData from '../../lib/getdata'
 import Work from './work'
 import Skills from './skills'
-import { onThisClick } from '../ga'
 import { FaEnvelope, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { ImLocation } from 'react-icons/im';
 import { CgWebsite } from 'react-icons/cg';
@@ -39,13 +38,13 @@ const Resume = () => {
                     <div className='my-2 sm:my-1'><FaEnvelope className='react-icons' /> me@acevedomiguel.com</div>
                     <div className='my-2 sm:my-1'><ImLocation className='react-icons' /> Hong Kong</div>
                     <div className='my-2 sm:my-1'>
-                        <Link href="https://www.linkedin.com/in/acevedomiguel/" passHref onClick={onThisClick}>
+                        <Link href="https://www.linkedin.com/in/acevedomiguel/" passHref>
                                 <FaLinkedin className='react-icons'/> linkedin.com/in/acevedomiguel
                         </Link>
                     </div>
                     <div className='my-2 sm:my-1'><BsPhone className='react-icons' /> (852) 6435-6936</div>
                     <div className='my-2 sm:my-1'>
-                        <Link href="https://www.acevedomiguel.com/" passHref onClick={onThisClick}>
+                        <Link href="https://www.acevedomiguel.com/" passHref>
                                 <CgWebsite className='react-icons' /> acevedomiguel.com
                         </Link>
                     </div>
