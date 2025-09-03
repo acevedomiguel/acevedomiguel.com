@@ -3,69 +3,75 @@
 @tailwind utilities;
 
 body {
-    /* background: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195)); */
-    background-color: white;
-    font-family: Seravek,
-    'Gill Sans Nova',
-    Ubuntu,
-    Calibri,
-    'DejaVu Sans',
-    source-sans-pro,
-    sans-serif;
+	/* background: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195)); */
+	background-color: white;
+	font-family:
+		Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro,
+		sans-serif;
 }
 
 .react-icons {
-    /* vertical-align: middle; */
-    display: inline-block;
-    size: 1.2em;
+	/* vertical-align: middle; */
+	display: inline-block;
+	size: 1.2em;
 }
 
-.linktree-resume{
-    background-color: #1A2477;
+.linktree-resume {
+	background-color: #1a2477;
 }
 
-.linktree-linkedin{
-    background-color: #0A66C2;
+.linktree-linkedin {
+	background-color: #0a66c2;
 }
 
-.linktree-twitter{
-    background-color: #1DA1F2;
+.linktree-twitter {
+	background-color: #1da1f2;
 }
 
-.linktree-github{
-    background-color: #181717;
+.linktree-github {
+	background-color: #181717;
 }
 
-.linktree-buymeacoffee{
-    background-color: #f2d200;
+.linktree-buymeacoffee {
+	background-color: #f2d200;
 }
 
-.linktree-instagram{
-    background-color: #E4405F;
+.linktree-instagram {
+	background-color: #e4405f;
 }
 
 .linktree-so {
-    background-color: #f48225;
+	background-color: #f48225;
 }
 
 .resume-bg {
-    background-color: #345383;
+	background-color: #345383;
 }
 
 .resume-name {
-    color: #345383;
+	color: #345383;
 }
 
 .resume-light {
-    color: #fdfdfd;
+	color: #fdfdfd;
 }
 
-.resume-color-1 { color: #fdfdfd; }
-.resume-color-2 { color: #345383; }
-.resume-color-3 { color: #c5c5c9; }
-.resume-color-4 { color: #6980a7; }
-.resume-color-5 { color: #312b3d; }
+.resume-color-1 {
+	color: #fdfdfd;
+}
+.resume-color-2 {
+	color: #345383;
+}
+.resume-color-3 {
+	color: #c5c5c9;
+}
+.resume-color-4 {
+	color: #6980a7;
+}
+.resume-color-5 {
+	color: #312b3d;
+}
 
 .signature-logo {
-  max-width: 300px;
+	max-width: 300px;
 }

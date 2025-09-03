@@ -1,6 +1,6 @@
-const config = require("./next.config")
+const config = require("./next.config");
 module.exports = {
-    siteUrl: config.siteUrl,
-    generateRobotsTxt: true,
-    outDir: "out"
-}
+	siteUrl: config.siteUrl,
+	generateRobotsTxt: true,
+	outDir: "out",
+};
