@@ -3,7 +3,7 @@ import { ResumeData } from '../../types/resumedata'
 import getData from '../../lib/getdata'
 import Work from './work'
 import Skills from './skills'
-import { FaEnvelope, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import { ImLocation } from 'react-icons/im';
 import { CgWebsite } from 'react-icons/cg';
 import { BsPhone } from 'react-icons/bs';
