@@ -1,12 +1,14 @@
-import Footer from './footer';
-import Meta from './meta';
+import Footer from "./footer";
+import Meta from "./meta";
 
 export default function Layout({ children }) {
-    return (<>
-        <Meta />
-        <div>
-            <main>{children}</main>
-        </div>
-        <Footer />
-    </>)
+	return (
+		<>
+			<Meta />
+			<div>
+				<main>{children}</main>
+			</div>
+			<Footer />
+		</>
+	);
 }
