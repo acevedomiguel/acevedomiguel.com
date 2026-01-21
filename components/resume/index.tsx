@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import getData from "../../lib/getdata";
 import type { ResumeData } from "../../types/resumedata";
+import Certifications from "./Certifications";
+import Languages from "./Languages";
 import PersonalInfo from "./PersonalInfo";
 import Skills from "./skills";
 import WorkExperience from "./WorkExperience";
-import Certifications from "./Certifications";
-import Languages from "./Languages";
 
 const Resume = () => {
 	const [data, setData] = useState();
@@ -36,12 +36,12 @@ const Resume = () => {
 			<section>
 				<Skills skills={cv.skills} />
 			</section>
-			
+
 			{/* Certifications Section */}
 			<section>
 				<Certifications certifications={cv.certifications} />
 			</section>
-			
+
 			{/* Languages Section */}
 			<section>
 				<Languages languages={cv.languages} />

@@ -2,11 +2,14 @@ import Footer from "./footer";
 import Meta from "./meta";
 
 interface LayoutProps {
-  children: React.ReactNode;
-  pageType?: 'home' | 'resume' | 'contact' | 'generic';
+	children: React.ReactNode;
+	pageType?: "home" | "resume" | "contact" | "generic";
 }
 
-export default function Layout({ children, pageType = 'generic' }: LayoutProps) {
+export default function Layout({
+	children,
+	pageType = "generic",
+}: LayoutProps) {
 	return (
 		<>
 			<Meta pageType={pageType} />
