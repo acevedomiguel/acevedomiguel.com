@@ -14,7 +14,7 @@ export default function Index() {
       <Container>
         <div className="m-auto py-4 max-w-3xl text-md">
           <div className="">
-            <div className="p-6 items-center justify-center">
+            <div className="p-4 sm:p-6 items-center justify-center">
               <div className="mb-6">
                 <p className="mb-3">
                   Hi, I&apos;m Acevedo Miguel, a{" "}
