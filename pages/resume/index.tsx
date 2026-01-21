@@ -13,10 +13,10 @@ export default function Index() {
       </Head>
       <Header />
       <Container>
-        <Breadcrumbs className="mb-4 pt-4" />
+        <Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />
         <main id="main-content">
           <article>
-            <header className="mb-6">
+            <header className="max-w-3xl mx-auto px-6 mb-6">
               <h1 className="sr-only">Professional Resume - Acevedo Miguel</h1>
               
               {/* Minimalistic Download Section */}

@@ -34,7 +34,7 @@ export default function Sitemap() {
       </Head>
       <Header />
       <Container>
-        <Breadcrumbs className="mb-4 pt-4" />
+        <Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />
         <main role="main" id="main-content">
           <article className="max-w-3xl mx-auto py-8">
             <header className="mb-8">
