@@ -24,10 +24,10 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
   return (
     <div className="mb-6">
       {/* Name and Title */}
-      <h1 className="text-2xl font-bold mb-3">
+      <h1 className="text-3xl font-bold mb-2">
         {basics.name}
       </h1>
-      <p className="text-lg font-medium mb-6">
+      <p className="text-xl font-medium mb-6">
         {basics.label}
       </p>
       
@@ -36,12 +36,12 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
       
       {/* Contact Information */}
       <address className="mb-6 not-italic">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Email */}
           {basics.email && (
-            <div className="text-md">
-              <FaEnvelope className="inline mr-2 text-gray-700" /> 
-              <a href={`mailto:${basics.email}`} className="text-blue-700 hover:underline">
+            <div className="text-md flex items-center">
+              <FaEnvelope className="inline mr-2 text-gray-600" /> 
+              <a href={`mailto:${basics.email}`} className="text-gray-700 hover:text-gray-900 hover:underline">
                 {basics.email}
               </a>
             </div>
@@ -49,9 +49,9 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
           
           {/* Phone */}
           {basics.phone && (
-            <div className="text-md">
-              <BsPhone className="inline mr-2 text-gray-700" /> 
-              <a href={`tel:${basics.phone}`} className="text-blue-700 hover:underline">
+            <div className="text-md flex items-center">
+              <BsPhone className="inline mr-2 text-gray-600" /> 
+              <a href={`tel:${basics.phone}`} className="text-gray-700 hover:text-gray-900 hover:underline">
                 {basics.phone}
               </a>
             </div>
@@ -59,17 +59,17 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
           
           {/* Location */}
           {basics.location?.city && (
-            <div className="text-md">
-              <ImLocation className="inline mr-2 text-gray-700" /> 
-              {basics.location.city}
+            <div className="text-md flex items-center">
+              <ImLocation className="inline mr-2 text-gray-600" /> 
+              <span>{basics.location.city}</span>
             </div>
           )}
           
           {/* Website */}
           {basics.url && (
-            <div className="text-md">
-              <CgWebsite className="inline mr-2 text-gray-700" /> 
-              <Link href={basics.url} className="text-blue-700 hover:underline">
+            <div className="text-md flex items-center">
+              <CgWebsite className="inline mr-2 text-gray-600" /> 
+              <Link href={basics.url} className="text-gray-700 hover:text-gray-900 hover:underline">
                 {basics.url.replace('https://', '').replace('http://', '')}
               </Link>
             </div>
@@ -77,9 +77,9 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
           
           {/* LinkedIn Profile */}
           {basics.profiles && basics.profiles.length > 0 && (
-            <div className="text-md">
-              <FaLinkedin className="inline mr-2 text-gray-700" /> 
-              <Link href={basics.profiles[0].url} className="text-blue-700 hover:underline">
+            <div className="text-md flex items-center">
+              <FaLinkedin className="inline mr-2 text-gray-600" /> 
+              <Link href={basics.profiles[0].url} className="text-gray-700 hover:text-gray-900 hover:underline">
                 {basics.profiles[0].username}
               </Link>
             </div>

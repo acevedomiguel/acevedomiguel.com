@@ -65,13 +65,13 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ work }) => {
             {workItem.position}
           </h3>
           
-          {/* Company Name and Date Range - on same line with proper hierarchy */}
-          <div className="flex justify-between items-baseline mb-2">
-            <div className="text-md text-gray-800">
+          {/* Company Name and Date Range */}
+          <div className="flex flex-col sm:flex-row sm:justify-between mb-3">
+            <div className="text-md font-medium text-gray-900">
               {workItem.name}
               {workItem.location && ` • ${workItem.location}`}
             </div>
-            <div className="text-sm text-gray-700">
+            <div className="text-sm text-gray-600">
               <time dateTime={workItem.startDate}>{workItem.startDate}</time> - <time dateTime={workItem.endDate || new Date().toISOString().slice(0, 7)}>{workItem.endDate || 'Present'}</time>
             </div>
           </div>

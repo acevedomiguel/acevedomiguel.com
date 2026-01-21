@@ -1,6 +1,6 @@
 {
 	"basics": {
-		"name": "Miguel Angel Acevedo",
+		"name": "Acevedo Miguel",
 		"label": "Senior Software Engineer",
 		"image": "/profile.png",
 		"email": "me@acevedomiguel.com",
@@ -229,63 +229,13 @@
 	],
 	"volunteer": [],
 	"certifications": [
-		{
-			"institution": "AWS",
-			"url": "https://www.aws.training/Transcript/CompletionCertificateHtml?transcriptid=BNmHVzD3-0CqMQWvU3oJ5w2",
-			"area": "IoT",
-			"studyType": "Certification",
-			"startDate": "2020-08-01",
-			"endDate": "2020-08-01",
-			"score": "",
-			"courses": ["IoT Foundation: Telemetry"]
-		},
-		{
-			"institution": "Linux Academy",
-			"url": "https://linuxacademy.com/profile/u/cert/id/339546",
-			"area": "System Administration",
-			"studyType": "Certification",
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-01",
-			"score": "",
-			"courses": ["LPI Linux Essentials Certification"]
-		},
-		{
-			"institution": "Linux Academy",
-			"url": "https://linuxacademy.com/profile/u/cert/id/314027",
-			"area": "DevOps",
-			"studyType": "Certification",
-			"startDate": "2020-04-01",
-			"endDate": "2020-04-01",
-			"score": "",
-			"courses": ["Deploying to AWS with Ansible and Terraform"]
-		},
-		{
-			"institution": "Linux Academy",
-			"url": "https://linuxacademy.com/profile/u/cert/id/170168",
-			"area": "DevOps",
-			"studyType": "Certification",
-			"startDate": "2019-10-01",
-			"endDate": "2019-10-01",
-			"score": "",
-			"courses": ["DevOps Essentials"]
-		}
+		
 	],
 	"awards": [
-		{
-			"title": "Award",
-			"date": "2020-11-01",
-			"awarder": "Company",
-			"summary": "Programmer of the Year 2020"
-		}
+	
 	],
 	"publications": [
-		{
-			"name": "Publication",
-			"publisher": "Company",
-			"releaseDate": "2020-10-01",
-			"url": "http://publication.com",
-			"summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-		}
+
 	],
 	"skills": [
 		{

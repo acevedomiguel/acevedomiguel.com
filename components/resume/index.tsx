@@ -19,7 +19,6 @@ const Resume = () => {
 	}
 
 	const cv: ResumeData = data;
-	console.log(cv);
 
 	return (
 		<main className="max-w-3xl mx-auto p-6 text-md">

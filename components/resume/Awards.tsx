@@ -37,7 +37,7 @@ const Awards: React.FC<AwardsProps> = ({ awards }) => {
           </h3>
           
           {/* Awarder and Date */}
-          <div className="text-md text-gray-800 mb-2">
+          <div className="text-md text-gray-900 mb-2">
             {award.awarder} • <time dateTime={award.date}>{award.date}</time>
           </div>
           

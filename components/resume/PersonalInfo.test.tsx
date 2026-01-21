@@ -41,12 +41,12 @@ describe('PersonalInfo Component', () => {
     // Check name is displayed as h1 with proper styling
     const nameHeading = screen.getByRole('heading', { level: 1 });
     expect(nameHeading).toHaveTextContent('John Doe');
-    expect(nameHeading).toHaveClass('text-2xl', 'font-bold', 'mb-3');
+    expect(nameHeading).toHaveClass('text-3xl', 'font-bold', 'mb-2');
     
     // Check title is displayed as p (not h2) with proper styling
     const titleElement = screen.getByText('Senior Software Engineer');
     expect(titleElement.tagName).toBe('P');
-    expect(titleElement).toHaveClass('text-lg', 'font-medium', 'mb-6');
+    expect(titleElement).toHaveClass('text-xl', 'font-medium', 'mb-6');
     
     // Check summary is displayed with proper styling
     expect(screen.getByText('Experienced software engineer with expertise in full-stack development.')).toHaveClass('text-md', 'mb-6');
@@ -78,7 +78,7 @@ describe('PersonalInfo Component', () => {
     const gridContainer = screen.getByRole('group'); // address element has group role
     expect(gridContainer.querySelector('.grid')).toBeInTheDocument();
     expect(gridContainer.querySelector('.grid-cols-1')).toBeInTheDocument();
-    expect(gridContainer.querySelector('.md\\:grid-cols-2')).toBeInTheDocument();
+    expect(gridContainer.querySelector('.sm\\:grid-cols-2')).toBeInTheDocument();
   });
 
   it('handles missing profiles gracefully', () => {
