@@ -134,12 +134,12 @@ export class MetaTagGeneratorImpl implements MetaTagGenerator {
 				},
 				{
 					property: "og:image:width",
-					content: "1200",
+					content: "192",
 					key: "og:image:width",
 				},
 				{
 					property: "og:image:height",
-					content: "630",
+					content: "192",
 					key: "og:image:height",
 				},
 				{
