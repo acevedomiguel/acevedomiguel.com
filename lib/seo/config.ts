@@ -5,7 +5,7 @@ export const seoConfig: SEOConfig = {
 		name: "Acevedo Miguel - Senior DevOps & Backend Engineer",
 		url: "https://www.acevedomiguel.com",
 		description:
-			"Senior software engineer with over 20 years of experience in DevOps, backend development, IoT, and cloud computing. Currently Cloud Lead & IoT at Tensor Energy.",
+			"Senior software engineer with 20+ years experience in DevOps, backend development, IoT, and cloud computing. Currently Cloud Lead & IoT at Tensor Energy. Contact: me@acevedomiguel.com",
 		author: {
 			"@type": "Person",
 			name: "Acevedo Miguel",
@@ -53,7 +53,7 @@ export const seoConfig: SEOConfig = {
 		home: {
 			title: "Acevedo Miguel - Senior DevOps & Backend Engineer",
 			description:
-				"Senior software engineer with over 20 years of experience in DevOps, backend development, IoT, and cloud computing. Currently Cloud Lead & IoT at Tensor Energy.",
+				"Senior software engineer with 20+ years experience in DevOps, backend development, IoT, and cloud computing. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong. Contact: me@acevedomiguel.com",
 			keywords: [
 				"DevOps Engineer",
 				"Backend Developer",

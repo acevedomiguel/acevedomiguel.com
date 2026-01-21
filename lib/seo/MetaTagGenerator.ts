@@ -126,11 +126,28 @@ export class MetaTagGeneratorImpl implements MetaTagGenerator {
 
 		// Optional Open Graph tags
 		if (config.image) {
-			tags.push({
-				property: "og:image",
-				content: config.image,
-				key: "og:image",
-			});
+			tags.push(
+				{
+					property: "og:image",
+					content: config.image,
+					key: "og:image",
+				},
+				{
+					property: "og:image:width",
+					content: "192",
+					key: "og:image:width",
+				},
+				{
+					property: "og:image:height",
+					content: "192",
+					key: "og:image:height",
+				},
+				{
+					property: "og:image:type",
+					content: "image/png",
+					key: "og:image:type",
+				},
+			);
 		}
 
 		if (config.siteName) {
@@ -142,11 +159,18 @@ export class MetaTagGeneratorImpl implements MetaTagGenerator {
 		}
 
 		// Additional Open Graph tags for better social sharing
-		tags.push({
-			property: "og:locale",
-			content: "en_US",
-			key: "og:locale",
-		});
+		tags.push(
+			{
+				property: "og:locale",
+				content: "en_US",
+				key: "og:locale",
+			},
+			{
+				property: "fb:app_id",
+				content: "966242223397117", // Default Facebook app ID for better attribution
+				key: "fb:app_id",
+			},
+		);
 
 		return tags;
 	}
