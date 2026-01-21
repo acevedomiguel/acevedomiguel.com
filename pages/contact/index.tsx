@@ -1,25 +1,169 @@
 import Head from "next/head";
-import { FaCalendarDay } from "react-icons/fa";
+import { FaCalendarDay, FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload } from "react-icons/fa";
 import Container from "../../components/container";
 import Layout from "../../components/layout";
-import Nav from "../../components/nav";
+import Header from "../../components/header";
+import Breadcrumbs from "../../components/Breadcrumbs";
 
 export default function Index() {
 	return (
-    <Layout>
+    <Layout pageType="contact">
       <Head>
-        <title>Contact for Acevedo Miguel Angel</title>
+        <title>Contact Acevedo Miguel - DevOps & Backend Engineer</title>
       </Head>
-      <Nav />
+      <Header />
       <Container>
-        contact info
-        <a
-          href="https://calendly.com/acevedomiguel/30-min-zoom-meeting"
-          className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-        >
-          <FaCalendarDay className="react-icons" title="Calendly" />
-          <span className="sr-only">Calendly</span>
-        </a>
+        <Breadcrumbs className="mb-4 pt-4" />
+        <main role="main" id="main-content">
+          <article className="max-w-3xl mx-auto py-8">
+            <header className="mb-8">
+              <h1 className="text-3xl font-bold text-gray-900 mb-4">
+                Contact Me
+              </h1>
+              <p className="text-lg text-gray-600">
+                Get in touch for DevOps consulting, backend development, or IoT projects. 
+                I&apos;m based in Hong Kong with global experience.
+              </p>
+            </header>
+
+            <section className="grid md:grid-cols-2 gap-8" aria-labelledby="contact-methods">
+              <div>
+                <h2 id="contact-methods" className="text-xl font-semibold mb-4">
+                  Contact Information
+                </h2>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3" itemScope itemType="https://schema.org/ContactPoint">
+                    <FaEnvelope className="text-sky-600" aria-hidden="true" />
+                    <div>
+                      <span className="text-sm text-gray-500">Email</span>
+                      <a 
+                        href="mailto:me@acevedomiguel.com"
+                        className="block text-gray-900 hover:text-sky-600 transition-colors"
+                        itemProp="email"
+                      >
+                        me@acevedomiguel.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-3" itemScope itemType="https://schema.org/ContactPoint">
+                    <FaPhone className="text-sky-600" aria-hidden="true" />
+                    <div>
+                      <span className="text-sm text-gray-500">Phone</span>
+                      <a 
+                        href="tel:+85264356936"
+                        className="block text-gray-900 hover:text-sky-600 transition-colors"
+                        itemProp="telephone"
+                      >
+                        (+852) 6435-6936
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-3">
+                    <FaMapMarkerAlt className="text-sky-600" aria-hidden="true" />
+                    <div>
+                      <span className="text-sm text-gray-500">Location</span>
+                      <span className="block text-gray-900">
+                        Kowloon, Hong Kong
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h2 className="text-xl font-semibold mb-4">
+                  Schedule a Meeting
+                </h2>
+                
+                <p className="text-gray-600 mb-4">
+                  Book a 30-minute consultation to discuss your project needs.
+                </p>
+                
+                <a
+                  href="https://calendly.com/acevedomiguel/30-min-zoom-meeting"
+                  className="inline-flex items-center space-x-2 bg-sky-900 hover:bg-sky-700 text-white px-6 py-3 rounded-lg transition-colors"
+                  title="Schedule a meeting with Acevedo Miguel"
+                >
+                  <FaCalendarDay aria-hidden="true" />
+                  <span>Schedule Meeting</span>
+                </a>
+              </div>
+            </section>
+
+            <section className="mt-12 pt-8 border-t border-gray-200" aria-labelledby="resume-download">
+              <h2 id="resume-download" className="text-xl font-semibold mb-4">
+                Resume Download
+              </h2>
+              
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <p className="text-gray-600 mb-4">
+                  Download my complete professional resume with detailed work experience and technical skills.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="/resume.pdf"
+                    download="Acevedo_Miguel_Resume.pdf"
+                    className="inline-flex items-center justify-center space-x-2 bg-sky-900 hover:bg-sky-700 text-white px-6 py-3 rounded-lg transition-colors font-medium"
+                    title="Download PDF resume"
+                  >
+                    <FaDownload className="w-4 h-4" aria-hidden="true" />
+                    <span>Download Resume (PDF)</span>
+                  </a>
+                  
+                  <a
+                    href="/resume"
+                    className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-gray-50 text-gray-700 border border-gray-300 px-6 py-3 rounded-lg transition-colors font-medium"
+                    title="View online resume"
+                  >
+                    <span>View Online Resume</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section className="mt-12 pt-8 border-t border-gray-200" aria-labelledby="expertise">
+              <h2 id="expertise" className="text-xl font-semibold mb-4">
+                Areas of Expertise
+              </h2>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div>
+                  <h3 className="font-medium text-gray-900 mb-2">DevOps & Infrastructure</h3>
+                  <ul className="text-sm text-gray-600 space-y-1" role="list">
+                    <li>AWS Cloud Architecture</li>
+                    <li>Kubernetes & Docker</li>
+                    <li>CI/CD Pipelines</li>
+                    <li>Infrastructure as Code</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-gray-900 mb-2">Backend Development</h3>
+                  <ul className="text-sm text-gray-600 space-y-1" role="list">
+                    <li>Node.js & TypeScript</li>
+                    <li>Python & Go</li>
+                    <li>Microservices Architecture</li>
+                    <li>API Design & GraphQL</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-gray-900 mb-2">IoT & Integration</h3>
+                  <ul className="text-sm text-gray-600 space-y-1" role="list">
+                    <li>IoT Device Integration</li>
+                    <li>MQTT & Message Queues</li>
+                    <li>Real-time Data Processing</li>
+                    <li>Edge Computing</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </article>
+        </main>
       </Container>
     </Layout>
 	);
