@@ -15,7 +15,7 @@ export interface MetaTagGenerator {
 export class MetaTagGeneratorImpl implements MetaTagGenerator {
 	private readonly baseUrl: string;
 
-	constructor(baseUrl: string = "https://www.acevedomiguel.com") {
+	constructor(baseUrl: string = "https://acevedomiguel.com") {
 		this.baseUrl = baseUrl.replace(/\/$/, ""); // Remove trailing slash
 	}
 
@@ -134,12 +134,12 @@ export class MetaTagGeneratorImpl implements MetaTagGenerator {
 				},
 				{
 					property: "og:image:width",
-					content: "192",
+					content: "310",
 					key: "og:image:width",
 				},
 				{
 					property: "og:image:height",
-					content: "192",
+					content: "310",
 					key: "og:image:height",
 				},
 				{

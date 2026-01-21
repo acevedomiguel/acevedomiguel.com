@@ -7,7 +7,7 @@ const previewUrl =
 		? `https://${commit_sha}.${project}.pages.dev`
 		: undefined;
 
-const siteUrl = previewUrl || "https://www.acevedomiguel.com";
+const siteUrl = previewUrl || "https://acevedomiguel.com";
 
 module.exports = {
 	siteUrl,

@@ -45,7 +45,7 @@ Disallow: /admin/
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://www.acevedomiguel.com/sitemap.xml
+Sitemap: https://acevedomiguel.com/sitemap.xml
 
 # Host
-Host: https://www.acevedomiguel.com
+Host: https://acevedomiguel.com
