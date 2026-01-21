@@ -60,10 +60,10 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 					)}
 
 					{/* Location */}
-					{basics.location?.city && (
+					{basics.location?.region && (
 						<div className="text-md flex items-center">
 							<ImLocation className="inline mr-2 text-gray-600" />
-							<span>{basics.location.city}</span>
+							<span>{basics.location.region}</span>
 						</div>
 					)}
 
