@@ -4,14 +4,14 @@ export default function Header() {
 			<div className="container mx-auto mt-4 mb-4 text-center">
 				<div className="title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
 					<a href="/" title="Return to homepage">
-            <picture>
-              <img
-                src="/signature.svg"
-                className="signature-logo mx-auto"
-                alt="Acevedo Miguel - Senior DevOps & Backend Engineer"
-                title="Acevedo Miguel"
-              />
-            </picture>
+						<picture>
+							<img
+								src="/signature.svg"
+								className="signature-logo mx-auto"
+								alt="Acevedo Miguel - Senior DevOps & Backend Engineer"
+								title="Acevedo Miguel"
+							/>
+						</picture>
 					</a>
 				</div>
 			</div>

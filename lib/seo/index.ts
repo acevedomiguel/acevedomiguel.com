@@ -1,33 +1,33 @@
 // Main SEO exports
-export { SEOManager } from './SEOManager';
-export { StructuredDataGenerator } from './StructuredDataGenerator';
-export { MetaTagGeneratorImpl as MetaTagGenerator } from './MetaTagGenerator';
-export { SchemaValidator } from './SchemaValidator';
-export { BreadcrumbNavigation } from './BreadcrumbNavigation';
-export { ContentOptimizer } from './ContentOptimizer';
-export { TechnicalSEO } from './TechnicalSEO';
-export { SitemapGenerator } from './SitemapGenerator';
-export { SemanticHTMLEnhancerImpl as SemanticHTMLEnhancer } from './SemanticHTMLEnhancer';
-export { TextTruncator } from './TextTruncator';
 
+export { BreadcrumbNavigation } from "./BreadcrumbNavigation";
+export { ContentOptimizer } from "./ContentOptimizer";
 // Configuration
-export { seoConfig } from './config';
+export { seoConfig } from "./config";
+export { MetaTagGeneratorImpl as MetaTagGenerator } from "./MetaTagGenerator";
+export { SchemaValidator } from "./SchemaValidator";
+export { SEOManager } from "./SEOManager";
+export { SemanticHTMLEnhancerImpl as SemanticHTMLEnhancer } from "./SemanticHTMLEnhancer";
+export { SitemapGenerator } from "./SitemapGenerator";
+export { StructuredDataGenerator } from "./StructuredDataGenerator";
+export { TechnicalSEO } from "./TechnicalSEO";
+export { TextTruncator } from "./TextTruncator";
 
 // Types
 export type {
-  SEOManagerProps,
-  MetaTag,
-  StructuredDataConfig,
-  OpenGraphConfig,
-  TwitterCardConfig,
-  BasicMetaConfig,
-  PersonSchemaData,
-  WorkExperienceSchemaData,
-  OrganizationSchemaData,
-  ContactPointSchemaData,
-  BreadcrumbItem,
-  SEOConfig,
-  PageSEOConfig,
-  ValidationResult,
-  SemanticElement
-} from './types';
+	BasicMetaConfig,
+	BreadcrumbItem,
+	ContactPointSchemaData,
+	MetaTag,
+	OpenGraphConfig,
+	OrganizationSchemaData,
+	PageSEOConfig,
+	PersonSchemaData,
+	SEOConfig,
+	SEOManagerProps,
+	SemanticElement,
+	StructuredDataConfig,
+	TwitterCardConfig,
+	ValidationResult,
+	WorkExperienceSchemaData,
+} from "./types";
