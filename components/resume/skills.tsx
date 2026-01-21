@@ -1,30 +1,42 @@
-export const Skills = ({ skills }) => {
+import type React from 'react';
+import ResumeSection from "./ResumeSection";
+
+interface SkillItem {
+  name: string;
+  level?: string;
+  keywords: string[];
+}
+
+interface SkillsProps {
+  skills: SkillItem[];
+}
+
+/**
+ * Skills component displays skills with clean list styling matching homepage patterns.
+ * Uses simple text-based layout without complex styling elements.
+ * 
+ * Features:
+ * - Uses text-md sizing for content consistency with homepage
+ * - Applies mb-3 spacing patterns from homepage
+ * - Clean, minimal styling without borders or backgrounds
+ * - Displays all skills categories and items clearly
+ * - Simple comma-separated list format for easy scanning
+ */
+const Skills: React.FC<SkillsProps> = ({ skills }) => {
 	return (
-		<div className="px-6 pt-6">
-			<h2 className="text-xl font-bold pb-3 underline">Areas of Expertise</h2>
-			{skills.map((skill, index) => {
-        const orderKey = `ok${index}`;
-				return (
-					<div key={`skill-${orderKey}`} className="mb-3">
-						<div className="text-sm font-semibold mb-1">{skill.name}</div>
-						<div className="mx-2">
-							{skill.keywords.map((keyword, index) => {
-                const subOrderKey = `ok${index}`;
-								return (
-									<span
-										key={`keyword-${subOrderKey}`}
-										className="ml-4 mb-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-md bg-gray-100 text-gray-700 border"
-									>
-										{keyword}
-									</span>
-								);
-							})}
-						</div>
-					</div>
-				);
-			})}
-		</div>
+		<ResumeSection title="Areas of Expertise">
+			{skills.map((skill, index) => (
+				<div key={`skill-${skill.name}-${index}`} className="mb-3">
+					{/* Skill Category - matching homepage typography hierarchy */}
+					<h3 className="text-lg font-medium mb-1">{skill.name}</h3>
+					
+					{/* Skills List - using text-md for consistency */}
+					<p className="text-md">
+						{skill.keywords.join(", ")}
+					</p>
+				</div>
+			))}
+		</ResumeSection>
 	);
 };
-
 export default Skills;

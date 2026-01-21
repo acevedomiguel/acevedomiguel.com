@@ -9,9 +9,10 @@ body {
 }
 
 .react-icons {
-	/* vertical-align: middle; */
 	display: inline-block;
-	size: 1.2em;
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: middle;
 }
 
 .linktree-resume {
@@ -42,6 +43,7 @@ body {
 	background-color: #f48225;
 }
 
+/* Removed custom resume colors that may have contrast issues
 .resume-bg {
 	background-color: #345383;
 }
@@ -69,6 +71,7 @@ body {
 .resume-color-5 {
 	color: #312b3d;
 }
+*/
 
 .signature-logo {
 	max-width: 300px;
