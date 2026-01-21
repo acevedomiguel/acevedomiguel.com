@@ -25,7 +25,7 @@ export class SitemapGenerator {
 		"monthly";
 	private readonly defaultPriority: number = 0.5;
 
-	constructor(baseUrl: string = "https://www.acevedomiguel.com") {
+	constructor(baseUrl: string = "https://acevedomiguel.com") {
 		this.baseUrl = baseUrl.replace(/\/$/, "");
 	}
 

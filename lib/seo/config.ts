@@ -3,7 +3,7 @@ import type { SEOConfig } from "./types";
 export const seoConfig: SEOConfig = {
 	site: {
 		name: "Acevedo Miguel - Senior DevOps & Backend Engineer",
-		url: "https://www.acevedomiguel.com",
+		url: "https://acevedomiguel.com",
 		description:
 			"Senior software engineer with 20+ years experience in DevOps, backend development, IoT, and cloud computing. Currently Cloud Lead & IoT at Tensor Energy. Contact: me@acevedomiguel.com",
 		author: {
@@ -12,8 +12,8 @@ export const seoConfig: SEOConfig = {
 			jobTitle: "Senior DevOps & Backend Engineer",
 			description:
 				"Senior software engineer with extensive experience (over 20 years) in digital marketing, devops and infrastructure, with curiosity about IoT",
-			url: "https://www.acevedomiguel.com",
-			image: "https://www.acevedomiguel.com/profile.png",
+			url: "https://acevedomiguel.com",
+			image: "https://acevedomiguel.com/profile.png",
 			email: "me@acevedomiguel.com",
 			telephone: "+852 6435-6936",
 			address: {
@@ -108,7 +108,7 @@ export const seoConfig: SEOConfig = {
 		openGraph: {
 			type: "website",
 			siteName: "Acevedo Miguel",
-			image: "https://www.acevedomiguel.com/profile.png",
+			image: "https://acevedomiguel.com/profile.png",
 		},
 		twitter: {
 			card: "summary_large_image",

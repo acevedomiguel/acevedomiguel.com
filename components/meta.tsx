@@ -22,7 +22,7 @@ export default function Meta({
 		pageType,
 		title,
 		description,
-		canonicalUrl: `https://www.acevedomiguel.com${router.asPath}`,
+		canonicalUrl: `https://acevedomiguel.com${router.asPath}`,
 	});
 
 	return (

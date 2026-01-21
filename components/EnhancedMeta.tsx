@@ -31,7 +31,7 @@ export default function EnhancedMeta({
 		pageType,
 		title,
 		description,
-		canonicalUrl: `https://www.acevedomiguel.com${router.asPath}`,
+		canonicalUrl: `https://acevedomiguel.com${router.asPath}`,
 		structuredData,
 		additionalMeta,
 	};

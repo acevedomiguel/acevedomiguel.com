@@ -18,7 +18,7 @@ export class BreadcrumbNavigation {
 	private readonly baseUrl: string;
 	private readonly structuredDataGenerator: StructuredDataGenerator;
 
-	constructor(baseUrl: string = "https://www.acevedomiguel.com") {
+	constructor(baseUrl: string = "https://acevedomiguel.com") {
 		this.baseUrl = baseUrl.replace(/\/$/, "");
 		this.structuredDataGenerator = new StructuredDataGenerator();
 	}
