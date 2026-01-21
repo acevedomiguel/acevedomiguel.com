@@ -19,7 +19,7 @@ export const Footer = () => {
 							href="https://www.linkedin.com/in/acevedomiguel/"
 							className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
 						>
-							<FaLinkedin className="react-icons" title="Linkedin" />
+							<FaLinkedin className="react-icons" title="LinkedIn" />
 							<span className="sr-only">Linkedin</span>
 						</a>
 						<a
@@ -37,13 +37,6 @@ export const Footer = () => {
 							<span className="sr-only">Stack Overflow</span>
 						</a>
 						<a
-							href="https://bsky.app/profile/acevedomiguel.bsky.social"
-							className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-						>
-							<FaBluesky className="react-icons" title="Bluesky" />
-							<span className="sr-only">Bluesky</span>
-						</a>
-						<a
 							href="https://www.buymeacoffee.com/acevedomiguel"
 							className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
 						>
@@ -56,13 +49,6 @@ export const Footer = () => {
 						>
 							<FaInstagram className="react-icons" title="Instagram" />
 							<span className="sr-only">Instagram</span>
-						</a>
-						<a
-							href="https://infosec.exchange/@faultydev"
-							className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-						>
-							<FaMastodon className="react-icons" title="Mastodon" />
-							<span className="sr-only">Mastodon</span>
 						</a>
 					</div>
 				</div>
