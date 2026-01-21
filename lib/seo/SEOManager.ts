@@ -381,7 +381,15 @@ export class SEOManager {
     
     return content.replace(externalLinkRegex, (match) => {
       if (!match.includes('rel=')) {
-        return match.replace('>', ' rel="noopener noreferrer">');
+        const lastGtIndex = match.lastIndexOf('>');
+        if (lastGtIndex === -1) {
+          return match;
+        }
+        return (
+          match.slice(0, lastGtIndex) +
+          ' rel="noopener noreferrer"' +
+          match.slice(lastGtIndex)
+        );
       }
       return match;
     });
