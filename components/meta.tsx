@@ -27,6 +27,9 @@ export default function Meta({
 
 	return (
 		<Head>
+			{/* Viewport */}
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 			{/* Structured Data */}
 			{seoResult.structuredData && (
 				<script
@@ -127,10 +130,6 @@ export default function Meta({
 
 			{/* Preload Critical Resources */}
 			<link rel="preload" href="/profile.png" as="image" />
-
-			{/* DNS Prefetch for Performance */}
-			<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-			<link rel="dns-prefetch" href="//fonts.gstatic.com" />
 		</Head>
 	);
 }

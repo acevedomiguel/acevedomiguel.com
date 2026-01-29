@@ -50,13 +50,13 @@ export default function Breadcrumbs({ className = "" }: BreadcrumbsProps) {
 									<>
 										<a
 											href={breadcrumb.url}
-											className="hover:text-gray-900 transition-colors truncate max-w-[120px] sm:max-w-none"
+											className="hover:text-gray-900 transition-colors truncate max-w-[150px] sm:max-w-none"
 											title={`Go to ${breadcrumb.name}`}
 										>
 											{breadcrumb.name}
 										</a>
 										<span
-											className="mx-1 sm:mx-2 text-gray-400"
+											className="mx-1 sm:mx-2 text-gray-500"
 											aria-hidden="true"
 										>
 											/
@@ -64,7 +64,7 @@ export default function Breadcrumbs({ className = "" }: BreadcrumbsProps) {
 									</>
 								) : (
 									<span
-										className="text-gray-900 font-medium truncate max-w-[120px] sm:max-w-none"
+										className="text-gray-900 font-medium truncate max-w-[150px] sm:max-w-none"
 										aria-current="page"
 									>
 										{breadcrumb.name}
