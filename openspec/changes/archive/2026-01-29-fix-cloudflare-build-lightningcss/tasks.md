@@ -12,5 +12,5 @@
 
 - [x] 2.1 Run local build with `npm run build` to verify no regressions
 - [x] 2.2 Verify all pages render correctly with v3
-- [ ] 2.3 Commit and push changes to trigger Cloudflare Pages build
-- [ ] 2.4 Verify Cloudflare Pages build succeeds
+- [x] 2.3 Commit and push changes to trigger Cloudflare Pages build
+- [x] 2.4 Verify Cloudflare Pages build succeeds
