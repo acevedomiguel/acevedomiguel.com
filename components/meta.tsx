@@ -99,12 +99,12 @@ export default function Meta({
 				sizes="180x180"
 				href="/apple-icon-180x180.png"
 			/>
-			<link
-				rel="icon"
-				type="image/png"
-				sizes="192x192"
-				href="/android-icon-192x192.png"
-			/>
+		<link
+			rel="icon"
+			type="image/webp"
+			sizes="192x192"
+			href="/android-icon-192x192.webp"
+		/>
 			<link
 				rel="icon"
 				type="image/png"
@@ -128,8 +128,8 @@ export default function Meta({
 			<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 			<meta name="theme-color" content="#ffffff" />
 
-			{/* Preload Critical Resources */}
-			<link rel="preload" href="/profile.png" as="image" />
+		{/* Preload Critical Resources */}
+		<link rel="preload" href="/profile.webp" as="image" type="image/webp" />
 		</Head>
 	);
 }
