@@ -1,0 +1,24 @@
+{
+  "workflow": {
+    "default": "openspec",
+    "autoStart": true,
+    "enforceOpenSpec": true
+  },
+  "openspec": {
+    "enabled": true,
+    "autoCreateChange": true,
+    "changeDirectory": ".opencode/changes",
+    "archiveDirectory": ".opencode/archive",
+    "templatesDirectory": ".opencode/templates"
+  },
+  "git": {
+    "autoCommit": false,
+    "commitTemplate": "[OpenSpec: {{changeName}}] {{message}}",
+    "branchPrefix": "openspec/"
+  },
+  "preferences": {
+    "alwaysUseOpenSpec": true,
+    "promptOnNewSession": false,
+    "defaultChangeType": "feature"
+  }
+}
