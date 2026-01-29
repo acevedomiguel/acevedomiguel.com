@@ -124,9 +124,11 @@ export default function Meta({
 				href="/favicon-16x16.png"
 			/>
 			<link rel="manifest" href="/manifest.json" />
-			<meta name="msapplication-TileColor" content="#ffffff" />
+			<meta name="msapplication-TileColor" content="#0c4a6e" />
 			<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-			<meta name="theme-color" content="#ffffff" />
+			<meta name="theme-color" content="#0c4a6e" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+			<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
 		{/* Preload Critical Resources */}
 		<link rel="preload" href="/profile.webp" as="image" type="image/webp" />
