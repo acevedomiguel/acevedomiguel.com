@@ -8,6 +8,10 @@ export default function Index() {
 		<Layout pageType="home">
 			<Head>
 				<title>Acevedo Miguel - Senior DevOps & Backend Engineer</title>
+				<meta
+					name="description"
+					content="Senior DevOps & Backend Engineer with 20+ years of experience in cloud computing, IoT, and infrastructure. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong."
+				/>
 			</Head>
 			<Header />
 			<Container>
@@ -55,7 +59,7 @@ export default function Index() {
 							>
 								<a
 									href="/resume"
-									className="bg-sky-900 hover:bg-sky-700 text-white text-sm py-2 px-6 rounded-full transition-colors"
+									className="bg-sky-900 hover:bg-sky-700 text-white text-sm py-3 px-6 rounded-full transition-colors"
 									title="View my complete professional resume"
 								>
 									View Resume
@@ -64,7 +68,7 @@ export default function Index() {
 								<a
 									href="/resume.pdf"
 									download="Acevedo_Miguel_Resume.pdf"
-									className="bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-2 px-6 rounded-full transition-colors"
+									className="bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors"
 									title="Download PDF resume"
 								>
 									Download PDF

@@ -13,7 +13,7 @@ export const seoConfig: SEOConfig = {
 			description:
 				"Senior software engineer with extensive experience (over 20 years) in digital marketing, devops and infrastructure, with curiosity about IoT",
 			url: "https://acevedomiguel.com",
-			image: "https://www.acevedomiguel.com/ms-icon-310x310.png",
+			image: "https://www.acevedomiguel.com/og-image.png",
 			email: "me@acevedomiguel.com",
 			telephone: "+852 6435-6936",
 			address: {
@@ -108,7 +108,7 @@ export const seoConfig: SEOConfig = {
 		openGraph: {
 			type: "website",
 			siteName: "Acevedo Miguel",
-			image: "https://www.acevedomiguel.com/ms-icon-310x310.png",
+			image: "https://www.acevedomiguel.com/og-image.png",
 		},
 		twitter: {
 			card: "summary_large_image",

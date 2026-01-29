@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
 	/* background: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195)); */
@@ -6,6 +8,17 @@ body {
 	font-family:
 		Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro,
 		sans-serif;
+}
+
+/* Global focus styles for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+	outline: 2px solid #0c4a6e; /* sky-900 */
+	outline-offset: 2px;
+	border-radius: 2px;
 }
 
 .react-icons {

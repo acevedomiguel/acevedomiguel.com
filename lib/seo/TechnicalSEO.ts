@@ -221,10 +221,11 @@ export class TechnicalSEO {
 				type: "font/woff2",
 				crossorigin: "anonymous",
 			},
-			{
-				href: "/profile.png",
-				as: "image",
-			},
+		{
+			href: "/profile.webp",
+			as: "image",
+			type: "image/webp",
+		},
 			{
 				href: "/styles/index.css",
 				as: "style",

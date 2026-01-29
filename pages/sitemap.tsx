@@ -73,7 +73,7 @@ export default function Sitemap() {
 											<p className="text-gray-600 text-sm">
 												{page.description}
 											</p>
-											<span className="text-xs text-gray-400 font-mono">
+											<span className="text-xs text-gray-500 font-mono">
 												{page.url === "/"
 													? "acevedomiguel.com"
 													: `acevedomiguel.com${page.url}`}

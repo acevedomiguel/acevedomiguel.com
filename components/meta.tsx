@@ -27,6 +27,9 @@ export default function Meta({
 
 	return (
 		<Head>
+			{/* Viewport */}
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 			{/* Structured Data */}
 			{seoResult.structuredData && (
 				<script
@@ -96,12 +99,12 @@ export default function Meta({
 				sizes="180x180"
 				href="/apple-icon-180x180.png"
 			/>
-			<link
-				rel="icon"
-				type="image/png"
-				sizes="192x192"
-				href="/android-icon-192x192.png"
-			/>
+		<link
+			rel="icon"
+			type="image/webp"
+			sizes="192x192"
+			href="/android-icon-192x192.webp"
+		/>
 			<link
 				rel="icon"
 				type="image/png"
@@ -121,16 +124,14 @@ export default function Meta({
 				href="/favicon-16x16.png"
 			/>
 			<link rel="manifest" href="/manifest.json" />
-			<meta name="msapplication-TileColor" content="#ffffff" />
+			<meta name="msapplication-TileColor" content="#0c4a6e" />
 			<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-			<meta name="theme-color" content="#ffffff" />
+			<meta name="theme-color" content="#0c4a6e" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+			<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
-			{/* Preload Critical Resources */}
-			<link rel="preload" href="/profile.png" as="image" />
-
-			{/* DNS Prefetch for Performance */}
-			<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-			<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+		{/* Preload Critical Resources */}
+		<link rel="preload" href="/profile.webp" as="image" type="image/webp" />
 		</Head>
 	);
 }

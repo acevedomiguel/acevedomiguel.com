@@ -1,0 +1,27 @@
+{
+  "_comment": "This project uses global OpenCode configuration from ~/.opencode/config.json",
+  "_note": "Add project-specific overrides below to customize behavior for this project only",
+  "workflow": {
+    "default": "openspec",
+    "autoStart": true,
+    "enforceOpenSpec": true
+  },
+  "openspec": {
+    "enabled": true,
+    "autoCreateChange": true,
+    "changeDirectory": ".opencode/changes",
+    "archiveDirectory": ".opencode/archive",
+    "templatesDirectory": ".opencode/templates"
+  },
+  "git": {
+    "autoCommit": false,
+    "commitTemplate": "[OpenSpec: {{changeName}}] {{message}}",
+    "branchPrefix": "openspec/"
+  },
+  "preferences": {
+    "alwaysUseOpenSpec": true,
+    "promptOnNewSession": false,
+    "defaultChangeType": "feature",
+    "useGlobalTemplates": true
+  }
+}
