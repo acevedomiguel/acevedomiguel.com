@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Head from "next/head";
 import {
 	FaCalendarDay,
@@ -5,6 +6,8 @@ import {
 	FaEnvelope,
 	FaMapMarkerAlt,
 	FaPhone,
+	FaCheck,
+	FaCopy,
 } from "react-icons/fa";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Container from "../../components/container";
@@ -12,6 +15,27 @@ import Header from "../../components/header";
 import Layout from "../../components/layout";
 
 export default function Index() {
+	const [copiedEmail, setCopiedEmail] = useState(false);
+	const [copiedPhone, setCopiedPhone] = useState(false);
+
+	const copyToClipboard = async (
+		text: string,
+		type: "email" | "phone",
+	): Promise<void> => {
+		try {
+			await navigator.clipboard.writeText(text);
+			if (type === "email") {
+				setCopiedEmail(true);
+				setTimeout(() => setCopiedEmail(false), 2000);
+			} else {
+				setCopiedPhone(true);
+				setTimeout(() => setCopiedPhone(false), 2000);
+			}
+		} catch (err) {
+			console.error("Failed to copy:", err);
+		}
+	};
+
 	return (
 		<Layout pageType="contact">
 			<Head>
@@ -43,39 +67,69 @@ export default function Index() {
 
 								<div className="space-y-4">
 									<div
-										className="flex items-center space-x-3"
+										className="flex items-center justify-between group"
 										itemScope
 										itemType="https://schema.org/ContactPoint"
 									>
-										<FaEnvelope className="text-sky-600" aria-hidden="true" />
-										<div>
-											<span className="text-sm text-gray-500">Email</span>
-											<a
-												href="mailto:me@acevedomiguel.com"
-												className="block text-gray-900 hover:text-sky-600 transition-colors"
-												itemProp="email"
-											>
-												me@acevedomiguel.com
-											</a>
+										<div className="flex items-center space-x-3 flex-1">
+											<FaEnvelope className="text-sky-600" aria-hidden="true" />
+											<div className="flex-1">
+												<span className="text-sm text-gray-500 block">Email</span>
+												<a
+													href="mailto:me@acevedomiguel.com"
+													className="text-gray-900 hover:text-sky-600 transition-colors"
+													itemProp="email"
+												>
+													me@acevedomiguel.com
+												</a>
+											</div>
 										</div>
+										<button
+											onClick={() =>
+												copyToClipboard("me@acevedomiguel.com", "email")
+											}
+											className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded"
+											title="Copy email to clipboard"
+											aria-label="Copy email to clipboard"
+										>
+											{copiedEmail ? (
+												<FaCheck className="text-green-600 w-4 h-4" />
+											) : (
+												<FaCopy className="text-gray-600 w-4 h-4" />
+											)}
+										</button>
 									</div>
 
 									<div
-										className="flex items-center space-x-3"
+										className="flex items-center justify-between group"
 										itemScope
 										itemType="https://schema.org/ContactPoint"
 									>
-										<FaPhone className="text-sky-600" aria-hidden="true" />
-										<div>
-											<span className="text-sm text-gray-500">Phone</span>
-											<a
-												href="tel:+85264356936"
-												className="block text-gray-900 hover:text-sky-600 transition-colors"
-												itemProp="telephone"
-											>
-												(+852) 6435-6936
-											</a>
+										<div className="flex items-center space-x-3 flex-1">
+											<FaPhone className="text-sky-600" aria-hidden="true" />
+											<div className="flex-1">
+												<span className="text-sm text-gray-500 block">Phone</span>
+												<a
+													href="tel:+85264356936"
+													className="text-gray-900 hover:text-sky-600 transition-colors"
+													itemProp="telephone"
+												>
+													(+852) 6435-6936
+												</a>
+											</div>
 										</div>
+										<button
+											onClick={() => copyToClipboard("+85264356936", "phone")}
+											className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded"
+											title="Copy phone to clipboard"
+											aria-label="Copy phone to clipboard"
+										>
+											{copiedPhone ? (
+												<FaCheck className="text-green-600 w-4 h-4" />
+											) : (
+												<FaCopy className="text-gray-600 w-4 h-4" />
+											)}
+										</button>
 									</div>
 
 									<div className="flex items-center space-x-3">
@@ -84,10 +138,10 @@ export default function Index() {
 											aria-hidden="true"
 										/>
 										<div>
-											<span className="text-sm text-gray-500">Location</span>
-											<span className="block text-gray-900">
-												Kowloon, Hong Kong
+											<span className="text-sm text-gray-500 block">
+												Location
 											</span>
+											<span className="text-gray-900">Kowloon, Hong Kong</span>
 										</div>
 									</div>
 								</div>
@@ -104,6 +158,8 @@ export default function Index() {
 
 								<a
 									href="https://calendly.com/acevedomiguel/30-min-zoom-meeting"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="inline-flex items-center space-x-2 bg-sky-900 hover:bg-sky-700 text-white px-6 py-3 rounded-lg transition-colors"
 									title="Schedule a meeting with Acevedo Miguel"
 								>
