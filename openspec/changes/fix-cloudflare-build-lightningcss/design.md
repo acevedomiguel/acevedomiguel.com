@@ -7,53 +7,57 @@ In the Cloudflare Pages build environment (Linux x64), npm's handling of optiona
 Error: Cannot find module '../lightningcss.linux-x64-gnu.node'
 ```
 
-The local development environment (macOS) works fine because the macOS binary is installed, but CI/CD environments may have different behaviors with optional dependencies.
+Tailwind CSS v4 with its Oxide engine is designed to work with Cloudflare Pages and offers significant performance benefits. The issue is specifically with npm's optional dependency installation behavior in CI/CD environments, not with Tailwind v4 itself.
 
 ## Goals / Non-Goals
 
 **Goals:**
 - Ensure Cloudflare Pages builds succeed with Tailwind CSS v4
-- Make lightningcss installation explicit and reliable across all environments
-- Maintain compatibility with local development workflows
+- Force proper installation of optional dependencies in CI/CD environments
+- Maintain v4's performance benefits and modern features
 
 **Non-Goals:**
-- Changing the Tailwind CSS configuration or moving away from v4
-- Modifying the Cloudflare Pages build configuration
-- Creating custom build scripts or workarounds
+- Reverting to Tailwind CSS v3 (v4 is compatible with Cloudflare, just needs proper setup)
+- Modifying Cloudflare Pages build commands
+- Using workarounds that bypass the root cause
 
 ## Decisions
 
-### Decision 1: Add lightningcss as explicit devDependency
+### Decision 1: Configure npm to include optional dependencies via .npmrc
 
-**Choice:** Add `lightningcss` to the `devDependencies` section of package.json
+**Choice:** Create `.npmrc` file with `optional=true` to force installation of optional dependencies
 
 **Rationale:**
-- The native binary is already being pulled in transitively through `@tailwindcss/postcss`
-- Making it explicit forces npm to properly install the platform-specific optional dependency
-- This is the recommended approach in the Tailwind CSS v4 documentation for build environments
-- No version conflicts since we'll use the same version range that `@tailwindcss/postcss` requires
+- npm by default may skip optional dependencies in some CI/CD environments to speed up installs
+- Cloudflare Pages uses `npm clean-install` which can be more aggressive about skipping optionals
+- Adding `.npmrc` with `optional=true` explicitly tells npm to install optional dependencies
+- This is the recommended solution for projects using packages with platform-specific binaries
+- Solves the root cause rather than working around it
 
 **Alternatives considered:**
-- Using `--include=optional` in npm install → Would require modifying Cloudflare's build command
-- Switching back to Tailwind CSS v3 → Unnecessary regression, loses v4 benefits
-- Using a different CSS processor → Too invasive for this issue
+- Adding `lightningcss` as explicit dependency → **TRIED AND FAILED** - doesn't force optional binaries to install
+- Reverting to Tailwind CSS v3 → Unnecessary; v4 works fine with proper npm configuration
+- Adding platform-specific binary directly → Creates platform conflicts for local development
+- Modifying Cloudflare build command → Not accessible in Cloudflare Pages interface
 
-### Decision 2: Use compatible version range
+### Decision 2: Keep Tailwind CSS v4 and its benefits
 
-**Choice:** Install `lightningcss` with `^` version range matching the peer dependency requirement
+**Choice:** Maintain the v4 upgrade with proper npm configuration
 
 **Rationale:**
-- Ensures compatibility with `@tailwindcss/postcss`
-- Allows patch updates for bug fixes
-- Prevents version conflicts
+- Tailwind v4's Oxide engine (Rust + Lightning CSS) provides significant performance improvements
+- v4 is designed for modern deployment platforms including Cloudflare Pages/Workers
+- CSS-first configuration is simpler and more maintainable
+- Automatic content detection eliminates manual path configuration
+- The issue is npm configuration, not Tailwind v4 compatibility
 
 ## Risks / Trade-offs
 
-**Risk:** Additional dependency in package.json
-→ **Mitigation:** The package is already being used transitively, so bundle size unchanged
+**Risk:** `.npmrc` settings might affect other dependencies
+→ **Mitigation:** The `optional=true` setting is safe and only ensures optionals are installed when needed
 
-**Risk:** Version conflicts if Tailwind CSS updates lightningcss requirement
-→ **Mitigation:** Using semver range allows compatible updates; dependabot will catch conflicts
+**Risk:** Slightly longer install times in CI due to installing all optional dependencies
+→ **Mitigation:** The performance gain from Tailwind v4's Oxide engine far outweighs minimal install time increase
 
-**Risk:** Different binary needed for different platforms
-→ **Mitigation:** npm automatically installs the correct platform-specific optional dependency
+**Risk:** Other CI/CD platforms might behave differently
+→ **Mitigation:** `.npmrc` is a standard npm configuration file respected across all platforms
