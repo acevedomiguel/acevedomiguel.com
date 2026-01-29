@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Header() {
 	return (
-		<header className="text-gray-600 body-font">
+		<header className="text-gray-600 body-font" role="banner">
 			<div className="container mx-auto mt-4 mb-4 text-center">
 				<div className="title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-					<a href="/" title="Return to homepage">
+					<a href="/" title="Return to homepage" aria-label="Return to homepage">
 						<Image
 							src="/signature.svg"
 							className="signature-logo mx-auto"

@@ -40,6 +40,10 @@ export default function Index() {
     <Layout pageType="contact">
       <Head>
         <title>Contact Acevedo Miguel - DevOps & Backend Engineer</title>
+        <meta
+          name="description"
+          content="Contact Acevedo Miguel for DevOps consulting, backend development, or IoT projects. Based in Hong Kong with global experience. Email: me@acevedomiguel.com, Phone: +852 6435-6936. Schedule a 30-minute consultation."
+        />
       </Head>
       <Header />
       <Container>

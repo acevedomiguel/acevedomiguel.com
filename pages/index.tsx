@@ -8,6 +8,10 @@ export default function Index() {
 		<Layout pageType="home">
 			<Head>
 				<title>Acevedo Miguel - Senior DevOps & Backend Engineer</title>
+				<meta
+					name="description"
+					content="Senior DevOps & Backend Engineer with 20+ years of experience in cloud computing, IoT, and infrastructure. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong."
+				/>
 			</Head>
 			<Header />
 			<Container>

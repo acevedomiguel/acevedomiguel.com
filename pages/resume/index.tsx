@@ -12,6 +12,10 @@ export default function Index() {
 				<title>
 					Resume - Acevedo Miguel | 20+ Years DevOps & Backend Experience
 				</title>
+				<meta
+					name="description"
+					content="Comprehensive professional resume of Acevedo Miguel - Senior DevOps Engineer with 20+ years experience in AWS, Kubernetes, IoT, Node.js, Python, and cloud infrastructure. View detailed work history and technical skills."
+				/>
 			</Head>
 			<Header />
 			<Container>
