@@ -1,4 +1,6 @@
 {
+  "_comment": "This project uses global OpenCode configuration from ~/.opencode/config.json",
+  "_note": "Add project-specific overrides below to customize behavior for this project only",
   "workflow": {
     "default": "openspec",
     "autoStart": true,
@@ -19,6 +21,7 @@
   "preferences": {
     "alwaysUseOpenSpec": true,
     "promptOnNewSession": false,
-    "defaultChangeType": "feature"
+    "defaultChangeType": "feature",
+    "useGlobalTemplates": true
   }
 }
