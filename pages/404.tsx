@@ -35,7 +35,7 @@ export default function Custom404() {
 						<div className="grid md:grid-cols-3 gap-6 mb-12">
 							<Link
 								href="/"
-								className="group bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 transition-all hover:shadow-md"
+								className="group bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 transition-all hover:shadow-sm"
 							>
 								<FaHome className="w-8 h-8 text-sky-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
 								<h3 className="font-semibold text-gray-900 mb-2">Homepage</h3>
@@ -46,7 +46,7 @@ export default function Custom404() {
 
 							<Link
 								href="/resume"
-								className="group bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 transition-all hover:shadow-md"
+								className="group bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 transition-all hover:shadow-sm"
 							>
 								<FaFileAlt className="w-8 h-8 text-sky-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
 								<h3 className="font-semibold text-gray-900 mb-2">Resume</h3>
@@ -57,7 +57,7 @@ export default function Custom404() {
 
 							<Link
 								href="/contact"
-								className="group bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 transition-all hover:shadow-md"
+								className="group bg-white hover:bg-gray-50 border border-gray-200 rounded-lg p-6 transition-all hover:shadow-sm"
 							>
 								<FaEnvelope className="w-8 h-8 text-sky-600 mx-auto mb-3 group-hover:scale-110 transition-transform" />
 								<h3 className="font-semibold text-gray-900 mb-2">Contact</h3>

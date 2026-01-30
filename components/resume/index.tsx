@@ -16,10 +16,10 @@ const LoadingSkeleton = () => {
 				<div className="h-6 bg-gray-200 rounded w-48 mb-6"></div>
 				<div className="h-20 bg-gray-200 rounded w-full mb-6"></div>
 				<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-					<div className="h-4 bg-gray-200 rounded"></div>
-					<div className="h-4 bg-gray-200 rounded"></div>
-					<div className="h-4 bg-gray-200 rounded"></div>
-					<div className="h-4 bg-gray-200 rounded"></div>
+					<div className="h-4 bg-gray-200 rounded-sm"></div>
+					<div className="h-4 bg-gray-200 rounded-sm"></div>
+					<div className="h-4 bg-gray-200 rounded-sm"></div>
+					<div className="h-4 bg-gray-200 rounded-sm"></div>
 				</div>
 			</div>
 
