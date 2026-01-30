@@ -53,7 +53,7 @@ The system SHALL provide reliable deployment process to Cloudflare Pages with pr
 The system SHALL ensure Cloudflare Pages deployment serves styles compatible with target modern browsers.
 
 #### Scenario: Modern CSS feature support
-- **WHEN** browsers access the deployed site
+- **WHEN** browsers access deployed site
 - **THEN** all Tailwind v4 CSS features SHALL render correctly on Safari 16.4+, Chrome 111+, Firefox 128+
 - **AND** CSS custom properties SHALL work as expected
 
