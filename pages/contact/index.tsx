@@ -92,7 +92,7 @@ export default function Index() {
                       onClick={() =>
                         copyToClipboard("me@acevedomiguel.com", "email")
                       }
-                      className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded"
+                      className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded-sm"
                       title="Copy email to clipboard"
                       aria-label="Copy email to clipboard"
                     >
@@ -124,7 +124,7 @@ export default function Index() {
                     </div>
                     <button
                       onClick={() => copyToClipboard("+85264356936", "phone")}
-                      className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded"
+                      className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded-sm"
                       title="Copy phone to clipboard"
                       aria-label="Copy phone to clipboard"
                     >
@@ -181,7 +181,7 @@ export default function Index() {
                 Resume Download
               </h2>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 p-6 rounded-sm">
                 <p className="text-gray-600 mb-4">
                   Download my complete professional resume with detailed work
                   experience and technical skills.
