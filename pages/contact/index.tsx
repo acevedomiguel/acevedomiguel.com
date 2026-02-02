@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
 import {
-  FaCalendarDay,
   FaDownload,
   FaEnvelope,
   FaMapMarkerAlt,
@@ -61,7 +60,6 @@ export default function Index() {
             </header>
 
             <section
-              className="grid md:grid-cols-2 gap-8"
               aria-labelledby="contact-methods"
             >
               <div>
@@ -151,26 +149,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <div>
-                <h2 className="text-xl font-semibold mb-4">
-                  Schedule a Meeting
-                </h2>
 
-                <p className="text-gray-600 mb-4">
-                  Book a 30-minute consultation to discuss your project needs.
-                </p>
-
-                <a
-                  href="https://calendly.com/acevedomiguel-bwcw/30-minute-zoom-meeting"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-sky-900 hover:bg-sky-700 text-white px-6 py-3 rounded-lg transition-colors"
-                  title="Schedule a meeting with Acevedo Miguel"
-                >
-                  <FaCalendarDay aria-hidden="true" />
-                  <span>Schedule Meeting</span>
-                </a>
-              </div>
             </section>
 
             <section
