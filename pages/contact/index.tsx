@@ -67,16 +67,18 @@ export default function Index() {
                   Contact Information
                 </h2>
 
-                <div className="space-y-4">
+                <div className="grid md:grid-cols-3 gap-6">
                   <div
-                    className="flex items-center justify-between group"
+                    className="group"
                     itemScope
                     itemType="https://schema.org/ContactPoint"
                   >
-                    <div className="flex items-center space-x-3 flex-1">
-                      <FaEnvelope className="text-sky-600" aria-hidden="true" />
-                      <div className="flex-1">
-                        <span className="text-sm text-gray-500 block">Email</span>
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <FaEnvelope className="text-sky-600" aria-hidden="true" />
+                        <span className="text-sm text-gray-500">Email</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
                         <a
                           href="mailto:me@acevedomiguel.com"
                           className="text-gray-900 hover:text-sky-600 transition-colors"
@@ -84,33 +86,36 @@ export default function Index() {
                         >
                           me@acevedomiguel.com
                         </a>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            copyToClipboard("me@acevedomiguel.com", "email")
+                          }
+                          className="opacity-0 group-hover:opacity-100 transition-opacity p-1 hover:bg-gray-100 rounded-sm"
+                          title="Copy email to clipboard"
+                          aria-label="Copy email to clipboard"
+                        >
+                          {copiedEmail ? (
+                            <FaCheck className="text-green-600 w-3 h-3" />
+                          ) : (
+                            <FaCopy className="text-gray-600 w-3 h-3" />
+                          )}
+                        </button>
                       </div>
                     </div>
-                    <button
-                      onClick={() =>
-                        copyToClipboard("me@acevedomiguel.com", "email")
-                      }
-                      className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded-sm"
-                      title="Copy email to clipboard"
-                      aria-label="Copy email to clipboard"
-                    >
-                      {copiedEmail ? (
-                        <FaCheck className="text-green-600 w-4 h-4" />
-                      ) : (
-                        <FaCopy className="text-gray-600 w-4 h-4" />
-                      )}
-                    </button>
                   </div>
 
                   <div
-                    className="flex items-center justify-between group"
+                    className="group"
                     itemScope
                     itemType="https://schema.org/ContactPoint"
                   >
-                    <div className="flex items-center space-x-3 flex-1">
-                      <FaPhone className="text-sky-600" aria-hidden="true" />
-                      <div className="flex-1">
-                        <span className="text-sm text-gray-500 block">Phone</span>
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <FaPhone className="text-sky-600" aria-hidden="true" />
+                        <span className="text-sm text-gray-500">Phone</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
                         <a
                           href="tel:+85264356936"
                           className="text-gray-900 hover:text-sky-600 transition-colors"
@@ -118,32 +123,35 @@ export default function Index() {
                         >
                           (+852) 6435-6936
                         </a>
+                        <button
+                          type="button"
+                          onClick={() => copyToClipboard("+85264356936", "phone")}
+                          className="opacity-0 group-hover:opacity-100 transition-opacity p-1 hover:bg-gray-100 rounded-sm"
+                          title="Copy phone to clipboard"
+                          aria-label="Copy phone to clipboard"
+                        >
+                          {copiedPhone ? (
+                            <FaCheck className="text-green-600 w-3 h-3" />
+                          ) : (
+                            <FaCopy className="text-gray-600 w-3 h-3" />
+                          )}
+                        </button>
                       </div>
                     </div>
-                    <button
-                      onClick={() => copyToClipboard("+85264356936", "phone")}
-                      className="opacity-0 group-hover:opacity-100 transition-opacity p-2 hover:bg-gray-100 rounded-sm"
-                      title="Copy phone to clipboard"
-                      aria-label="Copy phone to clipboard"
-                    >
-                      {copiedPhone ? (
-                        <FaCheck className="text-green-600 w-4 h-4" />
-                      ) : (
-                        <FaCopy className="text-gray-600 w-4 h-4" />
-                      )}
-                    </button>
                   </div>
 
-                  <div className="flex items-center space-x-3">
-                    <FaMapMarkerAlt
-                      className="text-sky-600"
-                      aria-hidden="true"
-                    />
-                    <div>
-                      <span className="text-sm text-gray-500 block">
-                        Location
-                      </span>
-                      <span className="text-gray-900">Kowloon, Hong Kong</span>
+                  <div>
+                    <div className="flex flex-col space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <FaMapMarkerAlt
+                          className="text-sky-600"
+                          aria-hidden="true"
+                        />
+                        <span className="text-sm text-gray-500">Location</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="text-gray-900">Kowloon, Hong Kong</span>
+                      </div>
                     </div>
                   </div>
                 </div>
