@@ -3,7 +3,7 @@ import Meta from "./meta";
 
 interface LayoutProps {
 	children: React.ReactNode;
-	pageType?: "home" | "resume" | "contact" | "generic";
+	pageType?: "home" | "resume" | "contact" | "generic" | "blog";
 }
 
 export default function Layout({

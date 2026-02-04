@@ -3,7 +3,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next",
-		"build": "next build",
+		"build": "next build && npx tsx scripts/generate-rss.ts",
 		"start": "next start",
 		"lint": "next lint",
 		"postbuild": "next-sitemap",
@@ -11,14 +11,20 @@
 		"test:watch": "jest --watch"
 	},
 	"dependencies": {
+		"fuse.js": "^7.1.0",
+		"gray-matter": "^4.0.3",
 		"next": "^16.1.6",
+		"prism-react-renderer": "^2.4.1",
 		"react": "^19.2.4",
 		"react-dom": "^19.2.4",
-		"react-icons": "^5.5.0"
+		"react-icons": "^5.5.0",
+		"remark": "^15.0.1",
+		"remark-html": "^16.0.1"
 	},
 	"devDependencies": {
 		"@next/bundle-analyzer": "^16.1.6",
 		"@tailwindcss/postcss": "^4.1.18",
+		"@tailwindcss/typography": "^0.5.19",
 		"@testing-library/jest-dom": "^6.9.1",
 		"@testing-library/react": "^16.3.2",
 		"@testing-library/user-event": "^14.6.1",
@@ -37,6 +43,8 @@
 		"schema-dts": "^1.1.5",
 		"sharp": "^0.34.5",
 		"tailwindcss": "^4.1.18",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",
 		"web-vitals": "^5.1.0"
 	}
