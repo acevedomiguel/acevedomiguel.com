@@ -12,7 +12,6 @@ export const Footer = () => {
 	return (
 		<footer className="text-gray-600 body-font" role="contentinfo">
 			<div className="container mx-auto p-5 sm:p-6">
-				<hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 				<div className="text-center mb-3">
 					<nav aria-label="Social media links">
 						<div className="flex justify-center items-center space-x-6">

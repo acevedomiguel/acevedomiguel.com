@@ -42,11 +42,11 @@ export default function Index() {
 								</p>
 
 								<p>
-									I&apos;m currently the <strong>Cloud Lead & IoT</strong> at{" "}
+									I'm currently the <strong>Cloud Lead & IoT</strong> at{" "}
 									<strong>Tensor Energy</strong>, a company that provides smart
 									energy solutions. I enjoy learning from other developers,
 									keeping up with the latest technologies, and making toys and
-									furniture for my family in my spare time. I&apos;m also
+									furniture for my family in my spare time. I'm also
 									interested in the growing market of space and the
 									opportunities it offers for infrastructure, communication,
 									embedded system, security, and reliability.
@@ -74,6 +74,53 @@ export default function Index() {
 									Download PDF
 								</a>
 							</nav>
+
+							<section
+								className="mt-12 pt-8 border-t border-gray-200"
+								aria-labelledby="expertise"
+							>
+								<h2 id="expertise" className="text-xl font-semibold mb-4">
+									Areas of Expertise
+								</h2>
+
+								<div className="grid md:grid-cols-3 gap-6">
+									<div>
+										<h3 className="font-medium text-gray-900 mb-2">
+											DevOps & Infrastructure
+										</h3>
+										<ul className="text-sm text-gray-600 space-y-1">
+											<li>AWS Cloud Architecture</li>
+											<li>Kubernetes & Docker</li>
+											<li>CI/CD Pipelines</li>
+											<li>Infrastructure as Code</li>
+										</ul>
+									</div>
+
+									<div>
+										<h3 className="font-medium text-gray-900 mb-2">
+											Backend Development
+										</h3>
+										<ul className="text-sm text-gray-600 space-y-1">
+											<li>Node.js & TypeScript</li>
+											<li>Python & Go</li>
+											<li>Microservices Architecture</li>
+											<li>API Design & GraphQL</li>
+										</ul>
+									</div>
+
+									<div>
+										<h3 className="font-medium text-gray-900 mb-2">
+											IoT & Integration
+										</h3>
+										<ul className="text-sm text-gray-600 space-y-1">
+											<li>IoT Device Integration</li>
+											<li>MQTT & Message Queues</li>
+											<li>Real-time Data Processing</li>
+											<li>Edge Computing</li>
+										</ul>
+									</div>
+								</div>
+							</section>
 						</header>
 					</article>
 				</main>
