@@ -8,7 +8,7 @@ export interface MetaTag {
 }
 
 export interface SEOManagerProps {
-	pageType: "home" | "resume" | "contact" | "generic";
+	pageType: "home" | "resume" | "contact" | "generic" | "blog";
 	title?: string;
 	description?: string;
 	canonicalUrl?: string;

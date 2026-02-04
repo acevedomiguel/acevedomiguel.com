@@ -5,7 +5,7 @@ import { SEOManager } from "../lib/seo";
 interface MetaProps {
 	description?: string;
 	title?: string;
-	pageType?: "home" | "resume" | "contact" | "generic";
+	pageType?: "home" | "resume" | "contact" | "generic" | "blog";
 }
 
 // Enhanced Meta component with backward compatibility
@@ -130,7 +130,10 @@ export default function Meta({
 			<meta name="apple-mobile-web-app-capable" content="yes" />
 			<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
-		{/* Preload Critical Resources */}
+			{/* RSS Feed */}
+			<link rel="alternate" type="application/rss+xml" title="RSS Feed - Acevedo Miguel Blog" href="/rss.xml" />
+
+			{/* Preload Critical Resources */}
 		<link rel="preload" href="/profile.webp" as="image" type="image/webp" />
 		</Head>
 	);
