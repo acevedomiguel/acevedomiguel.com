@@ -34,3 +34,5 @@ yarn-error.log*
 .vercel
 out
 openspec/changes/archive/
+
+.DS_Store
