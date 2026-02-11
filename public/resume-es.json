@@ -1,311 +1,317 @@
 {
-	"basics": {
-		"name": "Acevedo Miguel",
-		"label": "Ingeniero de Software Senior",
-		"image": "/profile.webp",
-		"email": "me@acevedomiguel.com",
-		"phone": "(+852) 6435-6936",
-		"url": "https://acevedomiguel.com",
-		"summary": "Ingeniero de software senior, con amplia experiencia (más de 20 años) en marketing digital, devops e infraestructura, con curiosidad por el IoT",
-		"location": {
-			"address": "",
-			"postalCode": "00000",
-			"city": "Kowloon",
-			"countryCode": "HK",
-			"region": "Hong Kong"
-		},
-		"profiles": [
-			{
-				"network": "LinkedIn",
-				"username": "acevedomiguel",
-				"url": "https://www.linkedin.com/in/acevedomiguel/"
-			}
-		]
-	},
-	"work": [
-		{
-			"name": "Tensor Energy",
-			"position": "Cloud Lead & IoT",
-			"location": "Japón / Hong Kong",
-			"url": "https://www.tensorenergy.jp/",
-			"startDate": "Ene 2022",
-			"endDate": "Presente",
-			"summary": "",
-			"highlights": [
-				"Definí la arquitectura base y tecnología para la próxima plataforma de energía en Japón.",
-				"Lidero al nuevo personal para seguir buenas prácticas de desarrollo y despliegue",
-				"Programación de servicios de servidor en Typescript (GraphQL) y Golang (Lambda)",
-				"Enfoque serverless en entorno AWS, Lambda, Aurora (Postgres), Step Functions, ECS, Batch",
-				"Infraestructura como código con CDK"
-			],
-			"stack": [
-				"AWS EKS",
-				"AWS Keyspaces",
-				"Kubernetes",
-				"Cassandra",
-				"Redis",
-				"Postgres",
-				"Node.js",
-				"Scala"
-			]
-		},
-		{
-			"name": "Henderson (China) Investment Company Limited",
-			"position": "Devops - Ingeniero de Software Senior",
-			"location": "Hong Kong",
-			"url": "",
-			"startDate": "Feb 2020",
-			"endDate": "Dic 2021",
-			"summary": "",
-			"highlights": [
-				"Arquitectura del sistema de alta disponibilidad, optimización de rendimiento y análisis de librerías para mejor rendimiento",
-				"Diseñé e implementé arquitectura de microservicios en streaming para integración IoT",
-				"Despliegue y mantenimiento de la infraestructura para China Continental y Hong Kong",
-				"Planificación e implementación CI/CD, como DevOps a cargo de definir buenas prácticas en despliegue y estilos de código",
-				"Integración IoT con proveedores de hardware de terceros",
-				"Configuración de Plataforma Kubernetes en AWS (EKS e instalación Bare en EC2)",
-				"Instalación y mantenimiento de aplicaciones de monitoreo (Grafana, Kibana, Elasticsearch, Filebeat), almacenamiento (Redis, Postgres, Cassandra) y mensajería (Kafka, MQTT)"
-			],
-			"stack": [
-				"AWS Lambda",
-				"AWS Aurora",
-				"AWS Step Functions",
-				"AWS ECS",
-				"Github Actions",
-				"CDK",
-				"Postgres",
-				"GoLang",
-				"Go",
-				"Node.js"
-			]
-		},
-		{
-			"name": "Cereb Intelligence",
-			"position": "Ingeniero de Software Remoto y Especialista IoT",
-			"location": "Hong Kong",
-			"url": "",
-			"startDate": "Jun 2018",
-			"endDate": "Oct 2020",
-			"summary": "",
-			"highlights": [
-				"Gestioné y simplifiqué el proceso de construcción y lanzamiento de aplicaciones usando tecnología docker que redujo drásticamente los errores de construcción y tiempo de despliegue",
-				"Planeé la arquitectura para infraestructura de servicios escalable y de alta disponibilidad con AWS EKS, Kafka y Node.js",
-				"Integración de hardware IoT, autor y mantenedor de varios servicios backend integrando API de terceros (Lifesmart, Softhard.io, Salto Access, SMS gateway, Dingtalk, Telegram Bot, Slack Bot)",
-				"Mejoré y mantuve la infraestructura a través de monitoreo y reportes",
-				"Mejoré el costo y velocidad CI/CD migrando de Bitbucket Pipelines a Jenkins alojado",
-				"Soporte remoto para más de 1000 dispositivos conectados"
-			],
-			"stack": []
-		},
-		{
-			"name": "Urban Spring",
-			"position": "Ingeniero de Software Senior",
-			"location": "Hong Kong",
-			"url": "",
-			"startDate": "Feb 2019",
-			"endDate": "Nov 2019",
-			"summary": "",
-			"highlights": [
-				"Contribuí a las especificaciones de datos IoT (mensajes MQTT y DB Schema)",
-				"Programé la herramienta para el aprovisionamiento de dispositivos a AWS IoT Core (Things, Certs, Policies y Shadow) usando Python",
-				"Infraestructura como código, despliegue Kubernetes con terraform en AWS",
-				"Brindé mentoría a desarrolladores junior",
-				"Revisión de código de firmware de desarrolladores de terceros (C - C++) para STM32"
-			],
-			"stack": []
-		},
-		{
-			"name": "LYNK",
-			"position": "Arquitecto de Producto",
-			"location": "Hong Kong",
-			"url": "",
-			"startDate": "Nov 2016",
-			"endDate": "Ene 2018",
-			"summary": "",
-			"highlights": [
-				"Mentoreé y guié a miembros junior y nuevos del equipo de desarrollo",
-				"Implementé Scrum para mejorar la producción del equipo, gestionando desarrolladores y recursos, estableciendo buenas prácticas de software",
-				"Modifiqué sistemas actuales, escribiendo y probando código",
-				"Diseñé y creé aplicaciones web optimizadas en HTML5, CSS y WebRTC para apoyar las necesidades comerciales de la empresa que incluyen una aplicación tipo Skype para consultas entre expertos y clientes",
-				"Trabajé de forma independiente y en equipo en colaboración con otros departamentos para establecer sus necesidades para sus objetivos comerciales",
-				"Contribuyendo al desarrollo comercial general con reuniones regulares con la gerencia, y alineando objetivos con el CTO y CEO"
-			],
-			"stack": []
-		},
-		{
-			"name": "Kaizen Interactive",
-			"position": "CTO y Co-Fundador",
-			"location": "Argentina - México",
-			"url": "",
-			"startDate": "Ene 2009",
-			"endDate": "Dic 2015",
-			"summary": "",
-			"highlights": [
-				"Creé una plataforma Social CRM original que sirve como interfaz para el uso de aplicaciones de clientes, demografía de usuarios y reportes",
-				"Gestioné todas las etapas de la creación de aplicaciones promocionales para clientes, desde el diseño y arquitectura inicial hasta el desarrollo, despliegue y gestión. Completé un total de 40 proyectos, sirviendo a más de 200.000 usuarios en línea",
-				"Trabajé directamente con clientes en diferentes países, Argentina, México, Chile, España y Francia",
-				"Ayudé a crear e implementar nuevas ideas para formas de hacer crecer el negocio y generar ingresos",
-				"Gestioné tareas de proyectos, cronogramas y comunicación con varios desarrolladores y diseñadores freelance",
-				"Demostré la capacidad de trabajar diligentemente bajo presión para cumplir con los plazos"
-			],
-			"stack": []
-		},
-		{
-			"name": "Gravity Makers",
-			"position": "Programador Móvil Remoto",
-			"location": "Argentina",
-			"url": "",
-			"startDate": "Ene 2012",
-			"endDate": "Dic 2012",
-			"summary": "",
-			"highlights": [
-				"Capacitado en Symbian y Qt",
-				"Diseñado para y probado aplicaciones móviles, en múltiples dispositivos",
-				"Adaptado exitosamente y prosperado en un entorno de trabajo acelerado con objetivos cambiantes rápidamente"
-			],
-			"stack": []
-		},
-		{
-			"name": "United Virtualities",
-			"position": "Líder de Equipo y Experto en ActionScript",
-			"location": "Argentina",
-			"url": "",
-			"startDate": "May 2007",
-			"endDate": "Feb 2009",
-			"summary": "",
-			"highlights": [
-				"Serví exitosamente como líder de proyecto de tres desarrolladores",
-				"Responsable de la gestión general del proyecto web desde el desarrollo hasta la ejecución y mantenimiento"
-			],
-			"stack": []
-		},
-		{
-			"name": "E-volution",
-			"position": "Líder de Equipo y Programador ActionScript",
-			"location": "Argentina",
-			"url": "",
-			"startDate": "Ago 2004",
-			"endDate": "May 2007",
-			"summary": "",
-			"highlights": [
-				"Capacité y supervisé a múltiples miembros del equipo para nueva tecnología de llegada",
-				"Trabajé con los gerentes de programa en el diseño de la arquitectura del sitio, interfaces de usuario y la apariencia general de las aplicaciones",
-				"Creé el juego \"The bubble machine\" que ganó un \"Diente de Oro 2005\" por innovación al ser un juego jugable con la cámara web",
-				"Desarrollé y localicé varios juegos en línea principalmente para Disney Latinoamérica",
-				"Creé interactividad usando Flash, ActionScript y JavaScript"
-			],
-			"stack": []
-		},
-		{
-			"name": "Marketing Plus",
-			"position": "Programador y Administrador de Servidores",
-			"location": "Argentina",
-			"url": "",
-			"startDate": "May 2003",
-			"endDate": "Ago 2004",
-			"summary": "",
-			"highlights": [
-				"Desarrollé un simulador de juego de carreras de caballos usando datos reales, integrando el juego con el sistema interno del hipódromo en Buenos Aires",
-				"Creé Sitios Web Dinámicos que eran fáciles de usar, efectivos y atractivos para más de 12 clientes",
-				"Gestioné varios servidores web en producción y desarrollo"
-			],
-			"stack": []
-		},
-		{
-			"name": "Gauchito",
-			"position": "Pasante Desarrollador Web",
-			"location": "Argentina",
-			"url": "",
-			"startDate": "Nov 2001",
-			"endDate": "May 2003",
-			"summary": "",
-			"highlights": [
-				"Adquirí una familiarización profunda con CNC y electrónica",
-				"Creé aplicaciones UI web personalizadas para gestión de productos y stock, basadas en las necesidades y funcionalidad del departamento",
-				"Configuré el e-commerce y sistema de cotización en línea"
-			],
-			"stack": []
-		}
-	],
-	"volunteer": [],
-	"certifications": [],
-	"awards": [],
-	"publications": [],
-	"skills": [
-		{
-			"name": "Cloud",
-			"level": "",
-			"keywords": [
-				"Kubernetes",
-				"Bitbucket",
-				"GitHub",
-				"Github Actions",
-				"AWS Code Commit",
-				"Jenkins",
-				"AWS Code Build",
-				"Bitbucket",
-				"Bitbucket Pipelines",
-				"Docker",
-				"Docker Compose",
-				"AWS OpenSearch",
-				"AWS Lambda",
-				"AWS Amplify",
-				"AWS Appsync",
-				"AWS EKS",
-				"AWS IoT Core",
-				"APOLLO",
-				"Grafana",
-				"Loki"
-			]
-		},
-		{
-			"name": "Backend",
-			"level": "",
-			"keywords": ["Node.js", "Typescript", "Python", "PHP", "Go"]
-		},
-		{
-			"name": "Event Driven",
-			"level": "",
-			"keywords": [
-				"MQTT",
-				"RabbitMQ",
-				"AMQ",
-				"Kafka",
-				"AWS IoT Core",
-				"AWS MSK",
-				"AWS Kinesis",
-				"AWS SQS",
-				"NATS"
-			]
-		},
-		{
-			"name": "Electronics",
-			"level": "",
-			"keywords": [
-				"Arduino",
-				"PLC",
-				"ESP32",
-				"ESP8266",
-				"Micro Bit",
-				"Raspberry Pi"
-			]
-		}
-	],
-	"languages": [
-		{
-			"language": "Español",
-			"fluency": "Nativo"
-		},
-		{
-			"language": "English",
-			"fluency": "Fluido"
-		},
-		{
-			"language": "日本語",
-			"fluency": "Básico - N5"
-		}
-	],
-	"interests": [],
-	"references": [],
-	"projects": []
+  "basics": {
+    "name": "Acevedo Miguel",
+    "label": "Ingeniero de Software Senior",
+    "image": "/profile.webp",
+    "email": "me@acevedomiguel.com",
+    "phone": "(+852) 6435-6936",
+    "url": "https://acevedomiguel.com",
+    "summary": "Ingeniero de software senior, con amplia experiencia (más de 20 años) en marketing digital, devops e infraestructura, con curiosidad por el IoT",
+    "location": {
+      "address": "",
+      "postalCode": "00000",
+      "city": "Kowloon",
+      "countryCode": "HK",
+      "region": "Hong Kong"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "acevedomiguel",
+        "url": "https://www.linkedin.com/in/acevedomiguel/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Tensor Energy",
+      "position": "Cloud Lead & IoT",
+      "location": "Hong Kong",
+      "url": "https://www.tensorenergy.jp/",
+      "startDate": "Ene 2022",
+      "endDate": "Presente",
+      "summary": "",
+      "highlights": [
+        "Definí la arquitectura base y tecnología para la próxima plataforma de energía en Japón.",
+        "Lidero al nuevo personal para seguir buenas prácticas de desarrollo y despliegue",
+        "Programación de servicios de servidor en Typescript (GraphQL) y Golang (Lambda)",
+        "Enfoque serverless en entorno AWS, Lambda, Aurora (Postgres), Step Functions, ECS, Batch",
+        "Infraestructura como código con CDK"
+      ],
+      "stack": [
+        "AWS EKS",
+        "AWS Keyspaces",
+        "Kubernetes",
+        "Cassandra",
+        "Redis",
+        "Postgres",
+        "Node.js",
+        "Scala"
+      ]
+    },
+    {
+      "name": "Henderson (China) Investment Company Limited",
+      "position": "Devops - Ingeniero de Software Senior",
+      "location": "Hong Kong",
+      "url": "",
+      "startDate": "Feb 2020",
+      "endDate": "Dic 2021",
+      "summary": "",
+      "highlights": [
+        "Arquitectura del sistema de alta disponibilidad, optimización de rendimiento y análisis de librerías para mejor rendimiento",
+        "Diseñé e implementé arquitectura de microservicios en streaming para integración IoT",
+        "Despliegue y mantenimiento de la infraestructura para China Continental y Hong Kong",
+        "Planificación e implementación CI/CD, como DevOps a cargo de definir buenas prácticas en despliegue y estilos de código",
+        "Integración IoT con proveedores de hardware de terceros",
+        "Configuración de Plataforma Kubernetes en AWS (EKS e instalación Bare en EC2)",
+        "Instalación y mantenimiento de aplicaciones de monitoreo (Grafana, Kibana, Elasticsearch, Filebeat), almacenamiento (Redis, Postgres, Cassandra) y mensajería (Kafka, MQTT)"
+      ],
+      "stack": [
+        "AWS Lambda",
+        "AWS Aurora",
+        "AWS Step Functions",
+        "AWS ECS",
+        "Github Actions",
+        "CDK",
+        "Postgres",
+        "GoLang",
+        "Go",
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Cereb Intelligence",
+      "position": "Ingeniero de Software Remoto y Especialista IoT",
+      "location": "Hong Kong",
+      "url": "",
+      "startDate": "Jun 2018",
+      "endDate": "Oct 2020",
+      "summary": "",
+      "highlights": [
+        "Gestioné y simplifiqué el proceso de construcción y lanzamiento de aplicaciones usando tecnología docker que redujo drásticamente los errores de construcción y tiempo de despliegue",
+        "Planeé la arquitectura para infraestructura de servicios escalable y de alta disponibilidad con AWS EKS, Kafka y Node.js",
+        "Integración de hardware IoT, autor y mantenedor de varios servicios backend integrando API de terceros (Lifesmart, Softhard.io, Salto Access, SMS gateway, Dingtalk, Telegram Bot, Slack Bot)",
+        "Mejoré y mantuve la infraestructura a través de monitoreo y reportes",
+        "Mejoré el costo y velocidad CI/CD migrando de Bitbucket Pipelines a Jenkins alojado",
+        "Soporte remoto para más de 1000 dispositivos conectados"
+      ],
+      "stack": []
+    },
+    {
+      "name": "Urban Spring",
+      "position": "Ingeniero de Software Senior",
+      "location": "Hong Kong",
+      "url": "",
+      "startDate": "Feb 2019",
+      "endDate": "Nov 2019",
+      "summary": "",
+      "highlights": [
+        "Contribuí a las especificaciones de datos IoT (mensajes MQTT y DB Schema)",
+        "Programé la herramienta para el aprovisionamiento de dispositivos a AWS IoT Core (Things, Certs, Policies y Shadow) usando Python",
+        "Infraestructura como código, despliegue Kubernetes con terraform en AWS",
+        "Brindé mentoría a desarrolladores junior",
+        "Revisión de código de firmware de desarrolladores de terceros (C - C++) para STM32"
+      ],
+      "stack": []
+    },
+    {
+      "name": "LYNK",
+      "position": "Arquitecto de Producto",
+      "location": "Hong Kong",
+      "url": "",
+      "startDate": "Nov 2016",
+      "endDate": "Ene 2018",
+      "summary": "",
+      "highlights": [
+        "Mentoreé y guié a miembros junior y nuevos del equipo de desarrollo",
+        "Implementé Scrum para mejorar la producción del equipo, gestionando desarrolladores y recursos, estableciendo buenas prácticas de software",
+        "Modifiqué sistemas actuales, escribiendo y probando código",
+        "Diseñé y creé aplicaciones web optimizadas en HTML5, CSS y WebRTC para apoyar las necesidades comerciales de la empresa que incluyen una aplicación tipo Skype para consultas entre expertos y clientes",
+        "Trabajé de forma independiente y en equipo en colaboración con otros departamentos para establecer sus necesidades para sus objetivos comerciales",
+        "Contribuyendo al desarrollo comercial general con reuniones regulares con la gerencia, y alineando objetivos con el CTO y CEO"
+      ],
+      "stack": []
+    },
+    {
+      "name": "Kaizen Interactive",
+      "position": "CTO y Co-Fundador",
+      "location": "Argentina - México",
+      "url": "",
+      "startDate": "Ene 2009",
+      "endDate": "Dic 2015",
+      "summary": "",
+      "highlights": [
+        "Creé una plataforma Social CRM original que sirve como interfaz para el uso de aplicaciones de clientes, demografía de usuarios y reportes",
+        "Gestioné todas las etapas de la creación de aplicaciones promocionales para clientes, desde el diseño y arquitectura inicial hasta el desarrollo, despliegue y gestión. Completé un total de 40 proyectos, sirviendo a más de 200.000 usuarios en línea",
+        "Trabajé directamente con clientes en diferentes países, Argentina, México, Chile, España y Francia",
+        "Ayudé a crear e implementar nuevas ideas para formas de hacer crecer el negocio y generar ingresos",
+        "Gestioné tareas de proyectos, cronogramas y comunicación con varios desarrolladores y diseñadores freelance",
+        "Demostré la capacidad de trabajar diligentemente bajo presión para cumplir con los plazos"
+      ],
+      "stack": []
+    },
+    {
+      "name": "Gravity Makers",
+      "position": "Programador Móvil Remoto",
+      "location": "Argentina",
+      "url": "",
+      "startDate": "Ene 2012",
+      "endDate": "Dic 2012",
+      "summary": "",
+      "highlights": [
+        "Capacitado en Symbian y Qt",
+        "Diseñado para y probado aplicaciones móviles, en múltiples dispositivos",
+        "Adaptado exitosamente y prosperado en un entorno de trabajo acelerado con objetivos cambiantes rápidamente"
+      ],
+      "stack": []
+    },
+    {
+      "name": "United Virtualities",
+      "position": "Líder de Equipo y Experto en ActionScript",
+      "location": "Argentina",
+      "url": "",
+      "startDate": "May 2007",
+      "endDate": "Feb 2009",
+      "summary": "",
+      "highlights": [
+        "Serví exitosamente como líder de proyecto de tres desarrolladores",
+        "Responsable de la gestión general del proyecto web desde el desarrollo hasta la ejecución y mantenimiento"
+      ],
+      "stack": []
+    },
+    {
+      "name": "E-volution",
+      "position": "Líder de Equipo y Programador ActionScript",
+      "location": "Argentina",
+      "url": "",
+      "startDate": "Ago 2004",
+      "endDate": "May 2007",
+      "summary": "",
+      "highlights": [
+        "Capacité y supervisé a múltiples miembros del equipo para nueva tecnología de llegada",
+        "Trabajé con los gerentes de programa en el diseño de la arquitectura del sitio, interfaces de usuario y la apariencia general de las aplicaciones",
+        "Creé el juego \"The bubble machine\" que ganó un \"Diente de Oro 2005\" por innovación al ser un juego jugable con la cámara web",
+        "Desarrollé y localicé varios juegos en línea principalmente para Disney Latinoamérica",
+        "Creé interactividad usando Flash, ActionScript y JavaScript"
+      ],
+      "stack": []
+    },
+    {
+      "name": "Marketing Plus",
+      "position": "Programador y Administrador de Servidores",
+      "location": "Argentina",
+      "url": "",
+      "startDate": "May 2003",
+      "endDate": "Ago 2004",
+      "summary": "",
+      "highlights": [
+        "Desarrollé un simulador de juego de carreras de caballos usando datos reales, integrando el juego con el sistema interno del hipódromo en Buenos Aires",
+        "Creé Sitios Web Dinámicos que eran fáciles de usar, efectivos y atractivos para más de 12 clientes",
+        "Gestioné varios servidores web en producción y desarrollo"
+      ],
+      "stack": []
+    },
+    {
+      "name": "Gauchito",
+      "position": "Pasante Desarrollador Web",
+      "location": "Argentina",
+      "url": "",
+      "startDate": "Nov 2001",
+      "endDate": "May 2003",
+      "summary": "",
+      "highlights": [
+        "Adquirí una familiarización profunda con CNC y electrónica",
+        "Creé aplicaciones UI web personalizadas para gestión de productos y stock, basadas en las necesidades y funcionalidad del departamento",
+        "Configuré el e-commerce y sistema de cotización en línea"
+      ],
+      "stack": []
+    }
+  ],
+  "volunteer": [],
+  "certifications": [],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Cloud",
+      "level": "",
+      "keywords": [
+        "Kubernetes",
+        "Bitbucket",
+        "GitHub",
+        "Github Actions",
+        "AWS Code Commit",
+        "Jenkins",
+        "AWS Code Build",
+        "Bitbucket",
+        "Bitbucket Pipelines",
+        "Docker",
+        "Docker Compose",
+        "AWS OpenSearch",
+        "AWS Lambda",
+        "AWS Amplify",
+        "AWS Appsync",
+        "AWS EKS",
+        "AWS IoT Core",
+        "APOLLO",
+        "Grafana",
+        "Loki"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "",
+      "keywords": [
+        "Node.js",
+        "Typescript",
+        "Python",
+        "PHP",
+        "Go"
+      ]
+    },
+    {
+      "name": "Event Driven",
+      "level": "",
+      "keywords": [
+        "MQTT",
+        "RabbitMQ",
+        "AMQ",
+        "Kafka",
+        "AWS IoT Core",
+        "AWS MSK",
+        "AWS Kinesis",
+        "AWS SQS",
+        "NATS"
+      ]
+    },
+    {
+      "name": "Electronics",
+      "level": "",
+      "keywords": [
+        "Arduino",
+        "PLC",
+        "ESP32",
+        "ESP8266",
+        "Micro Bit",
+        "Raspberry Pi"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluido"
+    },
+    {
+      "language": "日本語",
+      "fluency": "Básico - N5"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
 }
