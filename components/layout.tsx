@@ -4,11 +4,13 @@ import Meta from "./meta";
 interface LayoutProps {
 	children: React.ReactNode;
 	pageType?: "home" | "resume" | "contact" | "generic";
+	showFooter?: boolean;
 }
 
 export default function Layout({
 	children,
 	pageType = "generic",
+	showFooter = true,
 }: LayoutProps) {
 	return (
 		<>
@@ -22,7 +24,7 @@ export default function Layout({
 			<div>
 				<main>{children}</main>
 			</div>
-			<Footer />
+			{showFooter && <Footer />}
 		</>
 	);
 }

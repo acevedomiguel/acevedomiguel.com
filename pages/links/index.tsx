@@ -52,7 +52,7 @@ const links = [
 
 export default function LinksPage() {
 	return (
-		<Layout pageType="generic">
+		<Layout pageType="generic" showFooter={false}>
 			<Head>
 				<title>Links | Miguel Angel Acevedo</title>
 				<meta
