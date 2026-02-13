@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Breadcrumbs from "../../../components/Breadcrumbs";
 import Container from "../../../components/container";
-import Header from "../../../components/header";
 import Layout from "../../../components/layout";
 import ResumeES from "../../../components/resume/index-es";
 
@@ -17,7 +16,6 @@ export default function Index() {
 					content="Currículum profesional completo de Acevedo Miguel - Ingeniero Senior DevOps con más de 20 años de experiencia en AWS, Kubernetes, IoT, Node.js, Python e infraestructura en la nube. Ver historial laboral detallado y habilidades técnicas."
 				/>
 			</Head>
-			<Header />
 			<Container>
 				<Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />
 				<main id="main-content">

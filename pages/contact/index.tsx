@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Container from "../../components/container";
-import Header from "../../components/header";
 import Layout from "../../components/layout";
 
 export default function Index() {
@@ -43,9 +42,8 @@ export default function Index() {
           name="description"
           content="Contact Acevedo Miguel for DevOps consulting, backend development, or IoT projects. Based in Hong Kong with global experience. Email: me@acevedomiguel.com, Phone: +852 6435-6936. Schedule a 30-minute consultation."
         />
-      </Head>
-      <Header />
-      <Container>
+			</Head>
+			<Container>
         <Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />
         <main role="main" id="main-content">
           <article className="max-w-3xl mx-auto py-8">
