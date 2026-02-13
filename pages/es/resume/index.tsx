@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Breadcrumbs from "../../../components/Breadcrumbs";
 import Container from "../../../components/container";
 import Layout from "../../../components/layout";
 import ResumeES from "../../../components/resume/index-es";
@@ -17,8 +16,7 @@ export default function Index() {
 				/>
 			</Head>
 			<Container>
-				<Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />
-				<main id="main-content">
+				<main id="main-content" className="pt-4">
 					<article>
 						<header className="max-w-3xl mx-auto px-6 mb-6">
 							<h1 className="sr-only">Currículum Profesional - Acevedo Miguel</h1>
