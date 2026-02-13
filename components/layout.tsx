@@ -1,14 +1,19 @@
 import Footer from "./footer";
 import Meta from "./meta";
+import Nav from "./nav";
 
 interface LayoutProps {
 	children: React.ReactNode;
 	pageType?: "home" | "resume" | "contact" | "generic";
+	showFooter?: boolean;
+	showNav?: boolean;
 }
 
 export default function Layout({
 	children,
 	pageType = "generic",
+	showFooter = true,
+	showNav = true,
 }: LayoutProps) {
 	return (
 		<>
@@ -19,10 +24,11 @@ export default function Layout({
 			>
 				Skip to main content
 			</a>
+			{showNav && <Nav />}
 			<div>
 				<main>{children}</main>
 			</div>
-			<Footer />
+			{showFooter && <Footer />}
 		</>
 	);
 }

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import { FaHome, FaFileAlt, FaEnvelope } from "react-icons/fa";
-import Header from "../components/header";
 import Container from "../components/container";
 import Layout from "../components/layout";
 
@@ -15,7 +14,6 @@ export default function Custom404() {
 					content="The page you're looking for doesn't exist. Navigate back to the homepage or explore other sections."
 				/>
 			</Head>
-			<Header />
 			<Container>
 				<main id="main-content" className="max-w-3xl mx-auto py-16 px-6">
 					<div className="text-center">

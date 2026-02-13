@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import Layout from "../../components/layout";
-import Container from "../../components/container";
+import Layout from "../../../components/layout";
+import Container from "../../../components/container";
 import {
 	FaGithub,
 	FaInstagram,
@@ -16,48 +16,48 @@ const links = [
 		name: "LinkedIn",
 		href: "https://www.linkedin.com/in/acevedomiguel/",
 		icon: FaLinkedin,
-		ariaLabel: "Visit LinkedIn profile",
+		ariaLabel: "Visitar perfil de LinkedIn",
 	},
 	{
 		name: "GitHub",
 		href: "https://github.com/acevedomiguel",
 		icon: FaGithub,
-		ariaLabel: "Visit GitHub profile",
+		ariaLabel: "Visitar perfil de GitHub",
 	},
 	{
 		name: "Stack Overflow",
 		href: "https://stackoverflow.com/users/599036/miguel-angel-acevedo",
 		icon: FaStackOverflow,
-		ariaLabel: "Visit Stack Overflow profile",
+		ariaLabel: "Visitar perfil de Stack Overflow",
 	},
 	{
 		name: "Buy Me a Coffee",
 		href: "https://www.buymeacoffee.com/acevedomiguel",
 		icon: SiBuymeacoffee,
-		ariaLabel: "Support on Buy Me a Coffee",
+		ariaLabel: "Apoyar en Buy Me a Coffee",
 	},
 	{
 		name: "Instagram",
 		href: "https://www.instagram.com/acevedomiguel/",
 		icon: FaInstagram,
-		ariaLabel: "Visit Instagram profile",
+		ariaLabel: "Visitar perfil de Instagram",
 	},
 	{
-		name: "Website",
+		name: "Sitio Web",
 		href: "https://acevedomiguel.com",
 		icon: CgWebsite,
-		ariaLabel: "Visit my website",
+		ariaLabel: "Visitar mi sitio web",
 	},
 ];
 
-export default function LinksPage() {
+export default function LinksPageES() {
 	return (
 		<Layout pageType="generic" showFooter={false}>
 			<Head>
-				<title>Links | Miguel Angel Acevedo</title>
+				<title>Enlaces | Miguel Angel Acevedo</title>
 				<meta
 					name="description"
-					content="Connect with Miguel Angel Acevedo - Software Engineer with 20+ years of experience in IoT and DevOps. Find all social media and professional links in one place."
+					content="Conecta con Miguel Angel Acevedo - Ingeniero de Software con más de 20 años de experiencia en IoT y DevOps. Encuentra todos los enlaces de redes sociales y profesionales en un solo lugar."
 				/>
 			</Head>
 			<Container>
@@ -78,12 +78,12 @@ export default function LinksPage() {
 								Miguel Angel Acevedo
 							</h1>
 							<p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-								I'm a software engineer with a passion for IoT and DevOps. I have over 20 years of experience in the field. I love creating innovative solutions that use connected devices and cloud computing. In my free time, I enjoy woodworking and playing with my kids.
+								Soy un ingeniero de software con pasión por IoT y DevOps. Tengo más de 20 años de experiencia en el campo. Me encanta crear soluciones innovadoras que utilizan dispositivos conectados y computación en la nube. En mi tiempo libre, disfruto de la carpintería y jugar con mis hijos.
 							</p>
 						</div>
 
 						{/* Links Section */}
-						<nav aria-label="Social media and professional links">
+						<nav aria-label="Enlaces de redes sociales y profesionales">
 							<div className="space-y-3">
 								{links.map((link) => {
 									const Icon = link.icon;

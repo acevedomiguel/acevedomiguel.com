@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Container from "../components/container";
-import Header from "../components/header";
 import Layout from "../components/layout";
 
 export default function Sitemap() {
@@ -35,7 +34,6 @@ export default function Sitemap() {
 					content="Complete site map for acevedomiguel.com - navigate to all pages including resume, contact, and professional information."
 				/>
 			</Head>
-			<Header />
 			<Container>
 				<Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />
 				<main role="main" id="main-content">

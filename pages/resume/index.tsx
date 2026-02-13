@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Breadcrumbs from "../../components/Breadcrumbs";
 import Container from "../../components/container";
-import Header from "../../components/header";
 import Layout from "../../components/layout";
 import Resume from "../../components/resume";
 
@@ -17,10 +15,8 @@ export default function Index() {
 					content="Comprehensive professional resume of Acevedo Miguel - Senior DevOps Engineer with 20+ years experience in AWS, Kubernetes, IoT, Node.js, Python, and cloud infrastructure. View detailed work history and technical skills."
 				/>
 			</Head>
-			<Header />
 			<Container>
-				<Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />
-				<main id="main-content">
+				<main id="main-content" className="pt-4">
 					<article>
 						<header className="max-w-3xl mx-auto px-6 mb-6">
 							<h1 className="sr-only">Professional Resume - Acevedo Miguel</h1>

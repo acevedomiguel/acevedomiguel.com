@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Container from "../components/container";
-import Header from "../components/header";
 import Layout from "../components/layout";
 
 export default function Index() {
@@ -13,7 +12,6 @@ export default function Index() {
 					content="Senior DevOps & Backend Engineer with 20+ years of experience in cloud computing, IoT, and infrastructure. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong."
 				/>
 			</Head>
-			<Header />
 			<Container>
 				<main id="main-content">
 					<article className="m-auto py-4 max-w-3xl text-md">
