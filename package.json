@@ -17,7 +17,7 @@
 		"react-icons": "^5.6.0"
 	},
 	"devDependencies": {
-		"@next/bundle-analyzer": "^16.2.0",
+		"@next/bundle-analyzer": "^16.2.1",
 		"@tailwindcss/postcss": "^4.2.2",
 		"@testing-library/jest-dom": "^6.9.1",
 		"@testing-library/react": "^16.3.2",
@@ -27,17 +27,17 @@
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"autoprefixer": "^10.4.27",
-		"eslint": "^10.0.3",
-		"eslint-config-next": "^16.2.0",
+		"eslint": "^10.1.0",
+		"eslint-config-next": "^16.2.1",
 		"fast-check": "^4.6.0",
 		"jest": "^30.3.0",
 		"jest-environment-jsdom": "^30.3.0",
 		"next-sitemap": "^4.2.3",
 		"postcss": "^8.5.8",
-		"schema-dts": "^1.1.5",
+		"schema-dts": "^2.0.0",
 		"sharp": "^0.34.5",
 		"tailwindcss": "^4.1.18",
-		"typescript": "^5.9.3",
-		"web-vitals": "^5.1.0"
+		"typescript": "^6.0.2",
+		"web-vitals": "^5.2.0"
 	}
 }
