@@ -1,58 +1,134 @@
-# Personal online resume for acevedomiguel.com
+# acevedomiguel.com
+
+Personal portfolio and resume website.
 
 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/s6ya.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 
-Static website made with [next.js](https://nextjs.org/) and [tailwindcss v4](https://tailwindcss.com/) (CSS-first configuration).
+## Overview
 
-Structure:
-* Homepage with links
-    * resume
-    * twitter
-    * github
-    * instagram
-    * buy me a coffee
-    * linkedin
-* Resume page + resume download
-* _[soon] Blog_
-* _[soon] Projects_
+A static, fast, and SEO-friendly personal site built with [Next.js](https://nextjs.org/) and [Tailwind CSS v4](https://tailwindcss.com/). It serves as an online resume and contact hub, hosted on [Cloudflare Pages](https://pages.cloudflare.com/).
 
-## Installing
+## Pages & Features
+
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage with bio, expertise grid, and navigation |
+| `/resume/` | Professional resume with PDF/ODT/DOCX download options |
+| `/contact/` | Contact page |
+| `/links/` | Social link hub (LinkedIn, GitHub, Twitter/X, Instagram, Buy Me a Coffee) |
+| `/es/` | Spanish localized homepage |
+| `/es/resume/` | Spanish resume |
+| `/es/links/` | Spanish links page |
+| `/sitemap` | Custom sitemap page |
+
+- **SEO Optimized:** Auto-generated `sitemap.xml` and `robots.txt` via `next-sitemap`, semantic HTML, and structured data support.
+- **Internationalization:** Spanish language variants under `/es/`.
+- **Performance:** Bundle analyzer available via `ANALYZE=true`, static HTML export for maximum speed.
+
+## Architecture
+
+| Technology | Purpose |
+|------------|---------|
+| [Next.js 16](https://nextjs.org/) | React framework using the **Pages Router** |
+| [React 19](https://react.dev/) | UI library |
+| [Tailwind CSS v4](https://tailwindcss.com/) | Utility-first CSS with CSS-first configuration |
+| [TypeScript](https://www.typescriptlang.org/) | Type safety |
+| [Jest](https://jestjs.io/) + [Testing Library](https://testing-library.com/) | Unit and component testing |
+| [next-sitemap](https://www.npmjs.com/package/next-sitemap) | Sitemap and robots.txt generation |
+
+### Build Configuration
+
+The site is configured for **static export** (`next.config.js`):
+
+```js
+{
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true }
+}
 ```
+
+This generates a fully static site in the `./out` directory, suitable for static hosting.
+
+## Deployment
+
+**Platform:** [Cloudflare Pages](https://pages.cloudflare.com/)  
+**Method:** Native Git integration (connects directly to this GitHub repository). Pushes to the production branch trigger automatic builds and deployments.
+
+The `next-sitemap` configuration automatically detects Cloudflare Pages preview deployments using `CF_PAGES_COMMIT_SHA` and `CF_PAGES_PROJECT_NAME` environment variables.
+
+**Live URL:** [https://acevedomiguel.com](https://acevedomiguel.com)
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- npm (comes with Node.js)
+
+### Install
+
+```bash
 git clone https://github.com/acevedomiguel/acevedomiguel.com.git
 cd acevedomiguel.com
-npm i
+npm install
 ```
 
-## Dev server
-```
+### Development
+
+Run the local development server:
+
+```bash
 npm run dev
 ```
 
-## Build
-```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build
+
+Generate a production static export:
+
+```bash
 npm run build
 ```
 
-## Deploy
-Using github actions `.github/workflows/*.yml`
+The static site will be output to the `./out` directory.
 
+### Testing
 
-/*
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-*/
+Run the test suite:
+
+```bash
+npm test
+```
+
+Run tests in watch mode during development:
+
+```bash
+npm run test:watch
+```
+
+### Linting
+
+Check code style and quality:
+
+```bash
+npm run lint
+```
+
+## Directory Structure
+
+```
+├── components/         # React components (layout, nav, footer, resume, etc.)
+├── lib/                # Utilities (SEO helpers, web-vitals, data fetching)
+├── pages/              # Next.js Pages Router
+├── public/             # Static assets (icons, images, resume.pdf, resume.json)
+├── styles/             # Global CSS (Tailwind v4 CSS-first config)
+├── out/                # Static export output directory
+├── .github/workflows/  # CI workflows (CodeQL security scanning)
+└── types/              # TypeScript type definitions
+```
+
+## License
+
+This is a personal project. All rights reserved.
