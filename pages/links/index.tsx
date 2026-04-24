@@ -57,7 +57,7 @@ export default function LinksPage() {
 				<title>Links | Miguel Angel Acevedo</title>
 				<meta
 					name="description"
-					content="Connect with Miguel Angel Acevedo - Software Engineer with 20+ years of experience in IoT and DevOps. Find all social media and professional links in one place."
+					content="Connect with Miguel Angel Acevedo - Cloud Architect and DevOps Engineer with 20+ years of experience in serverless infrastructure, IoT, and cloud computing. Find all social media and professional links in one place."
 				/>
 			</Head>
 			<Container>
@@ -78,7 +78,7 @@ export default function LinksPage() {
 								Miguel Angel Acevedo
 							</h1>
 							<p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-								I'm a software engineer with a passion for IoT and DevOps. I have over 20 years of experience in the field. I love creating innovative solutions that use connected devices and cloud computing. In my free time, I enjoy woodworking and playing with my kids.
+								I'm a Cloud Architect and DevOps Engineer with a passion for IoT and serverless infrastructure. I have over 20 years of experience designing high-availability systems across APAC. I love creating innovative solutions using connected devices, AWS, and cloud computing. In my free time, I enjoy woodworking and playing with my kids.
 							</p>
 						</div>
 

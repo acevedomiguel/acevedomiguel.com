@@ -6,10 +6,10 @@ export default function Index() {
 	return (
 		<Layout pageType="home">
 			<Head>
-				<title>Acevedo Miguel - Senior DevOps & Backend Engineer</title>
+				<title>Acevedo Miguel - Cloud Architect & DevOps Engineer</title>
 				<meta
 					name="description"
-					content="Senior DevOps & Backend Engineer with 20+ years of experience in cloud computing, IoT, and infrastructure. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong."
+					content="Cloud Architect and DevOps Engineer with 20+ years of experience designing serverless, high-availability infrastructure across APAC. Delivering IoT solutions for the Japan energy market. Based in Hong Kong."
 				/>
 			</Head>
 			<Container>
@@ -18,13 +18,14 @@ export default function Index() {
 						<header className="p-4 sm:p-6 items-center justify-center">
 							<section className="mb-6" aria-labelledby="intro-heading">
 								<h1 id="intro-heading" className="sr-only">
-									About Acevedo Miguel - Senior DevOps & Backend Engineer
+									About Acevedo Miguel - Cloud Architect & DevOps Engineer
 								</h1>
 
 								<p className="mb-3">
 									Hi, I&apos;m <strong>Acevedo Miguel</strong>, a{" "}
-									<strong>DevOps and Backend Engineer</strong> with over 20
-									years of coding experience.
+									<strong>Cloud Architect and DevOps Engineer</strong> with over 20
+									years of experience designing serverless, high-availability
+									infrastructure across APAC.
 								</p>
 
 								<p className="mb-3">
@@ -36,18 +37,18 @@ export default function Index() {
 										Things), and cloud computing
 									</strong>{" "}
 									for various clients and projects across Latin America and
-									Asia.{" "}
+									Asia. I specialize in AWS serverless architectures (Lambda, EKS),
+									Kubernetes, and AWS IoT Core.
 								</p>
 
 								<p>
-									I'm currently the <strong>Cloud Lead & IoT</strong> at{" "}
-									<strong>Tensor Energy</strong>, a company that provides smart
-									energy solutions. I enjoy learning from other developers,
-									keeping up with the latest technologies, and making toys and
-									furniture for my family in my spare time. I'm also
-									interested in the growing market of space and the
-									opportunities it offers for infrastructure, communication,
-									embedded system, security, and reliability.
+									I'm currently the <strong>Cloud Architect & Serverless Lead</strong>{" "}
+									at <strong>Tensor Energy</strong>, a company that provides smart
+									energy solutions for the Japan market. Based in Hong Kong (GMT+8),
+									I enjoy collaborating with teams across Singapore, Australia, and
+									Japan. I also enjoy learning from other developers, keeping up with
+									the latest technologies, and making toys and furniture for my family
+									in my spare time.
 								</p>
 							</section>
 

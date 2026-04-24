@@ -63,8 +63,8 @@ describe("PersonalInfo Component", () => {
 		// Check email
 		expect(screen.getByText("john.doe@example.com")).toBeInTheDocument();
 
-		// Check location (shows city)
-		expect(screen.getByText("San Francisco")).toBeInTheDocument();
+		// Check location (shows region)
+		expect(screen.getByText("CA")).toBeInTheDocument();
 
 		// Check phone
 		expect(screen.getByText("+1 (555) 123-4567")).toBeInTheDocument();
@@ -99,7 +99,7 @@ describe("PersonalInfo Component", () => {
 
 		// Should still render other contact information
 		expect(screen.getByText("john.doe@example.com")).toBeInTheDocument();
-		expect(screen.getByText("San Francisco")).toBeInTheDocument();
+		expect(screen.getByText("CA")).toBeInTheDocument();
 
 		// LinkedIn should not be present
 		expect(
