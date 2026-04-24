@@ -64,8 +64,11 @@ async function generatePDF() {
 	await page.waitForSelector("[data-print-ready='true']", { timeout: 10000 });
 
 	// Generate PDF
+	const outPdfPath = path.join(OUT_DIR, "resume.pdf");
+	const publicPdfPath = path.join(__dirname, "..", "public", "resume.pdf");
+
 	await page.pdf({
-		path: path.join(OUT_DIR, "resume.pdf"),
+		path: outPdfPath,
 		format: "A4",
 		printBackground: true,
 		margin: {
@@ -76,7 +79,10 @@ async function generatePDF() {
 		},
 	});
 
-	console.log(`Generated out/resume.pdf`);
+	// Also copy to public/ so it works in dev mode
+	fs.copyFileSync(outPdfPath, publicPdfPath);
+
+	console.log(`Generated out/resume.pdf and public/resume.pdf`);
 
 	await browser.close();
 	await new Promise((resolve) => server.close(resolve));
