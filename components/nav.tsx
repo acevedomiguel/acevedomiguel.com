@@ -18,9 +18,6 @@ export default function Nav() {
 				</div>
 
 				<nav className="md:py-1 md:px-4 items-center text-base" aria-label="Main navigation">
-					<a href="/" className="mx-3 md:mx-6 hover:text-gray-700 text-sm py-2 px-3" aria-label="Navigate to home page">
-						home
-					</a>
 					<a href="/resume" className="mx-3 md:mx-6 hover:text-black text-sm py-2 px-3" aria-label="Navigate to resume page">
 						resume
 					</a>
