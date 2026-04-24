@@ -9,7 +9,7 @@ export default function Nav() {
 						<Image
 							src="/signature.svg"
 							className="signature-logo mx-auto"
-							alt="Acevedo Miguel - Senior DevOps & Backend Engineer"
+							alt="Acevedo Miguel - Cloud Architect & DevOps Engineer"
 							title="acevedo miguel"
 							width={300}
 							height={80}

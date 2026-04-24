@@ -9,7 +9,7 @@ export default function Sitemap() {
 			title: "Home",
 			url: "/",
 			description:
-				"Learn about Acevedo Miguel, Senior DevOps & Backend Engineer with 20+ years experience",
+				"Learn about Acevedo Miguel, Cloud Architect & DevOps Engineer with 20+ years experience",
 		},
 		{
 			title: "Resume",
