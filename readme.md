@@ -16,13 +16,9 @@ A static, fast, and SEO-friendly personal site built with [Next.js](https://next
 | `/resume/` | Professional resume with PDF/ODT/DOCX download options |
 | `/contact/` | Contact page |
 | `/links/` | Social link hub (LinkedIn, GitHub, Twitter/X, Instagram, Buy Me a Coffee) |
-| `/es/` | Spanish localized homepage |
-| `/es/resume/` | Spanish resume |
-| `/es/links/` | Spanish links page |
 | `/sitemap` | Custom sitemap page |
 
 - **SEO Optimized:** Auto-generated `sitemap.xml` and `robots.txt` via `next-sitemap`, semantic HTML, and structured data support.
-- **Internationalization:** Spanish language variants under `/es/`.
 - **Performance:** Bundle analyzer available via `ANALYZE=true`, static HTML export for maximum speed.
 
 ## Architecture

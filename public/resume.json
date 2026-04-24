@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Acevedo Miguel",
-    "label": "Senior Software Engineer",
+    "label": "Cloud Architect & DevOps Engineer",
     "image": "/profile.webp",
     "email": "me@acevedomiguel.com",
     "phone": "(+852) 6435-6936",
     "url": "https://acevedomiguel.com",
-    "summary": "Senior software engineer, with extensive experience (over 20 years) in digital marketing, devops and infrastructure, with curiosity about IoT",
+    "summary": "Cloud Architect and DevOps Engineer with 20+ years of experience designing serverless, high-availability infrastructure across APAC. Proven track record leading distributed technical teams and delivering IoT solutions for the Japan energy market. Deep expertise in AWS serverless architectures (Lambda, EKS), Kubernetes, and AWS IoT Core. Based in Hong Kong (GMT+8) with extensive experience collaborating with teams across Singapore, Australia, and Japan. Fluent in English and Spanish; conversational Japanese (JLPT N5).",
     "location": {
       "address": "",
       "postalCode": "00000",
@@ -32,51 +32,53 @@
       "endDate": "Present",
       "summary": "",
       "highlights": [
-        "Defined the base architecture and tech for the next energy platform in Japan.",
-        "Lead new staff to follow good development and deployment practices",
-        "Coding server services in Typescript (GraphQL) and Golang (Lambda)",
-        "Serve-less approach in AWS environment, Lambda, Aurora (Postgres), Steps Functions, ECS, Batch",
-        "Code as infrastructure with CDK"
+        "Architected the next-generation energy platform for the Japan market, defining the serverless base architecture and tech stack",
+        "Led distributed technical teams across APAC, establishing development and deployment best practices",
+        "Built serverless backend services in TypeScript (GraphQL) and Go (Lambda), leveraging Aurora Postgres, Step Functions, ECS, and Batch",
+        "Delivered infrastructure cost optimization through AWS serverless and EKS architectures",
+        "Managed infrastructure-as-code with AWS CDK"
       ],
       "stack": [
+        "AWS Lambda",
+        "AWS CDK",
         "AWS EKS",
-        "AWS Keyspaces",
-        "Kubernetes",
-        "Cassandra",
-        "Redis",
-        "Postgres",
-        "Node.js",
-        "Scala"
+        "AWS Step Functions",
+        "AWS ECS",
+        "AWS Batch",
+        "Aurora Postgres",
+        "TypeScript",
+        "Go",
+        "Node.js"
       ]
     },
     {
       "name": "Henderson (China) Investment Company Limited",
-      "position": "Devops - Senior Software Engineer",
+      "position": "DevOps - Senior Software Engineer",
       "location": "Hong Kong",
       "url": "",
       "startDate": "Feb 2020",
       "endDate": "Dec 2021",
       "summary": "",
       "highlights": [
-        "Architecture the high availability system, performance optimization, and library analysis for better performance",
-        "Designed and implemented stream micro service architecture for the IoT integration",
-        "Deployment and maintenance the infrastructure for Mainland China and Hong Kong",
-        "CI/CD planning and implementation, as a DevOps in charge of defining good practices in deployment and coding styles",
-        "IoT integration with 3rd party hardware providers",
-        "Setting up Kubernetes Platform on AWS (EKS and Bare installation on EC2)",
-        "Installation and maintenance of monitoring application (Grafana, Kibana, Elasticsearch, Filebeat), storage (Redis, Postgres, Cassandra) and messaging (Kafka, MQTT)"
+        "Architected high-availability systems for China and Hong Kong, driving performance optimization and cost-efficient library selection",
+        "Designed streaming microservice architecture for IoT integration, including AWS IoT Core device provisioning and management",
+        "Owned CI/CD strategy and DevOps best practices, reducing deployment risk across mainland China and Hong Kong",
+        "Integrated IoT hardware with 3rd-party providers, supporting large-scale device fleets",
+        "Deployed and managed Kubernetes platforms on AWS (EKS and bare-metal EC2)",
+        "Maintained observability stack (Grafana, Kibana, Elasticsearch, Filebeat), storage (Redis, Postgres, Cassandra), and messaging (Kafka, MQTT)"
       ],
       "stack": [
+        "AWS EKS",
         "AWS Lambda",
-        "AWS Aurora",
-        "AWS Step Functions",
-        "AWS ECS",
-        "Github Actions",
-        "CDK",
+        "AWS IoT Core",
+        "Kubernetes",
+        "Kafka",
+        "MQTT",
+        "Redis",
         "Postgres",
-        "GoLang",
-        "Go",
-        "Node.js"
+        "Cassandra",
+        "Grafana",
+        "Elasticsearch"
       ]
     },
     {
@@ -88,14 +90,21 @@
       "endDate": "Oct 2020",
       "summary": "",
       "highlights": [
-        "Managed and simplified the applications build and release process by using docker technology which drastically reduced build errors and deployment time",
-        "Planned the architecture for scalable and high availability services infrastructure with AWS EKS, Kafka and Node.js",
-        "IoT hardware integration, authored and maintained several backend service integrating 3rd party API (Lifesmart, Softhard.io, Salto Access, SMS gateway, Dingtalk, Telegram Bot, Slack Bot)",
-        "Enhanced and maintained the infrastructure through monitoring and reporting",
-        "Improved the CI/CD cost and speed migrating from Bitbucket Pipelines to hosted Jenkins",
-        "Remote support for the more than 1000 devices connected"
+        "Cut deployment cycles by ~40% and eliminated recurring build errors by migrating to Docker-based build and release processes",
+        "Planned scalable, high-availability infrastructure on AWS EKS, Kafka, and Node.js",
+        "Authored and maintained backend services integrating 3rd-party APIs (Lifesmart, Softhard.io, Salto Access, SMS gateway, Dingtalk, Telegram Bot, Slack Bot)",
+        "Enhanced infrastructure observability through monitoring and reporting dashboards",
+        "Reduced CI/CD spend and improved pipeline speed by migrating from Bitbucket Pipelines to self-hosted Jenkins",
+        "Provided remote support for 1000+ connected devices across APAC"
       ],
-      "stack": []
+      "stack": [
+        "AWS EKS",
+        "Kafka",
+        "Node.js",
+        "Docker",
+        "Jenkins",
+        "IoT Hardware Integration"
+      ]
     },
     {
       "name": "Urban Spring",
@@ -106,13 +115,20 @@
       "endDate": "Nov 2019",
       "summary": "",
       "highlights": [
-        "Contribute to the IoT data specifications (MQTT messages and DB Schema)",
-        "Coded the tool for device provisioning to AWS IoT Core (Things,Certs, Policies and Shadow) using Python",
-        "Infrastructure as code, Kubernetes deployment with terraform in AWS",
-        "Provided mentoring to junior developers",
-        "Firmware code review from 3rd party developers (C - C++) for STM32"
+        "IoT Specialist — defined MQTT data specifications and DB schema for connected device fleet",
+        "Built Python-based automation for AWS IoT Core device provisioning (Things, Certificates, Policies, Shadow)",
+        "Deployed infrastructure-as-code with Terraform and Kubernetes on AWS",
+        "Mentored junior developers in a distributed team environment",
+        "Performed firmware code review (C/C++) for STM32 from 3rd-party vendors"
       ],
-      "stack": []
+      "stack": [
+        "AWS IoT Core",
+        "Python",
+        "Terraform",
+        "Kubernetes",
+        "MQTT",
+        "STM32"
+      ]
     },
     {
       "name": "LYNK",
@@ -123,10 +139,10 @@
       "endDate": "Jan 2018",
       "summary": "",
       "highlights": [
-        "Mentored and guided junior and new members of the development team",
-        "Implemented Scrum to improve the team output, managing developers and resources, establishing good software practices",
+        "Led and mentored junior and new developers in a distributed team setting",
+        "Implemented Scrum to improve team output, managing developers and resources while establishing good software practices",
         "Modified current systems, writing and testing code",
-        "Design and create optimised web applications in HTML5, CSS and WebRTC to support company' s business needs which includes a Skype-like application for experts and clients consultations",
+        "Designed and created optimised web applications in HTML5, CSS and WebRTC to support company' s business needs which includes a Skype-like application for experts and clients consultations",
         "Worked independently and as team in collaboration with other departments in establishing their needs for their business goals",
         "Contributing to overall business development with regular meetings with management, and aligning goals with the CTO and CEO"
       ],
@@ -233,40 +249,52 @@
   "publications": [],
   "skills": [
     {
-      "name": "Cloud",
+      "name": "IoT",
       "level": "",
       "keywords": [
-        "Kubernetes",
-        "Bitbucket",
-        "GitHub",
-        "Github Actions",
-        "AWS Code Commit",
-        "Jenkins",
-        "AWS Code Build",
-        "Bitbucket",
-        "Bitbucket Pipelines",
-        "Docker",
-        "Docker Compose",
-        "AWS OpenSearch",
-        "AWS Lambda",
-        "AWS Amplify",
-        "AWS Appsync",
-        "AWS EKS",
         "AWS IoT Core",
-        "APOLLO",
-        "Grafana",
-        "Loki"
+        "IoT Device Provisioning",
+        "MQTT",
+        "ESP32",
+        "Raspberry Pi",
+        "Firmware Review"
       ]
     },
     {
       "name": "Backend",
       "level": "",
       "keywords": [
-        "Node.js",
-        "Typescript",
+        "TypeScript",
+        "Go",
         "Python",
+        "Node.js",
         "PHP",
-        "Go"
+        "GraphQL"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "level": "",
+      "keywords": [
+        "AWS Lambda",
+        "AWS EKS",
+        "AWS CDK",
+        "AWS ECS",
+        "AWS Step Functions",
+        "Kubernetes",
+        "Docker",
+        "Docker Compose",
+        "GitHub Actions",
+        "Jenkins",
+        "AWS OpenSearch",
+        "AWS Amplify",
+        "AWS AppSync",
+        "Grafana",
+        "Loki",
+        "Bitbucket",
+        "Bitbucket Pipelines",
+        "AWS CodeCommit",
+        "AWS CodeBuild"
       ]
     },
     {
@@ -308,7 +336,7 @@
     },
     {
       "language": "日本語",
-      "fluency": "Basic - N5"
+      "fluency": "Basic - JLPT N5"
     }
   ],
   "interests": [],
