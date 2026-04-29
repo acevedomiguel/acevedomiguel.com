@@ -7,10 +7,6 @@ export default function Index() {
 		<Layout pageType="home">
 			<Head>
 				<title>Acevedo Miguel - Cloud Architect & DevOps Engineer</title>
-				<meta
-					name="description"
-					content="Cloud Architect and DevOps Engineer with 20+ years of experience designing serverless, high-availability infrastructure across APAC. Delivering IoT solutions for the Japan energy market. Based in Hong Kong."
-				/>
 			</Head>
 			<Container>
 				<main id="main-content">
