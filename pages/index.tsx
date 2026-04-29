@@ -45,8 +45,8 @@ export default function Index() {
 									I'm currently the <strong>Cloud Architect & Serverless Lead</strong>{" "}
 									at <strong>Tensor Energy</strong>, a company that provides smart
 									energy solutions for the Japan market. Based in Hong Kong (GMT+8),
-									I enjoy collaborating with teams across Singapore, Australia, and
-									Japan. I also enjoy learning from other developers, keeping up with
+									I enjoy collaborating with teams across Singapore, US, Europe, and Japan. 
+                  I also enjoy learning from other developers, keeping up with
 									the latest technologies, and making toys and furniture for my family
 									in my spare time.
 								</p>
