@@ -72,6 +72,13 @@ export default function Index() {
 								>
 									Download PDF
 								</a>
+								<a
+									href="/contact"
+									className="bg-gray-100 hover:bg-gray-200 text-sky-900 text-sm py-3 px-6 rounded-full transition-colors"
+									title="Contact me for consulting and opportunities"
+								>
+									Contact Me
+								</a>
 							</nav>
 
 							<section

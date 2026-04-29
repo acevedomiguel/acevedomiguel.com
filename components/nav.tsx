@@ -21,6 +21,9 @@ export default function Nav() {
 					<a href="/resume" className="mx-3 md:mx-6 hover:text-black text-sm py-2 px-3" aria-label="Navigate to resume page">
 						resume
 					</a>
+					<a href="/contact" className="mx-3 md:mx-6 hover:text-black text-sm py-2 px-3" aria-label="Navigate to contact page">
+						contact
+					</a>
 					<a href="/links" className="mx-3 md:mx-6 hover:text-black text-sm py-2 px-3" aria-label="Navigate to links page">
 						links
 					</a>
