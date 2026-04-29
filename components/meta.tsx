@@ -16,13 +16,15 @@ export default function Meta({
 }: MetaProps) {
 	const router = useRouter();
 	const seoManager = new SEOManager();
+	const normalizedPathname = router.asPath.split(/[?#]/)[0] || "/";
+	const canonicalUrl = `https://acevedomiguel.com${normalizedPathname}`;
 
 	// Generate basic SEO data for backward compatibility
 	const seoResult = seoManager.generatePageSEO({
 		pageType,
 		title,
 		description,
-		canonicalUrl: `https://acevedomiguel.com${router.asPath}`,
+		canonicalUrl,
 	});
 
 	return (

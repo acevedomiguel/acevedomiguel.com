@@ -11,7 +11,7 @@ const siteUrl = previewUrl || "https://acevedomiguel.com";
 
 module.exports = {
 	siteUrl,
-	generateRobotsTxt: true,
+	generateRobotsTxt: false,
 	outDir: "out",
 	sitemapSize: 7000,
 	changefreq: "monthly",
