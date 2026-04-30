@@ -2,7 +2,7 @@
 
 Personal portfolio and resume website.
 
-[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/s6ya.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+[Better Stack Badge](https://uptime.betterstack.com/?utm_source=status_badge)
 
 ## Overview
 
@@ -10,27 +10,31 @@ A static, fast, and SEO-friendly personal site built with [Next.js](https://next
 
 ## Pages & Features
 
-| Route | Description |
-|-------|-------------|
-| `/` | Homepage with bio, expertise grid, and navigation |
-| `/resume/` | Professional resume with PDF/ODT/DOCX download options |
-| `/contact/` | Contact page |
-| `/links/` | Social link hub (LinkedIn, GitHub, Twitter/X, Instagram, Buy Me a Coffee) |
-| `/sitemap` | Custom sitemap page |
+
+| Route       | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
+| `/`         | Homepage with bio, expertise grid, and navigation                         |
+| `/resume/`  | Professional resume with PDF/ODT/DOCX download options                    |
+| `/contact/` | Contact page                                                              |
+| `/links/`   | Social link hub (LinkedIn, GitHub, Twitter/X, Instagram, Buy Me a Coffee) |
+| `/sitemap`  | Custom sitemap page                                                       |
+
 
 - **SEO Optimized:** Auto-generated `sitemap.xml` and `robots.txt` via `next-sitemap`, semantic HTML, and structured data support.
 - **Performance:** Bundle analyzer available via `ANALYZE=true`, static HTML export for maximum speed.
 
 ## Architecture
 
-| Technology | Purpose |
-|------------|---------|
-| [Next.js 16](https://nextjs.org/) | React framework using the **Pages Router** |
-| [React 19](https://react.dev/) | UI library |
-| [Tailwind CSS v4](https://tailwindcss.com/) | Utility-first CSS with CSS-first configuration |
-| [TypeScript](https://www.typescriptlang.org/) | Type safety |
-| [Jest](https://jestjs.io/) + [Testing Library](https://testing-library.com/) | Unit and component testing |
-| [next-sitemap](https://www.npmjs.com/package/next-sitemap) | Sitemap and robots.txt generation |
+
+| Technology                                                                   | Purpose                                        |
+| ---------------------------------------------------------------------------- | ---------------------------------------------- |
+| [Next.js 16](https://nextjs.org/)                                            | React framework using the **Pages Router**     |
+| [React 19](https://react.dev/)                                               | UI library                                     |
+| [Tailwind CSS v4](https://tailwindcss.com/)                                  | Utility-first CSS with CSS-first configuration |
+| [TypeScript](https://www.typescriptlang.org/)                                | Type safety                                    |
+| [Jest](https://jestjs.io/) + [Testing Library](https://testing-library.com/) | Unit and component testing                     |
+| [next-sitemap](https://www.npmjs.com/package/next-sitemap)                   | Sitemap and robots.txt generation              |
+
 
 ### Build Configuration
 
