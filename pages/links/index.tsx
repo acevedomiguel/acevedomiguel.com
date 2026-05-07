@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import Container from "../../components/container";
 import {
 	FaGithub,
+	FaGitlab,
 	FaInstagram,
 	FaLinkedin,
 	FaStackOverflow,
@@ -23,6 +24,12 @@ const links = [
 		href: "https://github.com/acevedomiguel",
 		icon: FaGithub,
 		ariaLabel: "Visit GitHub profile",
+	},
+	{
+		name: "GitLab",
+		href: "https://gitlab.com/acevedomiguel/",
+		icon: FaGitlab,
+		ariaLabel: "Visit GitLab profile",
 	},
 	{
 		name: "Stack Overflow",

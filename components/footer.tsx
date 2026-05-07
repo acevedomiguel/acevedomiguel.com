@@ -1,5 +1,6 @@
 import {
 	FaGithub,
+	FaGitlab,
 	FaInstagram,
 	FaLinkedin,
 	FaMastodon,
@@ -34,6 +35,16 @@ export const Footer = () => {
 							>
 								<FaGithub className="react-icons" aria-hidden="true" />
 								<span className="sr-only">GitHub</span>
+							</a>
+							<a
+								href="https://gitlab.com/acevedomiguel/"
+								className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+								aria-label="Visit GitLab profile"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FaGitlab className="react-icons" aria-hidden="true" />
+								<span className="sr-only">GitLab</span>
 							</a>
 							<a
 								href="https://stackoverflow.com/users/599036/miguel-angel-acevedo"
