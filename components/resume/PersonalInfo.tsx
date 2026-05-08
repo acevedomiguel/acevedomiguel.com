@@ -1,9 +1,7 @@
 import Link from "next/link";
 import type React from "react";
-import { BsPhone } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
-import { FaEnvelope, FaLinkedin } from "react-icons/fa";
-import { ImLocation } from "react-icons/im";
+import { FaEnvelope, FaLinkedin, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import type { ResumeData } from "../../types/resumedata";
 
 interface PersonalInfoProps {
@@ -33,8 +31,9 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 			<p className="mb-8">{basics.summary}</p>
 
 			{/* Contact Information */}
+			<h2 className="contact-info-heading mb-4">Contact Information</h2>
 			<address className="mb-4 not-italic">
-				<div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 resume-meta resume-ui">
+				<div className="contact-info-grid grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
 					{/* Email */}
 					{basics.email && (
 						<div className="flex items-center">
@@ -51,12 +50,12 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 					{/* Phone */}
 					{basics.phone && (
 						<div className="flex items-center">
-							<BsPhone className="inline mr-2 text-gray-600" />
+							<FaPhone className="inline mr-2 text-gray-600" />
 							<a
 								href={`tel:${basics.phone}`}
 								className="text-gray-700 hover:text-gray-900 hover:underline"
 							>
-								{basics.phone}
+								(+852) 6435-6936
 							</a>
 						</div>
 					)}
@@ -64,7 +63,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 					{/* Location */}
 					{basics.location?.region && (
 						<div className="flex items-center">
-							<ImLocation className="inline mr-2 text-gray-600" />
+							<FaMapMarkerAlt className="inline mr-2 text-gray-600" />
 							<span>{basics.location.region}</span>
 						</div>
 					)}
@@ -90,7 +89,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 								href={basics.profiles[0].url}
 								className="text-gray-700 hover:text-gray-900 hover:underline"
 							>
-								{basics.profiles[0].username}
+								acevedomiguel
 							</Link>
 						</div>
 					)}

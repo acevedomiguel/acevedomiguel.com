@@ -11,21 +11,21 @@ export default function Index() {
 			</Head>
 			<Container>
 				<main id="main-content">
-					<article className="m-auto py-4 max-w-3xl text-md">
-						<header className="p-4 sm:p-6 items-center justify-center">
+					<article className="editorial-page m-auto py-4 sm:py-6 max-w-3xl px-4 sm:px-6">
+						<header className="items-center justify-center">
 							<section className="mb-6" aria-labelledby="intro-heading">
 								<h1 id="intro-heading" className="sr-only">
 									About Acevedo Miguel - Cloud Architect & DevOps Engineer
 								</h1>
 
-								<p className="mb-3">
+								<p className="mb-4">
 									Hi, I&apos;m <strong>Acevedo Miguel</strong>, a{" "}
 									<strong>Cloud Architect and DevOps Engineer</strong> with over 20
 									years of experience designing serverless, high-availability
 									infrastructure across APAC.
 								</p>
 
-								<p className="mb-3">
+								<p className="mb-4">
 									I started as an intern in high school, and since then, I have
 									been exploring different languages and paradigms in this
 									never-stopping industry. I have worked in{" "}
@@ -38,7 +38,7 @@ export default function Index() {
 									Kubernetes, and AWS IoT Core.
 								</p>
 
-								<p>
+								<p className="mb-2">
 									I'm currently the <strong>Cloud Architect & Serverless Lead</strong>{" "}
 									at <strong>Tensor Energy</strong>, a company that provides smart
 									energy solutions for the Japan market. Based in Hong Kong (GMT+8),
@@ -50,12 +50,12 @@ export default function Index() {
 							</section>
 
 							<nav
-								className="justify-center flex pt-4 space-x-4"
+								className="justify-center flex flex-col sm:flex-row pt-5 gap-3 sm:gap-4 editorial-ui"
 								aria-label="Quick navigation"
 							>
 								<a
 									href="/resume"
-									className="bg-sky-900 hover:bg-sky-700 text-white text-sm py-3 px-6 rounded-full transition-colors"
+									className="editorial-button-primary bg-sky-900 hover:bg-sky-700 text-white text-sm py-3 px-6 rounded-full transition-colors text-center"
 									title="View my complete professional resume"
 								>
 									View Resume
@@ -64,14 +64,14 @@ export default function Index() {
 								<a
 									href="/resume.pdf"
 									download="Acevedo_Miguel_Resume.pdf"
-									className="bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors"
+									className="bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors text-center"
 									title="Download PDF resume"
 								>
 									Download PDF
 								</a>
 								<a
 									href="/contact"
-									className="bg-gray-100 hover:bg-gray-200 text-sky-900 text-sm py-3 px-6 rounded-full transition-colors"
+									className="bg-gray-100 hover:bg-gray-200 text-sky-900 text-sm py-3 px-6 rounded-full transition-colors text-center"
 									title="Contact me for consulting and opportunities"
 								>
 									Contact Me
@@ -79,7 +79,7 @@ export default function Index() {
 							</nav>
 
 							<section
-								className="mt-12 pt-8 border-t border-gray-200"
+								className="mt-10 sm:mt-12 pt-8 border-t border-gray-200"
 								aria-labelledby="expertise"
 							>
 								<AreaExpertise />

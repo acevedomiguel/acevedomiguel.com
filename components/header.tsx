@@ -8,11 +8,13 @@ export default function Header() {
 					<a href="/" title="Return to homepage" aria-label="Return to homepage">
 						<Image
 							src="/signature.svg"
-							className="signature-logo mx-auto"
+							className="mx-auto"
+							style={{ width: "300px", maxWidth: "100%", height: "auto" }}
 							alt="Acevedo Miguel - Senior DevOps & Backend Engineer"
 							title="Acevedo Miguel"
 							width={300}
 							height={80}
+							loading="eager"
 							priority
 						/>
 					</a>

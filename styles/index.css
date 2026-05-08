@@ -80,6 +80,90 @@ body {
 	color: #6b7280;
 }
 
+.editorial-page {
+	font-family: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+	color: #1f2937;
+}
+
+.editorial-page h1,
+.editorial-page h2,
+.editorial-page h3,
+.editorial-page .editorial-ui {
+	font-family: "Avenir Next", Avenir, "Segoe UI", Inter, sans-serif;
+	letter-spacing: 0.01em;
+}
+
+.editorial-page p,
+.editorial-page li {
+	font-size: clamp(1rem, 0.97rem + 0.2vw, 1.1rem);
+	line-height: 1.8;
+}
+
+.editorial-page .expertise-list li {
+	font-size: 0.96rem;
+	line-height: 1.6;
+}
+
+.editorial-page a {
+	color: #1e3a8a;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.16em;
+}
+
+.editorial-page a:hover {
+	color: #1d4ed8;
+}
+
+.editorial-page a.editorial-button-primary,
+.editorial-page a.editorial-button-primary:hover {
+	color: #ffffff;
+}
+
+.editorial-page a.bg-sky-900,
+.editorial-page a.bg-sky-900:hover,
+.editorial-page a.bg-sky-700,
+.editorial-page a.bg-sky-700:hover,
+.resume-page a.bg-sky-900,
+.resume-page a.bg-sky-900:hover,
+.resume-page a.bg-sky-700,
+.resume-page a.bg-sky-700:hover {
+	color: #ffffff;
+}
+
+.editorial-card {
+	border: 1px solid #e5e7eb;
+	border-radius: 9999px;
+	background: #fff;
+}
+
+.contact-info-heading {
+	font-family: "Avenir Next", Avenir, "Segoe UI", Inter, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	line-height: 1.3;
+	color: #111827;
+}
+
+.contact-info-grid {
+	font-family: "Avenir Next", Avenir, "Segoe UI", Inter, sans-serif;
+	font-size: 0.85rem;
+	line-height: 1.45;
+	color: #6b7280;
+	letter-spacing: 0.01em;
+}
+
+.contact-info-grid a {
+	color: #374151;
+	text-decoration: none;
+}
+
+.contact-info-grid a:hover {
+	color: #111827;
+	text-decoration: underline;
+}
+
+
 /* Global focus styles for accessibility */
 a:focus-visible,
 button:focus-visible,
@@ -112,10 +196,6 @@ select:focus-visible {
 
 .linktree-github {
 	background-color: #181717;
-}
-
-.linktree-buymeacoffee {
-	background-color: #f2d200;
 }
 
 .linktree-instagram {
@@ -156,6 +236,3 @@ select:focus-visible {
 }
 */
 
-.signature-logo {
-	max-width: 300px;
-}

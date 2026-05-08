@@ -3,31 +3,21 @@ import Image from "next/image";
 export default function Nav() {
 	return (
 		<header className="text-gray-600 body-font">
-			<div className="container mx-auto mt-4 mb-4 text-center">
-				<div className="title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+			<div className="container mx-auto mt-6 mb-8 px-4 sm:px-6 text-center">
+				<div className="title-font font-medium items-center text-gray-900">
 					<a href="/" title="Return to homepage" aria-label="Return to homepage">
 						<Image
 							src="/signature.svg"
-							className="signature-logo mx-auto"
+							className="mx-auto"
+							style={{ width: "360px", maxWidth: "100%", height: "auto" }}
 							alt="Acevedo Miguel - Cloud Architect & DevOps Engineer"
 							title="acevedo miguel"
-							width={300}
-							height={80}
+							width={360}
+							height={96}
+							loading="eager"
 						/>
 					</a>
 				</div>
-
-				<nav className="md:py-1 md:px-4 items-center text-base" aria-label="Main navigation">
-					<a href="/resume" className="mx-3 md:mx-6 hover:text-black text-sm py-2 px-3" aria-label="Navigate to resume page">
-						resume
-					</a>
-					<a href="/contact" className="mx-3 md:mx-6 hover:text-black text-sm py-2 px-3" aria-label="Navigate to contact page">
-						contact
-					</a>
-					<a href="/links" className="mx-3 md:mx-6 hover:text-black text-sm py-2 px-3" aria-label="Navigate to links page">
-						links
-					</a>
-				</nav>
 			</div>
 		</header>
 	);

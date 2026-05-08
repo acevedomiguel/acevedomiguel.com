@@ -10,7 +10,6 @@ import {
 	FaStackOverflow,
 } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
-import { SiBuymeacoffee } from "react-icons/si";
 
 const links = [
 	{
@@ -38,12 +37,6 @@ const links = [
 		ariaLabel: "Visit Stack Overflow profile",
 	},
 	{
-		name: "Buy Me a Coffee",
-		href: "https://www.buymeacoffee.com/acevedomiguel",
-		icon: SiBuymeacoffee,
-		ariaLabel: "Support on Buy Me a Coffee",
-	},
-	{
 		name: "Instagram",
 		href: "https://www.instagram.com/acevedomiguel/",
 		icon: FaInstagram,
@@ -61,37 +54,39 @@ export default function LinksPage() {
 	return (
 		<Layout pageType="generic" showFooter={false}>
 			<Head>
-				<title>Links | Miguel Angel Acevedo</title>
+				<title>Links | Acevedo Miguel</title>
 				<meta
 					name="description"
-					content="Connect with Miguel Angel Acevedo - Cloud Architect and DevOps Engineer with 20+ years of experience in serverless infrastructure, IoT, and cloud computing. Find all social media and professional links in one place."
+					content="Connect with Acevedo Miguel - Cloud Architect and DevOps Engineer with 20+ years of experience in serverless infrastructure, IoT, and cloud computing. Find all social media and professional links in one place."
 				/>
 			</Head>
 			<Container>
-				<main id="main-content" className="min-h-screen flex items-center justify-center py-12">
-					<div className="w-full max-w-md mx-auto px-4">
+				<main
+					id="main-content"
+					className="editorial-page min-h-screen flex items-center justify-center py-10 sm:py-12 px-4"
+				>
+					<div className="w-full max-w-xl mx-auto">
 						{/* Profile Section */}
-						<div className="text-center mb-8">
-							<div className="relative w-32 h-32 mx-auto mb-6">
+						<div className="text-center mb-8 sm:mb-10">
+							<div className="relative w-28 h-28 sm:w-32 sm:h-32 mx-auto mb-5 sm:mb-6">
 								<Image
 									src="/profile.webp"
-									alt="Miguel Angel Acevedo"
+									alt="Acevedo Miguel"
 									fill
 									className="rounded-full object-cover border-4 border-white shadow-lg"
-									priority
 								/>
 							</div>
-							<h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-								Miguel Angel Acevedo
+							<h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-3 editorial-ui">
+								Acevedo Miguel
 							</h1>
-							<p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+							<p className="text-gray-600 max-w-2xl mx-auto">
 								I'm a Cloud Architect and DevOps Engineer with a passion for IoT and serverless infrastructure. I have over 20 years of experience designing high-availability systems across APAC. I love creating innovative solutions using connected devices, AWS, and cloud computing. In my free time, I enjoy woodworking and playing with my kids.
 							</p>
 						</div>
 
 						{/* Links Section */}
 						<nav aria-label="Social media and professional links">
-							<div className="space-y-3">
+							<div className="space-y-3 sm:space-y-4 editorial-ui">
 								{links.map((link) => {
 									const Icon = link.icon;
 									return (
@@ -101,7 +96,7 @@ export default function LinksPage() {
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label={link.ariaLabel}
-											className="flex items-center justify-center w-full px-6 py-4 text-gray-700 bg-white rounded-full border border-gray-200 shadow-sm transition-all duration-200 hover:bg-gray-50 hover:shadow-md hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-700"
+											className="editorial-card flex items-center justify-center w-full px-5 sm:px-6 py-3.5 sm:py-4 text-gray-700 shadow-sm transition-all duration-200 hover:bg-gray-50 hover:shadow-md hover:border-gray-300"
 										>
 											<Icon className="w-5 h-5 mr-3" aria-hidden="true" />
 											<span className="font-medium">{link.name}</span>
@@ -112,7 +107,7 @@ export default function LinksPage() {
 							</nav>
 
 						{/* Footer */}
-						<footer className="mt-12 text-center text-sm text-gray-500 dark:text-gray-400">
+						<footer className="mt-10 sm:mt-12 text-center text-sm text-gray-500 editorial-ui">
 							<p>acevedomiguel.com</p>
 						</footer>
 					</div>
