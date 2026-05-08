@@ -30,6 +30,54 @@ body {
 	font-family:
 		Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro,
 		sans-serif;
+	color: #111827;
+}
+
+.resume-page {
+	font-family: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+	color: #1f2937;
+}
+
+.resume-page h1,
+.resume-page h2,
+.resume-page h3,
+.resume-page .resume-ui {
+	font-family: "Avenir Next", Avenir, "Segoe UI", Inter, sans-serif;
+	letter-spacing: 0.01em;
+}
+
+.resume-page a {
+	color: #1e3a8a;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.16em;
+}
+
+.resume-page a:hover {
+	color: #1d4ed8;
+}
+
+.resume-page .resume-content {
+	font-size: 1.06rem;
+	line-height: 1.82;
+}
+
+.resume-page .resume-section {
+	border-top: 1px solid #e5e7eb;
+	padding-top: 1.9rem;
+	margin-top: 1.9rem;
+}
+
+.resume-page .resume-eyebrow {
+	font-size: 0.76rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #6b7280;
+}
+
+.resume-page .resume-meta {
+	font-size: 0.85rem;
+	color: #6b7280;
 }
 
 /* Global focus styles for accessibility */

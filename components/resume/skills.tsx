@@ -26,12 +26,12 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
 	return (
 		<ResumeSection title="Areas of Expertise">
 			{skills.map((skill, index) => (
-				<div key={`skill-${skill.name}-${index}`} className="mb-6">
+				<div key={`skill-${skill.name}-${index}`} className="mb-8 last:mb-0">
 					{/* Skill Category - matching homepage typography hierarchy */}
-					<h3 className="text-lg font-medium mb-1">{skill.name}</h3>
+					<h3 className="text-xl font-medium mb-2">{skill.name}</h3>
 
 					{/* Skills List - using text-md for consistency */}
-					<p className="text-md">{skill.keywords.join(", ")}</p>
+					<p>{skill.keywords.join(", ")}</p>
 				</div>
 			))}
 		</ResumeSection>

@@ -61,18 +61,18 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ work }) => {
 			{sortedWork.map((workItem, index) => (
 				<article
 					key={`work-${workItem.name}-${workItem.position}-${index}`}
-					className="mb-6"
+					className="mb-10 last:mb-0"
 				>
 					{/* Job Title - matching homepage typography hierarchy */}
-					<h3 className="text-lg font-medium mb-1">{workItem.position}</h3>
+					<h3 className="text-xl font-medium mb-1">{workItem.position}</h3>
 
 					{/* Company Name and Date Range */}
-					<div className="flex flex-col sm:flex-row sm:justify-between mb-3">
-						<div className="text-md font-medium text-gray-900">
+					<div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-1 mb-4">
+						<div className="font-medium text-gray-900 resume-ui">
 							{workItem.name}
 							{workItem.location && ` • ${workItem.location}`}
 						</div>
-						<div className="text-sm text-gray-600">
+						<div className="resume-meta resume-ui">
 							<time dateTime={workItem.startDate}>{workItem.startDate}</time> -{" "}
 							<time
 								dateTime={
@@ -85,19 +85,18 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ work }) => {
 					</div>
 
 					{/* Summary - if available */}
-					{workItem.summary && (
-						<p className="text-md mb-3">{workItem.summary}</p>
-					)}
+					{workItem.summary && <p className="mb-3">{workItem.summary}</p>}
 
 					{/* Job Highlights/Descriptions - using homepage text-md and mb-3 spacing */}
-					{workItem.highlights?.map((highlight, highlightIndex) => (
-						<p
-							key={`highlight-${workItem.name}-${index}-${highlightIndex}`}
-							className="text-md mb-3"
-						>
-							{highlight}
-						</p>
-					))}
+					{workItem.highlights && workItem.highlights.length > 0 && (
+						<ul className="list-disc pl-6 space-y-2">
+							{workItem.highlights.map((highlight, highlightIndex) => (
+								<li key={`highlight-${workItem.name}-${index}-${highlightIndex}`}>
+									{highlight}
+								</li>
+							))}
+						</ul>
+					)}
 				</article>
 			))}
 		</ResumeSection>

@@ -22,8 +22,8 @@ const ResumeSection: React.FC<ResumeSectionProps> = ({
 	className = "",
 }) => {
 	return (
-		<section className={`mb-6 ${className}`}>
-			{title && <h2 className="text-xl font-semibold mb-3">{title}</h2>}
+		<section className={`resume-section ${className}`}>
+			{title && <h2 className="text-2xl font-semibold mb-4">{title}</h2>}
 			{children}
 		</section>
 	);

@@ -18,12 +18,12 @@ export default function Index() {
 			<Container>
 				<main id="main-content" className="pt-4">
 					<article>
-						<header className="max-w-3xl mx-auto px-6 mb-6">
+						<header className="max-w-3xl mx-auto px-6 mb-6 resume-page">
 							<h1 className="sr-only">Professional Resume - Acevedo Miguel</h1>
 
 							{/* Minimalistic Download Section */}
 							<div className="flex flex-col sm:flex-row sm:justify-end mb-4">
-								<div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 text-sm">
+								<div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 text-sm resume-ui">
 									<span className="text-gray-500 mb-2 sm:mb-0">Download:</span>
 									<div className="flex items-center space-x-3">
 										<a

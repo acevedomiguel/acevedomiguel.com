@@ -22,24 +22,26 @@ interface PersonalInfoProps {
  */
 const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 	return (
-		<div className="mb-6">
+		<div className="mb-8">
 			{/* Name and Title */}
-			<h1 className="text-3xl font-bold mb-2">{basics.name}</h1>
-			<p className="text-xl font-medium mb-6">{basics.label}</p>
+			<h1 className="text-4xl sm:text-5xl font-semibold leading-tight mb-3">
+				{basics.name}
+			</h1>
+			<p className="text-xl sm:text-2xl font-medium mb-6 text-gray-700">{basics.label}</p>
 
 			{/* Professional Summary */}
-			<p className="text-md mb-6">{basics.summary}</p>
+			<p className="mb-8">{basics.summary}</p>
 
 			{/* Contact Information */}
-			<address className="mb-6 not-italic">
-				<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+			<address className="mb-4 not-italic">
+				<div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 resume-meta resume-ui">
 					{/* Email */}
 					{basics.email && (
-						<div className="text-md flex items-center">
+						<div className="flex items-center">
 							<FaEnvelope className="inline mr-2 text-gray-600" />
 							<a
 								href={`mailto:${basics.email}`}
-								className="text-gray-700 hover:text-gray-900 hover:underline"
+								className="text-gray-700 hover:text-gray-900 hover:underline break-all"
 							>
 								{basics.email}
 							</a>
@@ -48,7 +50,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 
 					{/* Phone */}
 					{basics.phone && (
-						<div className="text-md flex items-center">
+						<div className="flex items-center">
 							<BsPhone className="inline mr-2 text-gray-600" />
 							<a
 								href={`tel:${basics.phone}`}
@@ -61,7 +63,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 
 					{/* Location */}
 					{basics.location?.region && (
-						<div className="text-md flex items-center">
+						<div className="flex items-center">
 							<ImLocation className="inline mr-2 text-gray-600" />
 							<span>{basics.location.region}</span>
 						</div>
@@ -69,7 +71,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 
 					{/* Website */}
 					{basics.url && (
-						<div className="text-md flex items-center">
+						<div className="flex items-center">
 							<CgWebsite className="inline mr-2 text-gray-600" />
 							<Link
 								href={basics.url}
@@ -82,7 +84,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 
 					{/* LinkedIn Profile */}
 					{basics.profiles && basics.profiles.length > 0 && (
-						<div className="text-md flex items-center">
+						<div className="flex items-center">
 							<FaLinkedin className="inline mr-2 text-gray-600" />
 							<Link
 								href={basics.profiles[0].url}

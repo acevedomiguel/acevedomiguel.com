@@ -92,7 +92,7 @@ const Resume = () => {
 	const cv: ResumeData = data;
 
 	return (
-		<main className="max-w-3xl mx-auto p-6 text-md">
+		<main className="max-w-3xl mx-auto p-6 resume-page resume-content">
 			{/* Personal Information Header */}
 			<header>
 				<PersonalInfo basics={cv.basics} />

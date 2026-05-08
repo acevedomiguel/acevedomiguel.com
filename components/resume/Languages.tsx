@@ -27,7 +27,7 @@ const Languages: React.FC<LanguagesProps> = ({ languages }) => {
 
 	return (
 		<ResumeSection title="Languages">
-			<div className="text-md">
+			<div className="resume-ui">
 				{languages.map((lang, index) => (
 					<span key={`lang-${lang.language}-${index}`}>
 						<strong>{lang.language}</strong> ({lang.fluency})

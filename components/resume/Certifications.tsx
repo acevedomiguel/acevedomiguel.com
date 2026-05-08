@@ -35,14 +35,14 @@ const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
 	return (
 		<ResumeSection title="Certifications">
 			{certifications.map((cert, index) => (
-				<article key={`cert-${cert.institution}-${index}`} className="mb-6">
+				<article key={`cert-${cert.institution}-${index}`} className="mb-8 last:mb-0">
 					{/* Certification Title */}
-					<h3 className="text-lg font-medium mb-1">
+					<h3 className="text-xl font-medium mb-1">
 						{cert.courses.join(", ")}
 					</h3>
 
 					{/* Institution */}
-					<div className="text-md text-gray-900 mb-1">
+					<div className="text-gray-900 mb-1 resume-ui">
 						{cert.url ? (
 							<Link
 								href={cert.url}
@@ -57,7 +57,7 @@ const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
 					</div>
 
 					{/* Date */}
-					<div className="text-sm text-gray-600">
+					<div className="resume-meta resume-ui">
 						<time dateTime={cert.startDate}>{cert.startDate}</time>
 						{cert.endDate && cert.endDate !== cert.startDate && (
 							<>
