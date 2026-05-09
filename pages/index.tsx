@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { FaDownload } from "react-icons/fa";
 import Container from "../components/container";
 import Layout from "../components/layout";
 import AreaExpertise from "../components/area_expertise";
@@ -64,14 +65,15 @@ export default function Index() {
 								<a
 									href="/resume.pdf"
 									download="Acevedo_Miguel_Resume.pdf"
-									className="bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors text-center"
+									className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors editorial-ui"
 									title="Download PDF resume"
 								>
-									Download PDF
+									<FaDownload className="w-4 h-4 shrink-0" aria-hidden="true" />
+									<span>Download Resume (PDF)</span>
 								</a>
 								<a
 									href="/contact"
-									className="bg-gray-100 hover:bg-gray-200 text-sky-900 text-sm py-3 px-6 rounded-full transition-colors text-center"
+									className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors editorial-ui"
 									title="Contact me for consulting and opportunities"
 								>
 									Contact Me
