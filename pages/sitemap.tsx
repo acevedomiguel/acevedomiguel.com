@@ -26,13 +26,13 @@ export default function Sitemap() {
 	];
 
 	return (
-		<Layout pageType="generic">
+		<Layout
+			pageType="generic"
+			title="Site Map - Acevedo Miguel"
+			description="Complete site map for acevedomiguel.com - navigate to all pages including resume, contact, and professional information."
+		>
 			<Head>
 				<title>Site Map - Acevedo Miguel</title>
-				<meta
-					name="description"
-					content="Complete site map for acevedomiguel.com - navigate to all pages including resume, contact, and professional information."
-				/>
 			</Head>
 			<Container>
 				<Breadcrumbs className="max-w-3xl mx-auto px-6 mb-4 pt-4" />

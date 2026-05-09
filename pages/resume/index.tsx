@@ -10,10 +10,6 @@ export default function Index() {
 				<title>
 					Resume - Acevedo Miguel | Cloud Architect & DevOps Engineer
 				</title>
-				<meta
-					name="description"
-					content="Comprehensive professional resume of Acevedo Miguel - Cloud Architect and DevOps Engineer with 20+ years experience in AWS, Kubernetes, serverless architectures, IoT, Node.js, Python, and Go. View detailed work history and technical skills."
-				/>
 			</Head>
 			<Container>
 				<main id="main-content" className="pt-4">
