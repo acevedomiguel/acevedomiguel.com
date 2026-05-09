@@ -52,13 +52,14 @@ const links = [
 
 export default function LinksPage() {
 	return (
-		<Layout pageType="generic" showFooter={false}>
+		<Layout
+			pageType="generic"
+			showFooter={false}
+			title="Links | Acevedo Miguel"
+			description="Connect with Acevedo Miguel - Cloud Architect and DevOps Engineer with 20+ years of experience in serverless infrastructure, IoT, and cloud computing. Find all social media and professional links in one place."
+		>
 			<Head>
 				<title>Links | Acevedo Miguel</title>
-				<meta
-					name="description"
-					content="Connect with Acevedo Miguel - Cloud Architect and DevOps Engineer with 20+ years of experience in serverless infrastructure, IoT, and cloud computing. Find all social media and professional links in one place."
-				/>
 			</Head>
 			<Container>
 				<main

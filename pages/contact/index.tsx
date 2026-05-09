@@ -40,10 +40,6 @@ export default function Index() {
     <Layout pageType="contact">
       <Head>
         <title>Contact Acevedo Miguel - DevOps & Backend Engineer</title>
-        <meta
-          name="description"
-          content="Contact Acevedo Miguel for DevOps consulting, backend development, or IoT projects. Based in Hong Kong with global experience. Email: me@acevedomiguel.com, Phone: +852 6435-6936. Schedule a 30-minute consultation."
-        />
 			</Head>
 			<Container>
         <main role="main" id="main-content">
@@ -158,21 +154,21 @@ export default function Index() {
               <div className="py-2">
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="/resume.pdf"
-                    download="Acevedo_Miguel_Resume.pdf"
-                    className="editorial-button-primary inline-flex items-center justify-center space-x-2 bg-sky-900 hover:bg-sky-700 text-white text-sm py-3 px-6 rounded-full transition-colors editorial-ui"
-                    title="Download PDF resume"
+                    href="/resume"
+                    className="editorial-button-primary bg-sky-900 hover:bg-sky-700 text-white text-sm py-3 px-6 rounded-full transition-colors text-center editorial-ui"
+                    title="View my complete professional resume"
                   >
-                    <FaDownload className="w-4 h-4" aria-hidden="true" />
-                    <span>Download Resume (PDF)</span>
+                    View Online Resume
                   </a>
 
                   <a
-                    href="/resume"
+                    href="/resume.pdf"
+                    download="Acevedo_Miguel_Resume.pdf"
                     className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors editorial-ui"
-                    title="View online resume"
+                    title="Download PDF resume"
                   >
-                    <span>View Online Resume</span>
+                    <FaDownload className="w-4 h-4 shrink-0" aria-hidden="true" />
+                    <span>Download Resume (PDF)</span>
                   </a>
                 </div>
               </div>

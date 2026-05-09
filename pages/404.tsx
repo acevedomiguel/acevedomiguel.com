@@ -6,13 +6,13 @@ import Layout from "../components/layout";
 
 export default function Custom404() {
 	return (
-		<Layout pageType="generic">
+		<Layout
+			pageType="generic"
+			title="404 - Page Not Found | Acevedo Miguel"
+			description="The page you're looking for doesn't exist. Navigate back to the homepage or explore other sections."
+		>
 			<Head>
 				<title>404 - Page Not Found | Acevedo Miguel</title>
-				<meta
-					name="description"
-					content="The page you're looking for doesn't exist. Navigate back to the homepage or explore other sections."
-				/>
 			</Head>
 			<Container>
 				<main id="main-content" className="max-w-3xl mx-auto py-16 px-6">

@@ -68,9 +68,9 @@ export const seoConfig: SEOConfig = {
 			structuredDataTypes: ["Person", "Website"],
 		},
 		resume: {
-			title: "Resume - Acevedo Miguel | 20+ Years DevOps & Backend Experience",
+			title: "Resume - Acevedo Miguel | Cloud Architect & DevOps Engineer",
 			description:
-				"Comprehensive resume of Acevedo Miguel, Senior DevOps Engineer with 20+ years experience. Expert in AWS, Kubernetes, IoT, and cloud infrastructure.",
+				"Comprehensive professional resume of Acevedo Miguel - Cloud Architect and DevOps Engineer with 20+ years experience in AWS, Kubernetes, serverless architectures, IoT, Node.js, Python, and Go. View detailed work history and technical skills.",
 			keywords: [
 				"Resume",
 				"CV",
@@ -88,7 +88,7 @@ export const seoConfig: SEOConfig = {
 		contact: {
 			title: "Contact Acevedo Miguel - DevOps & Backend Engineer",
 			description:
-				"Get in touch with Acevedo Miguel for DevOps consulting, backend development, or IoT projects. Based in Hong Kong with global experience.",
+				"Contact Acevedo Miguel for DevOps consulting, backend development, or IoT projects. Based in Hong Kong with global experience. Email: me@acevedomiguel.com, Phone: +852 6435-6936. Schedule a 30-minute consultation.",
 			keywords: [
 				"Contact",
 				"DevOps Consultant",
