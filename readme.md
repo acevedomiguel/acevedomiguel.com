@@ -2,7 +2,7 @@
 
 Personal portfolio and resume website.
 
-[Better Stack Badge](https://uptime.betterstack.com/?utm_source=status_badge)
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v2/monitor/s6ya.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 
 ## Overview
 
