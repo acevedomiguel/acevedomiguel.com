@@ -10,6 +10,7 @@ import {
 	FaStackOverflow,
 } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import { SiCodeberg } from "react-icons/si";
 
 const links = [
 	{
@@ -23,6 +24,12 @@ const links = [
 		href: "https://github.com/acevedomiguel",
 		icon: FaGithub,
 		ariaLabel: "Visit GitHub profile",
+	},
+	{
+		name: "Codeberg",
+		href: "https://codeberg.org/acevedomiguel",
+		icon: SiCodeberg,
+		ariaLabel: "Visit Codeberg profile",
 	},
 	{
 		name: "GitLab",
