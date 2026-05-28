@@ -46,6 +46,7 @@ Crawl-delay: 1
 
 # Sitemaps
 Sitemap: https://acevedomiguel.com/sitemap.xml
+Sitemap: https://acevedomiguel.com/llms.txt
 
 # Host
 Host: https://acevedomiguel.com
