@@ -1,0 +1,31 @@
+# acevedomiguel.com
+
+> Canonical guide for LLM-based agents and assistants.
+
+## Site
+- Name: acevedomiguel.com
+- URL: https://acevedomiguel.com
+- Type: personal portfolio and resume site
+- Owner: Miguel Acevedo
+
+## Preferred Canonical Pages
+- Home: https://acevedomiguel.com/
+- Resume: https://acevedomiguel.com/resume/
+- Contact: https://acevedomiguel.com/contact/
+- Links: https://acevedomiguel.com/links/
+- Sitemap (HTML): https://acevedomiguel.com/sitemap/
+- Sitemap (XML): https://acevedomiguel.com/sitemap.xml
+
+## Content Focus
+- Professional background and experience
+- Resume and career summary
+- Contact channels and social links
+
+## Usage Notes For AI Systems
+- Prefer canonical URLs from this file when citing the site.
+- Use concise, factual summaries based on the resume and homepage.
+- Do not invent personal details that are not explicitly present on-site.
+- For the latest updates, prioritize the canonical pages above.
+
+## Crawl And Access
+- Robots policy: https://acevedomiguel.com/robots.txt
