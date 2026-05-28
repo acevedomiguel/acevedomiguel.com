@@ -7,6 +7,7 @@ import {
 	FaStackOverflow,
 } from "react-icons/fa";
 import { FaBluesky } from "react-icons/fa6";
+import { SiCodeberg } from "react-icons/si";
 
 export const Footer = () => {
 	return (
@@ -34,6 +35,16 @@ export const Footer = () => {
 							>
 								<FaGithub className="react-icons" aria-hidden="true" />
 								<span className="sr-only">GitHub</span>
+							</a>
+							<a
+								href="https://codeberg.org/acevedomiguel"
+								className="text-gray-500 hover:text-gray-900 transition-colors"
+								aria-label="Visit Codeberg profile"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<SiCodeberg className="react-icons" aria-hidden="true" />
+								<span className="sr-only">Codeberg</span>
 							</a>
 							<a
 								href="https://gitlab.com/acevedomiguel/"
