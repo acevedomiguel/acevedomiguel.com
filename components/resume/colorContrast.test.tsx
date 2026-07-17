@@ -108,8 +108,8 @@ describe("Color Contrast Compliance", () => {
 			const companyNames = container.querySelectorAll(".text-gray-900");
 			expect(companyNames.length).toBeGreaterThan(0);
 
-			// Check that dates use text-gray-600 (7.0:1 contrast ratio)
-			const dates = container.querySelectorAll(".text-gray-600");
+			// Check that dates use the resume-meta class (WCAG-compliant #6b7280)
+			const dates = container.querySelectorAll(".resume-meta");
 			expect(dates.length).toBeGreaterThan(0);
 
 			// Verify no non-compliant colors are used
@@ -145,8 +145,8 @@ describe("Color Contrast Compliance", () => {
 			const institutionNames = container.querySelectorAll(".text-gray-900");
 			expect(institutionNames.length).toBeGreaterThan(0);
 
-			// Check that dates use text-gray-600 (7.0:1 contrast ratio)
-			const dates = container.querySelectorAll(".text-gray-600");
+			// Check that dates use the resume-meta class (WCAG-compliant #6b7280)
+			const dates = container.querySelectorAll(".resume-meta");
 			expect(dates.length).toBeGreaterThan(0);
 
 			// Verify no non-compliant colors are used

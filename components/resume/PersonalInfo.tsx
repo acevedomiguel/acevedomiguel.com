@@ -55,7 +55,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 								href={`tel:${basics.phone}`}
 								className="text-gray-700 hover:text-gray-900 hover:underline"
 							>
-								(+852) 6435-6936
+								{basics.phone}
 							</a>
 						</div>
 					)}
@@ -89,7 +89,7 @@ const PersonalInfo: React.FC<PersonalInfoProps> = ({ basics }) => {
 								href={basics.profiles[0].url}
 								className="text-gray-700 hover:text-gray-900 hover:underline"
 							>
-								acevedomiguel
+								{basics.profiles[0].username}
 							</Link>
 						</div>
 					)}

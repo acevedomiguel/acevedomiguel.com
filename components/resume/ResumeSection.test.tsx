@@ -33,10 +33,10 @@ describe("ResumeSection", () => {
 		);
 
 		const section = container.querySelector("section");
-		expect(section).toHaveClass("mb-6");
+		expect(section).toHaveClass("resume-section");
 
 		const heading = screen.getByRole("heading", { level: 2 });
-		expect(heading).toHaveClass("text-xl", "font-semibold", "mb-3");
+		expect(heading).toHaveClass("text-2xl", "font-semibold", "mb-4");
 	});
 
 	it("applies custom className when provided", () => {
@@ -47,7 +47,7 @@ describe("ResumeSection", () => {
 		);
 
 		const section = container.querySelector("section");
-		expect(section).toHaveClass("mb-6", "custom-class");
+		expect(section).toHaveClass("resume-section", "custom-class");
 	});
 
 	it("renders without title when not provided", () => {
