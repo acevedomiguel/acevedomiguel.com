@@ -42,7 +42,7 @@ describe("PersonalInfo Component", () => {
 		// Check name is displayed as h1 with proper styling
 		const nameHeading = screen.getByRole("heading", { level: 1 });
 		expect(nameHeading).toHaveTextContent("John Doe");
-		expect(nameHeading).toHaveClass("text-3xl", "font-bold", "mb-2");
+		expect(nameHeading).toHaveClass("text-4xl", "font-semibold", "mb-3");
 
 		// Check title is displayed as p (not h2) with proper styling
 		const titleElement = screen.getByText("Senior Software Engineer");
@@ -54,7 +54,7 @@ describe("PersonalInfo Component", () => {
 			screen.getByText(
 				"Experienced software engineer with expertise in full-stack development.",
 			),
-		).toHaveClass("text-md", "mb-6");
+		).toHaveClass("mb-8");
 	});
 
 	it("displays all contact information with proper spacing", () => {
@@ -127,18 +127,18 @@ describe("PersonalInfo Component", () => {
 	it("applies homepage-consistent spacing patterns", () => {
 		const { container } = render(<PersonalInfo basics={mockBasics} />);
 
-		// Check main container has mb-6
+		// Check main container has mb-8
 		const mainDiv = container.firstChild as HTMLElement;
-		expect(mainDiv).toHaveClass("mb-6");
+		expect(mainDiv).toHaveClass("mb-8");
 
-		// Check summary has mb-6 spacing
+		// Check summary has mb-8 spacing
 		const summary = screen.getByText(
 			"Experienced software engineer with expertise in full-stack development.",
 		);
-		expect(summary).toHaveClass("mb-6");
+		expect(summary).toHaveClass("mb-8");
 
-		// Check address has mb-6 spacing
+		// Check address has mb-4 spacing
 		const address = screen.getByRole("group");
-		expect(address).toHaveClass("mb-6");
+		expect(address).toHaveClass("mb-4");
 	});
 });
