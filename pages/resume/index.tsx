@@ -1,9 +1,15 @@
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Container from "../../components/container";
 import Layout from "../../components/layout";
 import Resume from "../../components/resume";
+import type { ResumeData } from "../../types/resumedata";
 
-export default function Index() {
+type ResumePageProps = {
+	resume: ResumeData;
+};
+
+export default function Index({ resume }: ResumePageProps) {
 	return (
 		<Layout pageType="resume">
 			<Head>
@@ -43,10 +49,19 @@ export default function Index() {
 							</div>
 						</header>
 
-						<Resume />
+						<Resume data={resume} />
 					</article>
 				</main>
 			</Container>
 		</Layout>
 	);
 }
+
+export const getStaticProps: GetStaticProps<ResumePageProps> = async () => {
+	const { loadResumeData } = await import("../../lib/loadResume");
+	return {
+		props: {
+			resume: loadResumeData(),
+		},
+	};
+};
