@@ -15,8 +15,6 @@ export default function Index() {
 				<main id="main-content" className="pt-4">
 					<article>
 						<header className="max-w-3xl mx-auto px-6 mb-6 resume-page">
-							<h1 className="sr-only">Professional Resume - Acevedo Miguel</h1>
-
 							{/* Minimalistic Download Section */}
 							<div className="flex flex-col sm:flex-row sm:justify-end mb-4">
 								<div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 text-sm resume-ui">

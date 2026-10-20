@@ -39,7 +39,7 @@ export default function Index() {
   return (
     <Layout pageType="contact">
       <Head>
-        <title>Contact Acevedo Miguel - DevOps & Backend Engineer</title>
+        <title>Contact Acevedo Miguel - Cloud Architect & DevOps Engineer</title>
 			</Head>
 			<Container>
         <main role="main" id="main-content">

@@ -10,7 +10,7 @@ export default function Header() {
 							src="/signature.svg"
 							className="mx-auto"
 							style={{ width: "300px", maxWidth: "100%", height: "auto" }}
-							alt="Acevedo Miguel - Senior DevOps & Backend Engineer"
+							alt="Acevedo Miguel - Cloud Architect & DevOps Engineer"
 							title="Acevedo Miguel"
 							width={300}
 							height={80}
