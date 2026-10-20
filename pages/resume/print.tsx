@@ -1,36 +1,15 @@
-import { useEffect, useState } from "react";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 import type { ResumeData } from "../../types/resumedata";
 
-const getData = (): Promise<ResumeData> =>
-	fetch("/resume.json", {
-		headers: {
-			"Content-Type": "application/json",
-			Accept: "application/json",
-		},
-	}).then((res) => {
-		if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-		return res.json();
-	});
-
 const stripProtocol = (url: string) => url.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
-export default function ResumePrint() {
-	const [data, setData] = useState<ResumeData | null>(null);
+type ResumePrintProps = {
+	resume: ResumeData;
+};
 
-	useEffect(() => {
-		getData().then(setData).catch(console.error);
-	}, []);
-
-	if (!data) {
-		return (
-			<div className="min-h-screen flex items-center justify-center bg-white">
-				<p className="text-gray-500">Loading resume...</p>
-			</div>
-		);
-	}
-
-	const cv = data;
+export default function ResumePrint({ resume }: ResumePrintProps) {
+	const cv = resume;
 	const basics = cv.basics;
 	const linkedin = basics.profiles?.find((p) => p.network === "LinkedIn");
 
@@ -200,3 +179,13 @@ export default function ResumePrint() {
 		</>
 	);
 }
+
+export const getStaticProps: GetStaticProps<ResumePrintProps> = async () => {
+	const { loadResumeData } = await import("../../lib/loadResume");
+
+	return {
+		props: {
+			resume: loadResumeData(),
+		},
+	};
+};

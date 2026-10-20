@@ -51,7 +51,7 @@ npm i
 ### Project Structure
 
 - **Static Export**: Configured in `next.config.js` with `output: 'export'` for static hosting
-- **Resume Data**: Dynamic resume content loaded from `/public/resume.json` via client-side fetch
+- **Resume Data**: Resume content is read from `/public/resume.json` at build time (`getStaticProps`) and written into the static HTML
 - **Component-Based**: React components in `/components/` with page-specific directories
 - **TypeScript**: Strongly typed with custom types in `/types/`
 - **Styling**: Tailwind CSS with custom configuration and theme extensions
@@ -69,8 +69,8 @@ npm i
 ### Data Flow
 
 1. Resume data stored as JSON in `/public/resume.json`
-2. `getData()` utility fetches resume data client-side
-3. Resume components render data using TypeScript interfaces
+2. `loadResumeData()` reads that file during `next build` (not in the browser)
+3. Resume components render the prebuilt props using TypeScript interfaces
 4. Layout components provide consistent page structure
 
 ### Styling Architecture
