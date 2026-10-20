@@ -2,16 +2,16 @@ import type { SEOConfig } from "./types";
 
 export const seoConfig: SEOConfig = {
 	site: {
-		name: "Acevedo Miguel - Senior DevOps & Backend Engineer",
+		name: "Acevedo Miguel - Cloud Architect & DevOps Engineer",
 		url: "https://acevedomiguel.com",
 		description:
-			"Senior software engineer with 20+ years experience in DevOps, backend development, IoT, and cloud computing. Currently Cloud Lead & IoT at Tensor Energy. Contact: me@acevedomiguel.com",
+			"Cloud Architect and DevOps Engineer with 20+ years of experience designing serverless, high-availability infrastructure across APAC. Currently Cloud Lead & IoT at Tensor Energy. Contact: me@acevedomiguel.com",
 		author: {
 			"@type": "Person",
 			name: "Acevedo Miguel",
-			jobTitle: "Senior DevOps & Backend Engineer",
+			jobTitle: "Cloud Architect & DevOps Engineer",
 			description:
-				"Senior software engineer with extensive experience (over 20 years) in digital marketing, devops and infrastructure, with curiosity about IoT",
+				"Cloud Architect and DevOps Engineer with 20+ years of experience in cloud computing, IoT, and infrastructure.",
 			url: "https://acevedomiguel.com",
 			image: "https://acevedomiguel.com/og-image.png",
 			email: "me@acevedomiguel.com",
@@ -51,9 +51,9 @@ export const seoConfig: SEOConfig = {
 	},
 	pages: {
 		home: {
-			title: "Acevedo Miguel - Senior DevOps & Backend Engineer",
+			title: "Acevedo Miguel - Cloud Architect & DevOps Engineer",
 			description:
-				"Senior software engineer with 20+ years experience in DevOps, backend development, IoT, and cloud computing. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong. Contact: me@acevedomiguel.com",
+				"Cloud Architect and DevOps Engineer with 20+ years of experience designing serverless, high-availability infrastructure across APAC. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong. Contact: me@acevedomiguel.com",
 			keywords: [
 				"DevOps Engineer",
 				"Backend Developer",
@@ -86,7 +86,7 @@ export const seoConfig: SEOConfig = {
 			structuredDataTypes: ["Person", "WorkExperience", "Organization"],
 		},
 		contact: {
-			title: "Contact Acevedo Miguel - DevOps & Backend Engineer",
+			title: "Contact Acevedo Miguel - Cloud Architect & DevOps Engineer",
 			description:
 				"Contact Acevedo Miguel for DevOps consulting, backend development, or IoT projects. Based in Hong Kong with global experience. Email: me@acevedomiguel.com, Phone: +852 6435-6936. Schedule a 30-minute consultation.",
 			keywords: [
@@ -104,7 +104,7 @@ export const seoConfig: SEOConfig = {
 	defaults: {
 		titleTemplate: "%s | Acevedo Miguel",
 		description:
-			"Senior DevOps & Backend Engineer with 20+ years experience in cloud computing, IoT, and infrastructure.",
+			"Cloud Architect and DevOps Engineer with 20+ years of experience in cloud computing, IoT, and infrastructure.",
 		openGraph: {
 			type: "website",
 			siteName: "Acevedo Miguel",

@@ -40,7 +40,7 @@ export default function Index() {
 								</p>
 
 								<p className="mb-2">
-									I'm currently the <strong>Cloud Architect & Serverless Lead</strong>{" "}
+									I'm currently <strong>Cloud Lead & IoT</strong>{" "}
 									at <strong>Tensor Energy</strong>, a company that provides smart
 									energy solutions for the Japan market. Based in Hong Kong (GMT+8),
 									I enjoy collaborating with teams across Singapore, US, Europe, and Japan. 
