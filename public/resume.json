@@ -34,7 +34,7 @@
       "highlights": [
         "Architected the next-generation energy platform for the Japan market, defining the serverless base architecture and tech stack",
         "Led distributed technical teams across APAC, establishing development and deployment best practices",
-        "Built serverless backend services in TypeScript (GraphQL) and Go (Lambda), leveraging Aurora Postgres, Step Functions, ECS, and Batch",
+        "Built serverless backend services in TypeScript (GraphQL) and Go (Lambda) on PostgreSQL (Aurora), with protobuf / gRPC contracts, Step Functions, ECS, and Batch",
         "Delivered infrastructure cost optimization through AWS serverless and EKS architectures",
         "Managed infrastructure-as-code with AWS CDK"
       ],
@@ -45,7 +45,10 @@
         "AWS Step Functions",
         "AWS ECS",
         "AWS Batch",
+        "PostgreSQL",
         "Aurora Postgres",
+        "protobuf",
+        "gRPC",
         "TypeScript",
         "Go",
         "Node.js"
@@ -61,11 +64,11 @@
       "summary": "",
       "highlights": [
         "Architected high-availability systems for China and Hong Kong, driving performance optimization and cost-efficient library selection",
-        "Designed streaming microservice architecture for IoT integration, including AWS IoT Core device provisioning and management",
+        "Designed streaming microservice architecture for IoT integration on PostgreSQL with protobuf / gRPC, including AWS IoT Core device provisioning and management",
         "Owned CI/CD strategy and DevOps best practices, reducing deployment risk across mainland China and Hong Kong",
         "Integrated IoT hardware with 3rd-party providers, supporting large-scale device fleets",
         "Deployed and managed Kubernetes platforms on AWS (EKS and bare-metal EC2)",
-        "Maintained observability stack (Grafana, Kibana, Elasticsearch, Filebeat), storage (Redis, Postgres, Cassandra), and messaging (Kafka, MQTT)"
+        "Maintained observability stack (Grafana, Kibana, Elasticsearch, Filebeat), storage (Redis, PostgreSQL, Cassandra), and messaging (Kafka, MQTT)"
       ],
       "stack": [
         "AWS EKS",
@@ -75,7 +78,9 @@
         "Kafka",
         "MQTT",
         "Redis",
-        "Postgres",
+        "PostgreSQL",
+        "protobuf",
+        "gRPC",
         "Cassandra",
         "Grafana",
         "Elasticsearch"
@@ -92,7 +97,7 @@
       "highlights": [
         "Cut deployment cycles by ~40% and eliminated recurring build errors by migrating to Docker-based build and release processes",
         "Planned scalable, high-availability infrastructure on AWS EKS, Kafka, and Node.js",
-        "Authored and maintained backend services integrating 3rd-party APIs (Lifesmart, Softhard.io, Salto Access, SMS gateway, Dingtalk, Telegram Bot, Slack Bot)",
+        "Authored and maintained backend services on PostgreSQL with protobuf / gRPC, integrating 3rd-party APIs (Lifesmart, Softhard.io, Salto Access, SMS gateway, Dingtalk, Telegram Bot, Slack Bot)",
         "Enhanced infrastructure observability through monitoring and reporting dashboards",
         "Reduced CI/CD spend and improved pipeline speed by migrating from Bitbucket Pipelines to self-hosted Jenkins",
         "Provided remote support for 1000+ connected devices across APAC"
@@ -103,6 +108,9 @@
         "Node.js",
         "Docker",
         "Jenkins",
+        "PostgreSQL",
+        "protobuf",
+        "gRPC",
         "IoT Hardware Integration"
       ]
     },
@@ -269,7 +277,10 @@
         "Python",
         "Node.js",
         "PHP",
-        "GraphQL"
+        "GraphQL",
+        "PostgreSQL",
+        "protobuf",
+        "gRPC"
       ]
     },
     {
