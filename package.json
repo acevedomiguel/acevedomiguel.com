@@ -50,6 +50,9 @@
 		"web-vitals": "^6.2.3"
 	},
 	"overrides": {
-		"postcss": "$postcss"
+		"postcss": "$postcss",
+		"zod": "4.6.7",
+		"glob": "14.0.3",
+		"minimatch": "11.0.4"
 	}
 }
