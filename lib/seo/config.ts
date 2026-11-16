@@ -5,7 +5,7 @@ export const seoConfig: SEOConfig = {
 		name: "Acevedo Miguel - Cloud Architect & DevOps Engineer",
 		url: "https://acevedomiguel.com",
 		description:
-			"Cloud Architect and DevOps Engineer with 20+ years of experience designing serverless, high-availability infrastructure across APAC. Currently Cloud Lead & IoT at Tensor Energy. Contact: me@acevedomiguel.com",
+			"Cloud Architect & DevOps Engineer with 20+ years building serverless infrastructure across APAC. Cloud Lead & IoT at Tensor Energy, Hong Kong.",
 		author: {
 			"@type": "Person",
 			name: "Acevedo Miguel",
@@ -53,7 +53,7 @@ export const seoConfig: SEOConfig = {
 		home: {
 			title: "Acevedo Miguel - Cloud Architect & DevOps Engineer",
 			description:
-				"Cloud Architect and DevOps Engineer with 20+ years of experience designing serverless, high-availability infrastructure across APAC. Currently Cloud Lead & IoT at Tensor Energy in Hong Kong. Contact: me@acevedomiguel.com",
+				"Cloud Architect & DevOps Engineer with 20+ years building serverless infrastructure across APAC. Cloud Lead & IoT at Tensor Energy, Hong Kong.",
 			keywords: [
 				"DevOps Engineer",
 				"Backend Developer",
@@ -70,7 +70,7 @@ export const seoConfig: SEOConfig = {
 		resume: {
 			title: "Resume - Acevedo Miguel | Cloud Architect & DevOps Engineer",
 			description:
-				"Comprehensive professional resume of Acevedo Miguel - Cloud Architect and DevOps Engineer with 20+ years experience in AWS, Kubernetes, serverless architectures, IoT, Node.js, Python, and Go. View detailed work history and technical skills.",
+				"Resume of Acevedo Miguel: Cloud Architect & DevOps Engineer. 20+ years in AWS, Kubernetes, serverless and IoT across Hong Kong and APAC.",
 			keywords: [
 				"Resume",
 				"CV",
@@ -88,7 +88,7 @@ export const seoConfig: SEOConfig = {
 		contact: {
 			title: "Contact Acevedo Miguel - Cloud Architect & DevOps Engineer",
 			description:
-				"Contact Acevedo Miguel for DevOps consulting, backend development, or IoT projects. Based in Hong Kong with global experience. Email: me@acevedomiguel.com, Phone: +852 6435-6936. Schedule a 30-minute consultation.",
+				"Contact Acevedo Miguel for DevOps consulting, backend development and IoT projects. Based in Hong Kong, working globally.",
 			keywords: [
 				"Contact",
 				"DevOps Consultant",
