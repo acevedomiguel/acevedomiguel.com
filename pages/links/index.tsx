@@ -64,6 +64,7 @@ export default function LinksPage() {
 			showFooter={false}
 			title="Links | Acevedo Miguel"
 			description="Find Acevedo Miguel online: LinkedIn, GitHub, GitLab, Codeberg, Stack Overflow and more."
+			preloadProfileImage
 		>
 			<Head>
 				<title>Links | Acevedo Miguel</title>
