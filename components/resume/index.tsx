@@ -11,7 +11,7 @@ interface ResumeProps {
 
 const Resume = ({ data }: ResumeProps) => {
 	return (
-		<main className="max-w-3xl mx-auto p-6 resume-page resume-content">
+		<div className="max-w-3xl mx-auto p-6 resume-page resume-content">
 			<header>
 				<PersonalInfo basics={data.basics} />
 			</header>
@@ -31,7 +31,7 @@ const Resume = ({ data }: ResumeProps) => {
 			<section>
 				<Languages languages={data.languages} />
 			</section>
-		</main>
+		</div>
 	);
 };
 

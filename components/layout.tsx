@@ -35,9 +35,7 @@ export default function Layout({
 				Skip to main content
 			</a>
 			{showNav && <Nav />}
-			<div>
-				<main>{children}</main>
-			</div>
+			<div>{children}</div>
 			{showFooter && <Footer />}
 		</>
 	);
