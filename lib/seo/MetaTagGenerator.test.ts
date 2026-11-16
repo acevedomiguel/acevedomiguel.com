@@ -47,3 +47,20 @@ describe("MetaTagGenerator truncateDescription", () => {
 		expect(ogDescription).not.toContain("...");
 	});
 });
+
+describe("MetaTagGenerator og:image dimensions", () => {
+	it("declares 1200x630 for summary_large_image cards", () => {
+		const tags = generator.generateOpenGraphMeta({
+			title: "Test",
+			description: "Test",
+			url: "https://example.com",
+			image: "https://example.com/og-image.png",
+		});
+		expect(
+			tags.find((tag) => tag.property === "og:image:width")?.content,
+		).toBe("1200");
+		expect(
+			tags.find((tag) => tag.property === "og:image:height")?.content,
+		).toBe("630");
+	});
+});
