@@ -6,6 +6,8 @@ interface MetaProps {
 	description?: string;
 	title?: string;
 	pageType?: "home" | "resume" | "contact" | "generic";
+	/** Preload /profile.webp — only pages that render it (e.g. /links) should set this. */
+	preloadProfileImage?: boolean;
 }
 
 // Enhanced Meta component with backward compatibility
@@ -13,6 +15,7 @@ export default function Meta({
 	description = "",
 	title,
 	pageType = "generic",
+	preloadProfileImage = false,
 }: MetaProps) {
 	const router = useRouter();
 	const seoManager = new SEOManager();
@@ -134,7 +137,9 @@ export default function Meta({
 			<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
 		{/* Preload Critical Resources */}
-		<link rel="preload" href="/profile.webp" as="image" type="image/webp" />
+		{preloadProfileImage && (
+			<link rel="preload" href="/profile.webp" as="image" type="image/webp" />
+		)}
 		</Head>
 	);
 }

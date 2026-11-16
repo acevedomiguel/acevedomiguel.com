@@ -63,7 +63,8 @@ export default function LinksPage() {
 			pageType="generic"
 			showFooter={false}
 			title="Links | Acevedo Miguel"
-			description="Connect with Acevedo Miguel - Cloud Architect and DevOps Engineer with 20+ years of experience in serverless infrastructure, IoT, and cloud computing. Find all social media and professional links in one place."
+			description="Find Acevedo Miguel online: LinkedIn, GitHub, GitLab, Codeberg, Stack Overflow and more."
+			preloadProfileImage
 		>
 			<Head>
 				<title>Links | Acevedo Miguel</title>

@@ -11,6 +11,8 @@ interface LayoutProps {
 	description?: string;
 	showFooter?: boolean;
 	showNav?: boolean;
+	/** Preload /profile.webp — set on pages that render it. */
+	preloadProfileImage?: boolean;
 }
 
 export default function Layout({
@@ -20,6 +22,7 @@ export default function Layout({
 	description,
 	showFooter = true,
 	showNav = true,
+	preloadProfileImage = false,
 }: LayoutProps) {
 	return (
 		<>
@@ -27,6 +30,7 @@ export default function Layout({
 				pageType={pageType}
 				title={title}
 				description={description}
+				preloadProfileImage={preloadProfileImage}
 			/>
 			<a
 				href="#main-content"
@@ -35,9 +39,7 @@ export default function Layout({
 				Skip to main content
 			</a>
 			{showNav && <Nav />}
-			<div>
-				<main>{children}</main>
-			</div>
+			<div>{children}</div>
 			{showFooter && <Footer />}
 		</>
 	);

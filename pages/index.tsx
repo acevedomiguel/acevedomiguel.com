@@ -16,7 +16,7 @@ export default function Index() {
 						<header className="items-center justify-center">
 							<section className="mb-6" aria-labelledby="intro-heading">
 								<h1 id="intro-heading" className="sr-only">
-									About Acevedo Miguel - Cloud Architect & DevOps Engineer
+									Acevedo Miguel - Cloud Architect & DevOps Engineer
 								</h1>
 
 								<p className="mb-4">

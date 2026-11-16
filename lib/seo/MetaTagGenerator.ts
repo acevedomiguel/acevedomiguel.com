@@ -134,12 +134,12 @@ export class MetaTagGeneratorImpl implements MetaTagGenerator {
 				},
 				{
 					property: "og:image:width",
-					content: "310",
+					content: "1200",
 					key: "og:image:width",
 				},
 				{
 					property: "og:image:height",
-					content: "310",
+					content: "630",
 					key: "og:image:height",
 				},
 				{
@@ -286,21 +286,28 @@ export class MetaTagGeneratorImpl implements MetaTagGenerator {
 
 	/**
 	 * Truncate description to SEO best practices (150-160 characters)
+	 * without ever appending a bare ellipsis mid-word.
 	 */
 	private truncateDescription(description: string): string {
 		if (description.length <= 160) {
 			return description;
 		}
 
-		// Find the last space before the 157th character to avoid cutting words
-		const truncated = description.substring(0, 157);
-		const lastSpace = truncated.lastIndexOf(" ");
+		const limit = 155;
+		const truncated = description.substring(0, limit);
 
-		if (lastSpace > 120) {
-			// Only truncate at word boundary if it's not too short
-			return truncated.substring(0, lastSpace) + "...";
+		// Prefer the last sentence boundary
+		const lastSentence = truncated.lastIndexOf(". ");
+		if (lastSentence > 0) {
+			return truncated.substring(0, lastSentence + 1);
 		}
 
-		return truncated + "...";
+		// Fall back to the last word boundary
+		const lastSpace = truncated.lastIndexOf(" ");
+		if (lastSpace > 0) {
+			return truncated.substring(0, lastSpace);
+		}
+
+		return truncated;
 	}
 }
