@@ -47,50 +47,6 @@ module.exports = {
 			},
 		];
 	},
-	robotsTxtOptions: {
-		policies: [
-			{
-				userAgent: "*",
-				allow: "/",
-				disallow: ["/api/", "/admin/", "/_next/", "/404", "/500"],
-			},
-			// AI-friendly crawlers
-			{
-				userAgent: "GPTBot",
-				allow: "/",
-			},
-			{
-				userAgent: "ChatGPT-User",
-				allow: "/",
-			},
-			{
-				userAgent: "CCBot",
-				allow: "/",
-			},
-			{
-				userAgent: "anthropic-ai",
-				allow: "/",
-			},
-			{
-				userAgent: "Claude-Web",
-				allow: "/",
-			},
-			// Search engine crawlers with specific rules
-			{
-				userAgent: "Googlebot",
-				allow: "/",
-				disallow: ["/api/", "/admin/"],
-			},
-			{
-				userAgent: "Bingbot",
-				allow: "/",
-				disallow: ["/api/", "/admin/"],
-				crawlDelay: 1,
-			},
-		],
-		additionalSitemaps: [`${siteUrl}/sitemap.xml`],
-		host: siteUrl,
-	},
 	transform: async (config, path) => {
 		// Custom transform for specific pages
 		const customPriorities = {
