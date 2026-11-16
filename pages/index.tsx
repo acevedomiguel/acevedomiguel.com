@@ -15,10 +15,7 @@ export default function Index() {
 					<article className="editorial-page m-auto py-4 sm:py-6 max-w-3xl px-4 sm:px-6">
 						<header className="items-center justify-center">
 							<section className="mb-6" aria-labelledby="intro-heading">
-								<h1
-									id="intro-heading"
-									className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4"
-								>
+								<h1 id="intro-heading" className="sr-only">
 									Acevedo Miguel - Cloud Architect & DevOps Engineer
 								</h1>
 
