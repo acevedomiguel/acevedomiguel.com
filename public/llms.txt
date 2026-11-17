@@ -1,31 +1,25 @@
 # acevedomiguel.com
 
-> Canonical guide for LLM-based agents and assistants.
+> Personal portfolio and resume site of Miguel Acevedo.
 
-## Site
-- Name: acevedomiguel.com
-- URL: https://acevedomiguel.com
-- Type: personal portfolio and resume site
-- Owner: Miguel Acevedo
+Canonical guide for LLM-based agents and assistants. The site covers Miguel Acevedo's professional background and experience, resume and career summary, and contact channels and social links.
 
-## Preferred Canonical Pages
-- Home: https://acevedomiguel.com/
-- Resume: https://acevedomiguel.com/resume/
-- Contact: https://acevedomiguel.com/contact/
-- Links: https://acevedomiguel.com/links/
-- Sitemap (HTML): https://acevedomiguel.com/sitemap/
-- Sitemap (XML): https://acevedomiguel.com/sitemap.xml
+Usage notes for AI systems:
 
-## Content Focus
-- Professional background and experience
-- Resume and career summary
-- Contact channels and social links
-
-## Usage Notes For AI Systems
 - Prefer canonical URLs from this file when citing the site.
 - Use concise, factual summaries based on the resume and homepage.
 - Do not invent personal details that are not explicitly present on-site.
-- For the latest updates, prioritize the canonical pages above.
+- For the latest updates, prioritize the canonical pages below.
 
-## Crawl And Access
-- Robots policy: https://acevedomiguel.com/robots.txt
+## Pages
+
+- [Home](https://acevedomiguel.com/): Landing page with professional summary
+- [Resume](https://acevedomiguel.com/resume/): Full resume and career history
+- [Contact](https://acevedomiguel.com/contact/): Contact channels
+- [Links](https://acevedomiguel.com/links/): Social and profile links
+
+## Optional
+
+- [Sitemap (HTML)](https://acevedomiguel.com/sitemap/): Human-readable site index
+- [Sitemap (XML)](https://acevedomiguel.com/sitemap.xml): Machine-readable site index
+- [Robots policy](https://acevedomiguel.com/robots.txt): Crawl and access rules
