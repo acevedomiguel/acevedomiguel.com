@@ -11,6 +11,7 @@ if (typeof window !== "undefined") {
 	if (posthogToken && posthogHost) {
 		posthog.init(posthogToken, {
 			api_host: posthogHost,
+			ui_host: 'https://us.posthog.com',
 			defaults: "2026-08-30",
 			capture_exceptions: true,
 			debug: process.env.NODE_ENV === "development",
