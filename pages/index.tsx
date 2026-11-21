@@ -1,8 +1,15 @@
 import Head from "next/head";
 import { FaDownload } from "react-icons/fa";
+import posthog from "posthog-js";
 import Container from "../components/container";
 import Layout from "../components/layout";
 import AreaExpertise from "../components/area_expertise";
+import { portfolioLogger } from "../lib/posthog-logs";
+
+const posthogConfigured = Boolean(
+	process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN &&
+		process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 
 export default function Index() {
 	return (
@@ -65,6 +72,12 @@ export default function Index() {
 								<a
 									href="/resume.pdf"
 									download="Acevedo_Miguel_Resume.pdf"
+									onClick={() => {
+										if (posthogConfigured) {
+										posthog.capture("resume_downloaded", { source: "home" });
+									}
+										portfolioLogger.resumeDownloadRequested("home");
+									}}
 									className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors editorial-ui"
 									title="Download PDF resume"
 								>

@@ -1,9 +1,16 @@
 import type { GetStaticProps } from "next";
 import Head from "next/head";
+import posthog from "posthog-js";
 import Container from "../../components/container";
 import Layout from "../../components/layout";
 import Resume from "../../components/resume";
 import type { ResumeData } from "../../types/resumedata";
+import { portfolioLogger } from "../../lib/posthog-logs";
+
+const posthogConfigured = Boolean(
+	process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN &&
+		process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 
 type ResumePageProps = {
 	resume: ResumeData;
@@ -29,6 +36,12 @@ export default function Index({ resume }: ResumePageProps) {
 										<a
 											href="/resume.pdf"
 											download="Acevedo_Miguel_Resume.pdf"
+											onClick={() => {
+												if (posthogConfigured) {
+												posthog.capture("resume_downloaded", { source: "resume" });
+											}
+												portfolioLogger.resumeDownloadRequested("resume");
+											}}
 											className="text-sky-900 hover:text-sky-700 underline transition-colors"
 											title="Download PDF resume"
 										>
