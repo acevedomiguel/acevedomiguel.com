@@ -11,6 +11,13 @@ import {
 } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { SiCodeberg } from "react-icons/si";
+import posthog from "posthog-js";
+import { portfolioLogger } from "../../lib/posthog-logs";
+
+const posthogConfigured = Boolean(
+	process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN &&
+		process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 
 const links = [
 	{
@@ -105,6 +112,12 @@ export default function LinksPage() {
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label={link.ariaLabel}
+											onClick={() => {
+												if (posthogConfigured) {
+												posthog.capture("external_profile_visited", { platform: link.name });
+											}
+												portfolioLogger.externalProfileVisited(link.name);
+											}}
 											className="editorial-card flex items-center justify-center w-full px-5 sm:px-6 py-3.5 sm:py-4 text-gray-700 shadow-sm transition-all duration-200 hover:bg-gray-50 hover:shadow-md hover:border-gray-300"
 										>
 											<Icon className="w-5 h-5 mr-3" aria-hidden="true" />

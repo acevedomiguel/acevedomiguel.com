@@ -10,9 +10,16 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import posthog from "posthog-js";
 import Container from "../../components/container";
 import Layout from "../../components/layout";
 import AreaExpertise from "../../components/area_expertise";
+import { portfolioLogger } from "../../lib/posthog-logs";
+
+const posthogConfigured = Boolean(
+  process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN &&
+    process.env.NEXT_PUBLIC_POSTHOG_HOST
+);
 
 export default function Index() {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -24,6 +31,10 @@ export default function Index() {
   ): Promise<void> => {
     try {
       await navigator.clipboard.writeText(text);
+      if (posthogConfigured) {
+        posthog.capture("contact_detail_copied", { contact_method: type });
+      }
+      portfolioLogger.contactDetailCopied(type);
       if (type === "email") {
         setCopiedEmail(true);
         setTimeout(() => setCopiedEmail(false), 2000);
@@ -70,6 +81,12 @@ export default function Index() {
                         href="mailto:me@acevedomiguel.com"
                         className="text-gray-700 hover:text-gray-900 hover:underline break-all"
                         itemProp="email"
+                        onClick={() => {
+                          if (posthogConfigured) {
+                            posthog.capture("contact_method_selected", { contact_method: "email" });
+                          }
+                          portfolioLogger.contactMethodSelected("email");
+                        }}
                       >
                         me@acevedomiguel.com
                       </a>
@@ -94,6 +111,12 @@ export default function Index() {
                         href="tel:+85264356936"
                         className="text-gray-700 hover:text-gray-900 hover:underline"
                         itemProp="telephone"
+                        onClick={() => {
+                          if (posthogConfigured) {
+                            posthog.capture("contact_method_selected", { contact_method: "phone" });
+                          }
+                          portfolioLogger.contactMethodSelected("phone");
+                        }}
                       >
                         (+852) 6435-6936
                       </a>
@@ -132,6 +155,12 @@ export default function Index() {
                       <a
                         href="https://www.linkedin.com/in/acevedomiguel/"
                         className="text-gray-700 hover:text-gray-900 hover:underline"
+                        onClick={() => {
+                          if (posthogConfigured) {
+                            posthog.capture("contact_method_selected", { contact_method: "linkedin" });
+                          }
+                          portfolioLogger.contactMethodSelected("linkedin");
+                        }}
                       >
                         acevedomiguel
                       </a>
@@ -164,6 +193,12 @@ export default function Index() {
                   <a
                     href="/resume.pdf"
                     download="Acevedo_Miguel_Resume.pdf"
+                    onClick={() => {
+                      if (posthogConfigured) {
+                        posthog.capture("resume_downloaded", { source: "contact" });
+                      }
+                      portfolioLogger.resumeDownloadRequested("contact");
+                    }}
                     className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-gray-50 text-sky-900 border border-sky-900 text-sm py-3 px-6 rounded-full transition-colors editorial-ui"
                     title="Download PDF resume"
                   >
