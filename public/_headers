@@ -1,8 +1,11 @@
+# HSTS is served by the Cloudflare edge (zone setting security_header):
+# max-age=15552000; includeSubDomains
+# The edge replaces any origin Strict-Transport-Security header, so do not set it here.
+
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
 
 /*
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
