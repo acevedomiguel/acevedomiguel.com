@@ -1,0 +1,19 @@
+public/_headers
+  s_7c87a97d82a980::t_a8c142b75810a3 1-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "d984189808a257f1f21a6d12128e52a7359e717a",
+  "prompts": {},
+  "sessions": {
+    "s_7c87a97d82a980": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ddec64fb0ffeySn2JivciBkUAz",
+        "model": "deepseek/deepseek-v4.1-flash"
+      },
+      "human_author": "Miguel Angel Acevedo <acevedomiguel@gmail.com>"
+    }
+  }
+}
